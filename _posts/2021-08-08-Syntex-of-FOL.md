@@ -3,6 +3,9 @@ title: Syntex of First Order Logic
 tags: Logic Study
 ---
 
+NOTE: 지금은 정의만 간략히 적어두었습니다, 글을 다듬을 예정입니다.
+부족한 글이지만, 지적할 부분이 있다면 메일로 알려주세요.
+
 일상생활의 언어로는 논리적 구조를 분석하는데 한계가 있고, 모호함이 있다.
 그래서 우리는 명제를 기호화 하여 표현하고, 기호화된 명제를 분석하고자 한다.
 
@@ -51,6 +54,17 @@ tags: Logic Study
 1. 모든 variable은 *S-term*이다.
 2. 모든 constant는 *S-term*이다.
 3. 만약 문자열 $t_1, \cdots, t_n$ 이 모두 *S-term* 이고, $f$가 $n$개의 항을 가진 function symbol ($n$-ary function symbol)이라면, $ft_1 \cdots t_n$도 *S-term*이다.
+
+이러한 규칙으로 만들어진 S-term의 집합을 우리는 $T^S$라 표현하자.
+
+다음으로 만들 것은 명제이다.
+*S-formula*은 $\mathbb{A}_S$의 부분집합으로 아래 규칙을 만족한다.
+
+1. 만약 $t_1$과 $t_2$가 S-term이라면, $t_1 \equiv t_2$ 는 *S-formula*이다.
+2. 만약 $t_1, \cdots, t_n$가 모두 S-term이고, $R$이 n개의 항을 가진 relation symbol이라면 (n-ary relation symbol), $Rt_1 \codts t_n$은 *S-formula* 이다.
+3. 만약 $\varphi$가 S-formula라면, $\neg\varphi$는 *S-formula*이다.
+4. 만약 $\varphi$와 $\psi$가 S-formula라면, $(\varphi \wedge \psi), (\varphi \vee \psi), (\varphi \to \psi), (\varphi \leftrightarrow \psi)$는 *S-formula*이다.
+5. 만약 $\varphi$가 S-formula이고, $x$가 변수라면, $\forall x \varphi$, $\exists x \varphi$도 *S-formula*이다.
 
 # Formulas of First Order Logic
 
