@@ -7,14 +7,15 @@ titles: 소개
 
 # 경력
 
-2018 - 현재: 울산과학기술원 컴퓨터공학과 학사과정 재학
+2018 - 현재: Undergraduate Student in UNIST.
+Major: Computer Science and Engineering
 
-2020.9. - 2021.2: 울산과학기술원 인공지능대학원 [MLV 연구실](https://sites.google.com/view/mlvlab/) 학부인턴 (Unpaid, 지도교수: [김광인 교수님](https://sites.google.com/view/kimki))
+2020.9. - 2021.2: UNIST [Graduate School of Artificial Intelligence] [MLV Lab](https://sites.google.com/view/mlvlab/): Undergraduate Intern (Unpaid, PI: [Prof. Kwang In Kim](https://sites.google.com/view/kimki))
 
 ## 동아리 활동
 
-2018 - 현재: 울산과학기술원 컴퓨터공학 동아리 [HeXA](http://www.hexa.pro)
+2018 - Current: UNIST Computer Science and Engineering Club, [HeXA](http://www.hexa.pro)
 
-# 앞으로
+# Future
 
-2022.3 - : 울산과학기술원 인공지능대학원 [MLV 연구실](https://sites.google.com/view/mlvlab/)에서 석박통합과정 
+2022.3 - : M.S.-Ph.D Combined in UNIST [Graduate School of Artificial Intelligence](https://aigs.unist.ac.kr/web/index.php) [MLV Lab](https://sites.google.com/view/mlvlab/)
