@@ -1,5 +1,5 @@
 ---
-title: Syntex of First Order Logic
+title: Syntex of First Order Logic 1
 tags: Logic Study
 ---
 
@@ -11,8 +11,10 @@ NOTE: 지금은 정의만 간략히 적어두었습니다, 글을 다듬을 예�
 
 # Alphabet of First Order Logic
 
-우리가 새로운 언어를 배우면, 가장 먼저 배우는 것은 그 언어의 알파벳이다.
-여기서 알파벳(alphabet)은 기호(Symbol)의 집합이다.
+우리가 새로운 언어를 배우면, 가장 먼저 배우는 것은 그 언어를 구성하는 기호(symbol)의 집합인 알파벳(alphabet)이다.
+한글이라면, ㄱ, ㄴ, ㄷ을 배우고, 영어라면 A, B, C를 배우게 된다.
+FOL의 알파벳을 배우기 앞서 알파벳의 예시와 그로 구성되는 문자열을 살펴보자.
+알파벳은 기호의 집합이다.
 예를 들어, $\mathbb{A}_1 = \{ 0,1,2, \cdots, 9 \}$ 와 같이 표현이 될 수 있다.
 이러한 알파벳을 나열한 것을 우리는 문자열(string)이라 한다.
 알파벳 $\mathbb{A}$로 구성된 문자열을 $\mathbb{A}^*$이라 표현한다.
@@ -26,7 +28,6 @@ NOTE: 지금은 정의만 간략히 적어두었습니다, 글을 다듬을 예�
 다만, 알파벳으로 만들어진 문자열이 모호하게 해석이 되어서는 안된다.
 예를 들어, $\mathbb{A}_{NO} = \{ |, || \}$인 경우를 생각하고, $a_1 = |, a_2 = ||$이라 이야기하자.
 이로 만든 문자열 $|||$을 생각한다면, 이것을 읽는 방법으로는 $a_1 a_1 a_1, a_1 a_2, a_2 a_1$ 이렇게 세 가지 방식이 있을 수 있다. 
-이렇게 모호하게 읽혀지는 경우는 알파벳이라 하지 않기로 한다.
 
 우리의 관심사인 First Order Logic (FOL) 의 알파벳을 알아보자.
 
@@ -63,7 +64,7 @@ NOTE: 지금은 정의만 간략히 적어두었습니다, 글을 다듬을 예�
 *S-formula*은 $\mathbb{A}_S$의 부분집합으로 아래 규칙을 만족한다.
 
 1. 만약 $t_1$과 $t_2$가 S-term이라면, $t_1 \equiv t_2$ 는 *S-formula*이다.
-2. 만약 $t_1, \cdots, t_n$가 모두 S-term이고, $R$이 n개의 항을 가진 relation symbol이라면 (n-ary relation symbol), $Rt_1 \codts t_n$은 *S-formula* 이다.
+2. 만약 $t_1, \cdots, t_n$가 모두 S-term이고, $R$이 n개의 항을 가진 relation symbol이라면 (n-ary relation symbol), $R t_1 \cdots t_n$은 *S-formula* 이다.
 3. 만약 $\varphi$가 S-formula라면, $\neg\varphi$는 *S-formula*이다.
 4. 만약 $\varphi$와 $\psi$가 S-formula라면, $(\varphi \wedge \psi), (\varphi \vee \psi), (\varphi \to \psi), (\varphi \leftrightarrow \psi)$는 *S-formula*이다.
 5. 만약 $\varphi$가 S-formula이고, $x$가 변수라면, $\forall x \varphi$, $\exists x \varphi$도 *S-formula*이다.
@@ -72,7 +73,7 @@ NOTE: 지금은 정의만 간략히 적어두었습니다, 글을 다듬을 예�
 특별히 이러한 S-formula 중에서 1, 2를 통해 만들어진 S-formula는 S-formula로 부터 만들어 지지 않는다.
 S-formula에서 가장 기본이 되는 formula로 이것을 특별히 atomic formula라 한다.
 atomic formula의 경우, FOL에서 증명을 할 때, 귀납법을 활용하게 되는데 여기서 base case가 되게 된다.
-3. 4.에서 만들어진 수식의 경우 각각을 부르는 명칭이 있다.
+3 - 4에서 만들어진 수식의 경우 각각을 부르는 명칭이 있다.
 
 | S-formula | name |
 | --- | :---: |
@@ -82,10 +83,12 @@ atomic formula의 경우, FOL에서 증명을 할 때, 귀납법을 활용하게
 | $(\varphi \to \psi)$ | implication |
 | $(\varphi \leftrightarrow \psi)$ | bi-implication |
 
-# Variable of First Order Logic
+## Proof by Indyction on Terms or on Formulas
 
-## Free Variable
+우리는 S-term이나 S-formula가 특별한 성질 $P$를 만족함을 보이고 싶다면, 귀납적으로 증명하여야 한다.
+정의가 귀납적으로 되어 있어, 각각의 정의별로 성질 $P$를 만족시킨다면, S-term 또는 S-formula가 성질 $P$를 만족시킨다는 것을 보일 수 있다.
 
 # 참고문헌
 
 1. "Mathematical Logic", Heinz-Dieter Ebbinghaus, Jorg Flum, Wolfgang Thomas, Springer, 2021, 3rd Edition
+2. "A Mathematical Introduction to Logic", Herbert B. Enderton, Academic Press, 2nd Edition
