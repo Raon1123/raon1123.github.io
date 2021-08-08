@@ -57,6 +57,8 @@ NOTE: 지금은 정의만 간략히 적어두었습니다, 글을 다듬을 예�
 
 이러한 규칙으로 만들어진 S-term의 집합을 우리는 $T^S$라 표현하자.
 
+# Formulas of First Order Logic
+
 다음으로 만들 것은 명제이다.
 *S-formula*은 $\mathbb{A}_S$의 부분집합으로 아래 규칙을 만족한다.
 
@@ -66,7 +68,19 @@ NOTE: 지금은 정의만 간략히 적어두었습니다, 글을 다듬을 예�
 4. 만약 $\varphi$와 $\psi$가 S-formula라면, $(\varphi \wedge \psi), (\varphi \vee \psi), (\varphi \to \psi), (\varphi \leftrightarrow \psi)$는 *S-formula*이다.
 5. 만약 $\varphi$가 S-formula이고, $x$가 변수라면, $\forall x \varphi$, $\exists x \varphi$도 *S-formula*이다.
 
-# Formulas of First Order Logic
+이렇게 만들어진 S-formula의 집합을 우리는 $L^S$라 표현하자.
+특별히 이러한 S-formula 중에서 1, 2를 통해 만들어진 S-formula는 S-formula로 부터 만들어 지지 않는다.
+S-formula에서 가장 기본이 되는 formula로 이것을 특별히 atomic formula라 한다.
+atomic formula의 경우, FOL에서 증명을 할 때, 귀납법을 활용하게 되는데 여기서 base case가 되게 된다.
+3. 4.에서 만들어진 수식의 경우 각각을 부르는 명칭이 있다.
+
+| S-formula | name |
+| --- | :---: |
+| $\neg\varphi$ | negation |
+| $(\varphi \wedge \psi)$ | conjunction |
+| $(\varphi \vee \psi)$ | disjunction |
+| $(\varphi \to \psi)$ | implication |
+| $(\varphi \leftrightarrow \psi)$ | bi-implication |
 
 # Variable of First Order Logic
 
