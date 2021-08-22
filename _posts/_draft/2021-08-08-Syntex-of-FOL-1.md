@@ -11,24 +11,6 @@ NOTE: 지금은 정의만 간략히 적어두었습니다, 글을 다듬을 예�
 
 # Alphabet of First Order Logic
 
-우리가 새로운 언어를 배우면, 가장 먼저 배우는 것은 그 언어를 구성하는 기호(symbol)의 집합인 알파벳(alphabet)이다.
-한글이라면, ㄱ, ㄴ, ㄷ을 배우고, 영어라면 A, B, C를 배우게 된다.
-FOL의 알파벳을 배우기 앞서 알파벳의 예시와 그로 구성되는 문자열을 살펴보자.
-알파벳은 기호의 집합이다.
-예를 들어, $\mathbb{A}_1 = \{ 0,1,2, \cdots, 9 \}$ 와 같이 표현이 될 수 있다.
-이러한 알파벳을 나열한 것을 우리는 문자열(string)이라 한다.
-알파벳 $\mathbb{A}$로 구성된 문자열을 $\mathbb{A}^*$이라 표현한다.
-앞선 알파벳 $\mathbb{A}_1$로 구성된 문자열의 예시로는, $1, 11, 42, \cdots$ 가 있다.
-문자열의 길이를 우리는 length라 한다.
-앞선 예시에서, $1$의 길이는 1, $11$의 길이는 2라 할 수 있다.
-문자열에는 알파벳이 아무것도 없는 경우도 만들 수 있다.
-다른 말로, 문자열의 길이가 0인 경우도 만들 수 있다.
-이 경우 우리는 $\Box$ 로 표현한다.
-
-다만, 알파벳으로 만들어진 문자열이 모호하게 해석이 되어서는 안된다.
-예를 들어, $\mathbb{A}_{NO} = \{ |, || \}$인 경우를 생각하고, $a_1 = |, a_2 = ||$이라 이야기하자.
-이로 만든 문자열 $|||$을 생각한다면, 이것을 읽는 방법으로는 $a_1 a_1 a_1, a_1 a_2, a_2 a_1$ 이렇게 세 가지 방식이 있을 수 있다. 
-
 우리의 관심사인 First Order Logic (FOL) 의 알파벳을 알아보자.
 
 1. Variables ($v_0 , v_1, v_2, \cdots$)
@@ -87,6 +69,25 @@ atomic formula의 경우, FOL에서 증명을 할 때, 귀납법을 활용하게
 
 우리는 S-term이나 S-formula가 특별한 성질 $P$를 만족함을 보이고 싶다면, 귀납적으로 증명하여야 한다.
 정의가 귀납적으로 되어 있어, 각각의 정의별로 성질 $P$를 만족시킨다면, S-term 또는 S-formula가 성질 $P$를 만족시킨다는 것을 보일 수 있다.
+
+# Example of FOL
+
+## Group Theory
+
+수학에서 군(Group)의 정의는 집합 $G$와 연산 $\otimes^G$가 아래 조건을 만족해야 한다.
+
+1. 연산 $\otimes$은 결합법칙이 성립한다.
+2. 항등원이 존재한다.
+3. 모든 원소에 대해 역원이 존재한다.
+
+여기서 항등원을 $e^G$라 표현하자.
+그러면 우리는 $G$를 표현하는 기호의 집합으로 보고 여기에 binary function symbol $\otimes^G$, 항등원 $e^G$가 모인 집합으로 FOL을 표현할 수 있다.
+즉, $S_{gr} = (G, \otimes^G , e^G)$가 된다.
+이러한 알파벳을 통하여 FOL로 표현하면 아래와 같다.
+
+1. $\forall x \forall y \forall z (x \in G \wedge y \in G \wedge z \in G \wedge (x \otimes y) \otimes z = x \otimes (y \otimes z))$
+2. $\forall x (x \in G \wedge x \otimes e = x)$
+3. $\forall x \exists y (x \in G \wedge y \in G \wedge x \otimes y = e)$
 
 # 참고문헌
 
