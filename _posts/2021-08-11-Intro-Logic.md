@@ -24,7 +24,8 @@ tags: Logic Study
 
 # 포스팅 목록
 
-[Syntax of FOL]({% post_url 2021-08-21-Syntax-of-FOL %})
+[Alphabet of FOL]({% post_url 2021-08-21-Alphabet-of-FOL %})
+[Syntax of FOL]({% post_url 2021-08-22-Syntax-of-FOL %})
 
 # 유용한 참고자료
 
