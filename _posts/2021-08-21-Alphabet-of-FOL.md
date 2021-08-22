@@ -31,7 +31,7 @@ tags: Logic Study
 6번은 변수들간의 관계 연산자 (예, $<$), 하나의 변수 값을 다른 변수값으로 보내는 함수 연산자 (예, $f(x)=x$), 그리고 상수이다.
 1번에서 5번까지의 기호의 집합을 우리는 $\mathbb{A}$라 표현하기로 하고, 6번은 특별히 $S$로 표기한다.
 그렇다면 우리가 관심을 가지는 1차 논리의 알파벳은 $\mathbb{A}_S = \mathbb{A} \cup S$이 된다.
-예를 들어 $S = \{+, 0\}$ 이라면, $\mathbb{A}_S = \{ v_0, v_1, \cdots, \neg, \wedge, \cdots, \equiv, (, ), +, 0 \}$이 된다.
+예를 들어 $S = \left\{+, 0 \right\}$ 이라면, $\mathbb{A}_S = \left\{ v_0, v_1, \cdots, \neg, \wedge, \cdots, \equiv, (, ), +, 0 \right\}$이 된다.
 
 이러한 알파벳들이 나열이 되어 있으면 이를 문자열(String)이라 한다. 
 그리고 기호의 집합 $\mathbb{A}$로 부터 만들어진 문자열의 집합을 $\mathbb{A}^*$이라 한다.
