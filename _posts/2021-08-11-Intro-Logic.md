@@ -37,6 +37,8 @@ tags: Logic Study
 혼자서 공부하기 위하여 어떻게 공부를 하면 좋을지 설명을 하고 있는 사이트이다.
 많은 논리학 관련 서적들에 대한 소개가 이루어져 있으며, Peter Smith 교수님의 평이 달려 있다.
 
+[어떻게 집합론을 공부할 것인가](https://hanuljeon95.github.io/Set-theory-how-to-learn/)
+
 ## 강의
 
 ### KAIST 전산논리학 개론
