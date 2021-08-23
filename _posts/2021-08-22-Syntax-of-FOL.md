@@ -19,10 +19,6 @@ tags: Logic Study
 
 이러한 규칙으로 만들어진 S-term의 집합을 우리는 $T^S$라 표현하자.
 
-## Example of S-term
-
-S-term의 예시를 살펴보자.
-
 # Formulas of First Order Logic
 
 다음으로 만들 것은 명제이다.
@@ -48,7 +44,6 @@ atomic formula의 경우, FOL에서 증명을 할 때, 귀납법을 활용하게
 | $(\varphi \to \psi)$ | implication |
 | $(\varphi \leftrightarrow \psi)$ | bi-implication |
 
-## Proof by Indyction on Terms or on Formulas
-
-우리는 S-term이나 S-formula가 특별한 성질 $P$를 만족함을 보이고 싶다면, 귀납적으로 증명하여야 한다.
-정의가 귀납적으로 되어 있어, 각각의 정의별로 성질 $P$를 만족시킨다면, S-term 또는 S-formula가 성질 $P$를 만족시킨다는 것을 보일 수 있다.
+이렇게 구성한 syntax에 대해서는 더 살펴볼 내용이 있지만,
+이렇게만 syntax만 적어서는 문장의 구성에 대해 감이 좀처럼 잡히지 않는다.
+그래서 이러한 문장의 semantics에 대해 알아보고 돌아오기로 하자.
