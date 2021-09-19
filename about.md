@@ -11,13 +11,15 @@ titles: 소개
 Major in Computer Science and Engineering.
 
 2020.9. - 2021.2: UNIST [Graduate School of Artificial Intelligence](https://aigs.unist.ac.kr) [MLV Lab](https://sites.google.com/view/mlvlab/): Undergraduate Intern (Unpaid, PI: [Prof. Kwang In Kim](https://sites.google.com/view/kimki))
+Topic: Adversarial Example
+
+2021.9. - 2022.2: UNIST [Graduate School of Artificial Intelligence](https://aigs.unist.ac.kr) [MLV Lab](https://sites.google.com/view/mlvlab/): Undergraduate Intern (Paid, PI: [Prof. Kwang In Kim](https://sites.google.com/view/kimki))
+Topic: Image Attribution
 
 ## 동아리 활동
 
 2018 - Current: UNIST Computer Science and Engineering Club, [HeXA](http://www.hexa.pro)
 
 # Future
-
-2021.9. - 2022.2: UNIST [Graduate School of Artificial Intelligence](https://aigs.unist.ac.kr) [MLV Lab](https://sites.google.com/view/mlvlab/): Undergraduate Intern (Paid, PI: [Prof. Kwang In Kim](https://sites.google.com/view/kimki))
 
 2022.3 - : M.S.-Ph.D Combined in UNIST [Graduate School of Artificial Intelligence](https://aigs.unist.ac.kr/web/index.php) [MLV Lab](https://sites.google.com/view/mlvlab/)
