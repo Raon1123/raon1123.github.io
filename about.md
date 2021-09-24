@@ -9,8 +9,8 @@ titles: 소개
 
 # 경력
 
-2018 - Current: Undergraduate Student in UNIST.
-Major in Computer Science and Engineering.
+2018 - 2022.2 (예상): Undergraduate Student in UNIST.
+Major in [Computer Science and Engineering](https://cse.unist.ac.kr).
 
 2020.9. - 2021.2: UNIST [Graduate School of Artificial Intelligence](https://aigs.unist.ac.kr) [MLV Lab](https://sites.google.com/view/mlvlab/): Undergraduate Intern (Unpaid, PI: [Prof. Kwang In Kim](https://sites.google.com/view/kimki))
 Topic: Adversarial Example
