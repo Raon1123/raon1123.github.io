@@ -3,7 +3,7 @@ layout: article
 titles: 소개
 ---
 
-![Profile](/assets/images/YunpyoAn_profile.jpg)
+![Profile](/assets/images/YunpyoAn_profile.jpg){: width="50%" height="50%"}
 
 2021년 현재 울산과학기술원 컴퓨터공학과에 재학중인 안윤표입니다.
 
@@ -21,6 +21,8 @@ Topic: Image Attribution
 ## 동아리 활동
 
 2018 - Current: UNIST Computer Science and Engineering Club, [HeXA](http://www.hexa.pro)
+2020.9. - Current: UNIST AI Club, [brAIns](https://unist-brains.github.io)
+2021.3 - Current: UNIST Problem Solving Club, [Almight](https://unist-almight.github.io)
 
 # Future
 
