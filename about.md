@@ -11,9 +11,15 @@ I am senior undergraduate student at Dept. of CSE UNIST.
 I am interested in Machine Learning and Computer Vision area.
 My current research project focus on multi-label image attribution.
 
-# 경력
+# Topic of Interest
 
-2018 - 2022.2 (예상): Undergraduate Student in UNIST.
+- Machine Learning
+- Computer Vision
+- Logic
+
+# Vita
+
+2018 - 2022.2: Undergraduate Student in UNIST.
 Major in [Computer Science and Engineering](https://cse.unist.ac.kr).
 
 2020.9. - 2021.2: UNIST [Graduate School of Artificial Intelligence](https://aigs.unist.ac.kr) [MLV Lab](https://sites.google.com/view/mlvlab/): Undergraduate Intern (Unpaid, PI: [Prof. Kwang In Kim](https://sites.google.com/view/kimki))
@@ -22,7 +28,7 @@ Topic: Adversarial Example
 2021.9. - 2022.2: UNIST [Graduate School of Artificial Intelligence](https://aigs.unist.ac.kr) [MLV Lab](https://sites.google.com/view/mlvlab/): Undergraduate Intern (Paid, PI: [Prof. Kwang In Kim](https://sites.google.com/view/kimki))
 Topic: Image Attribution
 
-## 동아리 활동
+## Undergraduate Club Activity
 
 1. 2018 - Current: UNIST Computer Science and Engineering Club, [HeXA](http://www.hexa.pro)
 2. 2020.9. - Current: UNIST AI Club, [brAIns](https://unist-brains.github.io)
