@@ -5,7 +5,11 @@ titles: 소개
 
 ![Profile](/assets/images/YunpyoAn_profile.jpg){: width="30%" height="30%"}
 
-2021년 현재 울산과학기술원 컴퓨터공학과에 재학중인 안윤표입니다.
+Last Update: 2021. 10. 6.
+
+I am senior undergraduate student at Dept. of CSE UNIST. 
+I am interested in Machine Learning and Computer Vision area.
+My current research project focus on multi-label image attribution.
 
 # 경력
 
