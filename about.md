@@ -7,7 +7,9 @@ Yunpyo An (안윤표, 安潤杓)
 
 ![Profile](/assets/images/YunpyoAn_profile.jpg){: width="30%" height="30%"}
 
-Last Update: 2022. 01. 09.
+Email: anyunpyo `at` unist `dot` ac `dot` kr
+
+Last Update: 2022. 01. 18.
 
 오는 2022년 3월 부터 UNIST 인공지능대학원 석박통합과정 1학년이 되는 안윤표 입니다.
 현재 머신러닝과 컴퓨터 비전 분야에 관심을 가지고 있습니다.
