@@ -52,6 +52,10 @@ tags: Logic Study
 
 # 포스팅 목록
 
+## 1차 술어 논리 (FOL, First Order Logic)
+
+[FOL의 구문론]({% _posts 2022-02-11-Syntax-of-FOL %})
+
 # 유용한 참고자료
 
 ## 사이트
@@ -81,3 +85,4 @@ tags: Logic Study
 - "Mathematical Logic", Stephen Cole Kleene [Amazon](https://www.amazon.com/Mathematical-Logic-Dover-Books-Mathematics/dp/0486425339)
 - "Mathematical Logic", Heinz-Dieter Ebbinghaus, Jorg Flum, Wolfgang Thomas [Amazon](https://www.amazon.com/Mathematical-Logic-Graduate-Texts-Mathematics/dp/3030738388/)
 - "Introduction to Mathemtaical Logic", Elliott Mendelson [Amazon](https://www.amazon.com/Introduction-Mathematical-Discrete-Mathematics-Applications/dp/1482237725)
+- "Mathematical Logic", Joseph R. Shoenfield
