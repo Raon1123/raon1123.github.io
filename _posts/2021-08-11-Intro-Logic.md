@@ -54,7 +54,7 @@ tags: Logic Study
 
 ## 1차 술어 논리 (FOL, First Order Logic)
 
-[FOL의 구문론]({% _posts 2022-02-11-Syntax-of-FOL %})
+[FOL의 구문론]({% post_url 2022-02-11-Syntax-of-FOL %})
 
 # 유용한 참고자료
 
