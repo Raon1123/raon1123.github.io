@@ -29,8 +29,7 @@ My current research project focus on multi-class image classification.
 
 2022.3 - : M.S.-Ph.D Combined in UNIST [Graduate School of Artificial Intelligence](https://aigs.unist.ac.kr/web/index.php) [MLV Lab](https://sites.google.com/view/mlvlab/)
 
-2018 - 2022.2: Bachelor of Engineering, UNIST. (current, candidate)
-Major in [Computer Science and Engineering](https://cse.unist.ac.kr).
+2018 - 2022.2: Bachelor of Science, UNIST. Major in [Computer Science and Engineering](https://cse.unist.ac.kr). Cum laude
 
 ## Research Activity
 
