@@ -21,6 +21,7 @@ tags: MachineLearning LearningTheory
 - [STATS214 / CS229M: Machine Learning Theory](https://web.stanford.edu/class/stats214/)
 - [18.408 Theoretical Foundations for Deep Learning](https://people.csail.mit.edu/moitra/408b.html)
 - [18.408: Algorithmic Aspects of Machine Learning](https://people.csail.mit.edu/moitra/408.html)
+- [Mathematical Aspects of Deep Learning](https://elmos.scripts.mit.edu/mathofdeeplearning/mathematical-aspects-of-deep-learning-intro/)
 - [CMSC 828W: Foundations of Deep Learning](https://www.cs.umd.edu/class/fall2020/cmsc828W/)
 
 ## Workshop and Seminar
