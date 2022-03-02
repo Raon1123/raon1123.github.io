@@ -23,11 +23,13 @@ tags: MachineLearning LearningTheory
 - [18.408: Algorithmic Aspects of Machine Learning](https://people.csail.mit.edu/moitra/408.html)
 - [Mathematical Aspects of Deep Learning](https://elmos.scripts.mit.edu/mathofdeeplearning/mathematical-aspects-of-deep-learning-intro/)
 - [CMSC 828W: Foundations of Deep Learning](https://www.cs.umd.edu/class/fall2020/cmsc828W/)
+- [COMPSCI 590.2 - Algorithimic Aspects of Machine Learning](https://courses.cs.duke.edu//fall16/compsci590.2/)
 
 ## Workshop and Seminar
 
 - [Issac Newton Institute: Theory of Deep Learning](https://www.newton.ac.uk/event/mdlw01/)
 - [Harvard ML Theory](https://mltheory.org/)
+- [Foundations of Deep Learning](https://simons.berkeley.edu/programs/dl2019)
 
 # Survey Paper
 
