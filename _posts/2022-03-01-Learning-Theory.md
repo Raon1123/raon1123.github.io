@@ -14,7 +14,21 @@ tags: MachineLearning LearningTheory
 - [Learning Theory form First Principles](https://www.di.ens.fr/~fbach/learning_theory_class/index.html)
 - [Foundations of Data Science](https://www.cs.cornell.edu/jeh/book.pdf)
 
-# Course Note and Survey Paper
+# Course Note, Workshop and Survey Paper
+
+## Course
 
 - [STATS214 / CS229M: Machine Learning Theory](https://web.stanford.edu/class/stats214/)
+- [18.408 Theoretical Foundations for Deep Learning](https://people.csail.mit.edu/moitra/408b.html)
+- [18.408: Algorithmic Aspects of Machine Learning](https://people.csail.mit.edu/moitra/408.html)
+- [CMSC 828W: Foundations of Deep Learning](https://www.cs.umd.edu/class/fall2020/cmsc828W/)
+
+## Workshop and Seminar
+
+- [Issac Newton Institute: Theory of Deep Learning](https://www.newton.ac.uk/event/mdlw01/)
+- [Harvard ML Theory](https://mltheory.org/)
+
+# Survey Paper
+
 - [Introduction to Statistical Learning Theory](http://www.econ.upf.edu/~lugosi/mlss_slt.pdf)
+- [Kernel Methods in Machine Learning](https://projecteuclid.org/journals/annals-of-statistics/volume-36/issue-3/Kernel-methods-in-machine-learning/10.1214/009053607000000677.full)
