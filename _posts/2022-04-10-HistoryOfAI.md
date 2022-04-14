@@ -1,11 +1,13 @@
 ---
 title: History of AI
-tags: AI Study
+tags: [AI, Study]
 ---
 
 Curation of history of artificial intelligence according to my taste.
 
 A. M. Turing et al. [COMPUTING MACHINERY AND INTELLIGENCE](https://academic.oup.com/mind/article/LIX/236/433/986238)
+
+[Deep Learning in Neural Networks: An Overview](https://arxiv.org/abs/1404.7828)
 
 # Computer Vision
 

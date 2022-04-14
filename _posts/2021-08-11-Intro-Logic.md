@@ -1,6 +1,6 @@
 ---
 title: Introduction to Logic
-tags: Logic Study
+tags: [Logic, Study]
 ---
 
 # 왜 논리학을 공부하는가?

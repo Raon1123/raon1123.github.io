@@ -1,6 +1,6 @@
 ---
 title: Syntex of First Order Logic
-tags: Logic Study
+tags: [Logic, Study]
 ---
 
 # Syntax and Semantics

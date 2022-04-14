@@ -1,6 +1,6 @@
 ---
 title: Foundation of Machine Learning
-tags: MachineLearning LearningTheory
+tags: [Machine Learning, Learning Theory]
 ---
 
 개인적으로 모아보는 Learning Theory와 딥러닝 이론에 대한 자료 모음집.

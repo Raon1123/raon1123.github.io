@@ -1,6 +1,6 @@
 ---
 title: Markdown entry_points() Type Error 관련 경험
-tags: Lab Research
+tags: [Lab, Research]
 ---
 
 # 문제상황
