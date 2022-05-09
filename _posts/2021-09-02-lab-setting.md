@@ -1,6 +1,6 @@
 ---
 title: 연구실 세팅 작업
-tags: Lab Research
+tags: [Lab] 
 ---
 
 연구실 컴퓨터를 세팅하면서 한 작업들을 정리해보고자 한다.
