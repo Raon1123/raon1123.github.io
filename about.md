@@ -11,13 +11,13 @@ Email: anyunpyo `at` unist `dot` ac `dot` kr
 
 Last Update: 2022. 01. 18.
 
-오는 2022년 3월 부터 UNIST 인공지능대학원 석박통합과정 1학년이 되는 안윤표 입니다.
+현재 UNIST 인공지능대학원 석박통합과정 1학년이 되는 안윤표 입니다.
 현재 머신러닝과 컴퓨터 비전 분야에 관심을 가지고 있습니다.
-현재 연구분야는 여러 속성을 가진 이미지를 분류하는 문제를 연구하고 있습니다.
+현재는 연합 학습 (federated learning) 분야에서 연구를 진행하고 있습니다.
 
 I am first year master student at UNIST AIGS from 2022. 3.
 I am interested in Machine Learning and Computer Vision area.
-My current research project focus on multi-class image classification.
+My current research project focus on active learning and federated learning.
 
 # Topic of Interest
 
@@ -42,5 +42,5 @@ Topic: Image Attribution
 ## Undergraduate Club Activity
 
 1. 2018.3. - 2022.3.: UNIST Computer Science and Engineering Club, [HeXA](http://www.hexa.pro)
-2. 2020.9. - Current: UNIST AI Club, [brAIns](https://unist-brains.github.io)
+2. 2020.9. - 2022.3.: UNIST AI Club, [brAIns](https://unist-brains.github.io)
 3. 2021.3. - 2022.3.: UNIST Problem Solving Club, [Almight](https://unist-almight.github.io)
