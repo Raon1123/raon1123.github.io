@@ -28,16 +28,23 @@ My current research project focus on active learning and federated learning.
 # Vita
 
 2022.3 - : M.S.-Ph.D Combined in UNIST [Graduate School of Artificial Intelligence](https://aigs.unist.ac.kr/web/index.php) 
+(Advisor: [Seungryul Baek](https://sites.google.com/site/bsrvision00/))
 
 2018 - 2022.2: Bachelor of Science, UNIST. Major in [Computer Science and Engineering](https://cse.unist.ac.kr). Cum laude
 
 ## Research Activity
 
-2020.9. - 2021.2: UNIST [Graduate School of Artificial Intelligence](https://aigs.unist.ac.kr) [MLV Lab](https://sites.google.com/view/mlvlab/): Undergraduate Intern (Unpaid, PI: [Prof. Kwang In Kim](https://sites.google.com/view/kimki))
+2020.9. - 2021.2: UNIST [Graduate School of Artificial Intelligence](https://aigs.unist.ac.kr) MLV Lab: Undergraduate Intern (Unpaid, PI: [Prof. Kwang In Kim](https://sites.google.com/view/kimki))
 Topic: Adversarial Example
 
-2021.9. - 2022.2: UNIST [Graduate School of Artificial Intelligence](https://aigs.unist.ac.kr) [MLV Lab](https://sites.google.com/view/mlvlab/): Undergraduate Intern (Paid, PI: [Prof. Kwang In Kim](https://sites.google.com/view/kimki))
+2021.9. - 2022.2: UNIST [Graduate School of Artificial Intelligence](https://aigs.unist.ac.kr) MLV Lab: Undergraduate Intern (Paid, PI: [Prof. Kwang In Kim](https://sites.google.com/view/kimki))
 Topic: Image Attribution
+
+## Teaching Activity
+
+2022 Spring: CSE463 Machine Learning (TA, undergraduate course)
+2020-21 Winter, 2021-22 Winter: ABC: A Build CS skills winter school TA
+
 
 ## Undergraduate Club Activity
 
