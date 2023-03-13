@@ -28,7 +28,7 @@ My current research project focus on active learning and federated learning.
 # Vita
 
 2022.3 - : M.S.-Ph.D Combined in UNIST [Graduate School of Artificial Intelligence](https://aigs.unist.ac.kr/web/index.php) 
-(Advisor: [Seungryul Baek](https://sites.google.com/site/bsrvision00/))
+(Advisor: [Prof. Seungryul Baek](https://sites.google.com/site/bsrvision00/) and [Prof. Kwang In Kim](https://sites.google.com/view/kimki))
 
 2018 - 2022.2: Bachelor of Science, UNIST. Major in [Computer Science and Engineering](https://cse.unist.ac.kr). Cum laude
 
