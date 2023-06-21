@@ -3,7 +3,7 @@ title: Slurm 설치 방법
 tags: [Server] 
 ---
 
-(계속 업데이트 중...)
+마지막 업데이트: 2023. 6. 21.
 
 # Slurm 이란 무엇인가?
 
@@ -33,59 +33,6 @@ Slurm 설치에 앞서 많~은 준비사항이 있는데 step-by-step으로 따�
 Munge는 서버 사이에서 인증을 하는 프로토콜이다.
 Slurm에서는 각 연산 서버간의 통신인증을 위해 munge를 활용하고 있으므로 이를 사전에 설치하여야 한다.
 
-### Openssl
-
-[OpenSSL Download](https://www.openssl.org/source/)
-
-Munge를 설치하기에 앞서 munge에 필요한 openssl을 설치하자.
-현재 서버에 설치된 버전을 확인해보자.
-```
-$ openssl version
-OpenSSL 1.1.1l  24 Aug 2021
-```
-위의 경우 버전을 출력하는 명령이며, 보통은 1이 설치되어 있을 것이다.
-이후 설치 요구사항을 맞추기 위하여 openssl을 설치하자.
-
-가끔 아나콘다에 openssl이 설치되어 있으면 그 친구 먼저 잡히는 경우가 있다. deactivate로 해제시켜서 올바른 openssl이 잡히도록 하자.
-```
-(base) $ munge-0.5.15 which openssl
-/home/<niceuser>/anaconda3/bin/openssl
-```
-다만, anaconda 등의 python이 동작하는 환경에서는 openssl이 anaconda 환경에 설치가 되어 있을 수 있다.
-anaconda를 해제하고, 아니면 다른 계정에서 작업하는 것을 권한다. (이걸로 일주일간 애먹어서...)
-또한 이미 openssl이 설치된 경우라면 이를 삭제하는 작업도 필요하다.
-```
-$ sudo ls -al /usr/bin/openssl # 있으면 삭제 후 설치
-$ sudo apt remove openssl
-```
-
-소스를 공식 홈페이지에서 직접 다운로드 할 수 있다. 
-Tip을 적자면 서버가 외부 망에 직접 연결 되어 있다면, 우클릭으로 주소를 복사하고 `wget <붙여넣은 주소>`로 바로 다운로드 하자.
-
-설치는 단순하다. 일반적인 컴파일과 동일하다.
-```
-$ tar -xvf <다운 받은 파일명>
-$ cd openssl-<버전>
-$ ./Configure --prefix=/usr
-$ make -j # j 옵션 없어도 되지만 시간을 단축시키자, 서버정도면 코어가 많아서 괜찮을 것이다.
-$ sudo make install
-```
-
-이후 심볼릭링크로 바로가기를 만들고, openssl 라이브러리를 연동시키는 작업이 필요하다.
-```
-$ sudo ln -s /usr/local/bin/openssl /usr/bin/openssl
-$ sudo ldconfig /usr/local/lib64
-$ openssl version
-```
-
-#### 참고자료
-
-- [OpenSSL 설치](https://blog.yeon.me/goto/1205)
-- [Openssl cannot open shared library](https://stackoverflow.com/questions/54124906/openssl-error-while-loading-shared-libraries-libssl-so-3)
-
-### Munge 설치
-
-이제 정말로 munge를 설치하여보자. 
 우선 munge를 실행할 user를 아래와 같이 생성하자.
 ```
 export MUNGEUSER=991
@@ -99,10 +46,10 @@ ubuntu와 같은 경우 아래와 같은 명령어로 설치할 수 있다.
 apt-get install munge libmunge-dev
 ```
 
-혹은 직접 파일을 다운받아 컴파일을 할 수도 있다.
+혹은 직접 파일을 다운받아 컴파일을 할 수도 있다. (근데 에러가 자주 나서 권하지 않는다.)
 ```
-wget https://github.com/dun/munge/releases/download/munge-0.5.15/munge-0.5.15.tar.xz --no-ch
-eck-certificate
+sudo apt install bzip2 zlib1g pkgconf
+wget https://github.com/dun/munge/releases/download/munge-0.5.15/munge-0.5.15.tar.xz --no-check-certificate
 tar xJf munge-0.5.15.tar.xz
 cd munge-0.5.15/
 ./configure \
@@ -145,12 +92,12 @@ munge -n | unmunge
 munge -n | ssh <node> unmunge
 ```
 
-#### 참고자료
+### 참고자료
 
 - [Munge install guide](https://github.com/dun/munge/wiki/Installation-Guide)
 
 
-## Slurm의 설치
+# Slurm의 설치
 
 먼저 slurm을 실행할 user를 생성하자.
 ```
@@ -193,7 +140,7 @@ sinfo -a
 ```
 로 가능하다.
 
-### Common error
+## Common error
 resolve DNS에 실패하는 경우는 1) slurm.conf 파일의 위치가 잘못 되었거나. (apt-get으로 설치하게 되면 다른 위치에 존재한다. `systemctl status slurmd`를 통해 위치를 확인할 수 있다.) 2) 혹은 hostname을 찾지 못하는 경우이다.
 ```
 slurmd: error: resolve_ctls_from_dns_srv: res_nsearch error: Unknown host
@@ -209,13 +156,41 @@ sudo ln -s /etc/slurm-llnl/slurm.conf /usr/local/etc/slurm.conf
 
 만약 에러가 난다면 디버깅 모드로 `slurmd -Dcvvv`를 통해 로그를 뱉게 하여보자.
 
+## 연산노드의 추가
+
 ### 연산 노드 사양의 확인
 
 Slurm을 설정할려면 각 연산 노드의 사양을 기입하여야 하는데, slurm이 연산노드에 설치된 상태로
 ```
-slurmd -C
+compute0 $ slurmd -C
+NodeName=compute0 <detail spec of server>
 ```
-를 통해 바로 확인할 수 있다. 첫번째 줄을 복사 붙여넣기를 하자.
+를 통해 바로 확인할 수 있다. 
+
+GPU 서버의 경우 GPU 연산 자원을 configuration file 위치의 `gres.conf`를 통해 추가해줘야 한다. `nvidia-smi` 등으로 설치된 GPU의 사양을 확인하고 아래와 같은 예시로 추가하자.
+```
+# /etc/slurm-llnl/gres.conf at Compute Node (compute0)
+Nodename=compute0 Name=gpu Type=rtx3090 File=/dev/nvidia0
+Nodename=compute0 Name=gpu Type=rtx3090 File=/dev/nvidia1
+```
+File의 경우 리눅스에서는 `/dev` 아래에 서버에 설치된 장비를 관리할 수 있다. NVIDIA GPU의 경우 `nvidia0` 부터 끝 부분 숫자가 추가되는 형식으로 그래픽카드가 설치되어 있다. 
+
+### 관리 노드에서 연산 노드의 추가
+
+관리 노드의 설정 파일 `slurm.conf` (이전 configuration file `/etc/slurm-llnl/slurm.conf`) 의 끝을 보면, Compute Nodes를 적는 란이 있다. 여기에 우리의 연산 노드를 추가해줘야 한다.
+여기에 들어갈 정보는 앞서 연산 노드에서 `slurmd -C` 를 참고하여 작성할 수 있다.
+또한 연산 노드를 묶어 파티션을 만들 수 있는데 이러한 파티션도 같이 설정하도록 하자.
+```
+# /etc/slurm-llnl/slurm.conf at Control Node (control)
+~~~ SKIP ~~~
+# Compute Node
+GresTypes=gpu
+NodeName=compute0 <spec> Gres=gpu:rtx3090:2 State=UNKNOWN
+~~~ SKIP ~~~
+
+PartitonName=comppart Nodes=compute[0-3] Default=YES MaxTime=INFINITE State=UP
+```
+
 
 ## 참고 사이트
 
