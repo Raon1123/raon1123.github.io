@@ -40,8 +40,9 @@ Topic: Image Attribution
 
 ## Teaching Activity
 
-2022 Spring: CSE463 Machine Learning (TA, undergraduate course)
-2020-21 Winter, 2021-22 Winter: ABC: A Build CS skills winter school TA
+- 2023 Spring: AI502 Principles of Deep Learning (TA, graduate course)
+- 2022 Spring: CSE463 Machine Learning (TA, undergraduate course)
+- 2020-21 Winter, 2021-22 Winter: ABC: A Build CS skills winter school TA
 
 
 ## Undergraduate Club Activity
