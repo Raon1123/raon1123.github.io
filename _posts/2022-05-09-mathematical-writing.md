@@ -1,6 +1,6 @@
 ---
 title: Tips on Writing
-tags: [writing]
+tags: [Writing]
 ---
 
 Personal collection about writing tips
