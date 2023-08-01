@@ -25,3 +25,4 @@ tags: [Lab, Research]
 3. [How to do research](http://people.csail.mit.edu/billf/www/papers/doresearch.pdf)
 4. [How to avoid machine learning pitfalls: a guide for academic researchers](https://arxiv.org/abs/2108.02497): 머신러닝 연구 뿐만 아니라 머신러닝을 활용하는 연구에 대해서도 다루고 있습니다.
 5. [Computer Vision and Machine Learning for Computer Graphics: Seminar MPI at 2020 Summer](https://vcai.mpi-inf.mpg.de/teaching/gvv_seminar_2020/resources.html): Max-Planck institute에서 진행된 Computer Vision and Machine Learning for Computer Graphics 세미나 입니다. 홈페이지에 들어가보시면 어떻게 좋은 발표를 할 수 있을지, 어떻게 읽고 쓰는 것이 좋을지에 대한 자료가 모아져 있습니다.
+6. [Stanford CS197: Computer Science Research](https://web.stanford.edu/class/cs197/)

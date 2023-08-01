@@ -26,7 +26,7 @@ I am interested in Machine Learning and Computer Vision area.
 # Vita
 
 2022.3 - : M.S.-Ph.D Combined in UNIST [Graduate School of Artificial Intelligence](https://aigs.unist.ac.kr/web/index.php) 
-(Advisor: [Prof. Seungryul Baek](https://sites.google.com/site/bsrvision00/) and [Prof. Kwang In Kim](https://sites.google.com/view/kimki))
+(Advisor: [Prof. Kwang In Kim](https://sites.google.com/view/kimki) and [Prof. Seungryul Baek](https://sites.google.com/site/bsrvision00/))
 
 2018.3 - 2022.2: Bachelor of Science, UNIST. Major in [Computer Science and Engineering](https://cse.unist.ac.kr). Cum laude
 
@@ -40,8 +40,9 @@ Topic: Image Attribution
 
 ## Teaching Activity
 
-2022 Spring: CSE463 Machine Learning (TA, undergraduate course)
-2020-21 Winter, 2021-22 Winter: ABC: A Build CS skills winter school TA
+- 2023 Spring: AI502 Principles of Deep Learning (TA, graduate course)
+- 2022 Spring: CSE463 Machine Learning (TA, undergraduate course)
+- 2020-21 Winter, 2021-22 Winter: ABC: A Build CS skills winter school TA
 
 
 ## Undergraduate Club Activity
