@@ -19,6 +19,7 @@ tags: [Server]
 # 관련 블로그 글
 
 - [Slurm 사용법]({% post_url 2022-09-04-Install-Slurm %})
+- [서버관리 관련 용어]({% post_url 2023-08-01-Server01 %})
 
 # 관련 링크
 
