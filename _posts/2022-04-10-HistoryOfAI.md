@@ -49,3 +49,7 @@ A. M. Turing et al. [COMPUTING MACHINERY AND INTELLIGENCE](https://academic.oup.
 
 - Ashish Vaswani et al. [Transformers](https://arxiv.org/abs/1706.03762), 2017
 - Alexey Dosovitskiy et al. [Vision Transformers(ViT)](https://arxiv.org/abs/2010.11929), 2020
+
+# Relate resources
+
+- [Historical advances in machine learning and AI](https://www.stat.cmu.edu/~aramdas/history/MLhistory.html)
