@@ -1,0 +1,244 @@
+\section{Syntax of First-Order Logic}
+
+\subsection{Alphabets}
+
+\begin{frame}
+    \frametitle{Alphabets}
+    \begin{definition}
+        An \textit{alphabet} $\bA$ is a finite set of \textbf{symbols}. \\
+        \bigskip
+        \pause
+        The finite sequences of symbols from an alphabet $\bA$ are called \textit{strings} or \textit{words}.
+        The $\bA^{\star}$ denotes the set of all strings over $\bA$.
+    \end{definition}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Alphabets}
+    \begin{Example}
+        Suppose that $\bA = \{ a, b, c \}$ is an alphabet. \\
+        \bigskip
+        \pause
+        Then, $\bA^{\star}$ is the set of all strings over $\bA$, i.e.,
+        \begin{align*}
+            \bA^{\star} = \{ & \square, a, b, c, aa, ab, ac, ba, bb, bc, ca, cb, cc, \\
+                             & aaa, aab, aac, aba, abb, abc, aca, acb, acc, \ldots \}
+        \end{align*}
+        where $\square$ is the \textit{empty string}.
+    \end{Example}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Alphabets}
+    \begin{lemma}
+        For a nonempty set $M$ the followings are equivalent:
+        \begin{enumerate}
+            \item $M$ is at most countable. (i.e., $M$ is finite or countably infinite.)
+            \item There is an injective map $\beta : M \rightarrow \mathbb{N}$.
+            \item There is a surjective map $\alpha : \mathbb{N} \rightarrow M$.
+        \end{enumerate}
+    \end{lemma}
+\end{frame}
+
+\subsection{Alphabets of First-Order Logic}
+
+\begin{frame}
+    \frametitle{Alphabets of First-Order Logic}
+    
+    \begin{definition}
+        The alphabet of a first-order language concists of the following symbols:
+        \begin{enumerate}
+            \item Variables: $v_0, v_1, v_2, \ldots$ \label{def:variables}
+            \item $\neg, \wedge, \vee, \rightarrow, \leftrightarrow$ (logical connectives) \label{def:logical_connectives}
+            \item $\forall, \exists$ (quantifiers) \label{def:quantifiers}
+            \item $\equiv$ (equality) \label{def:equality}
+            \item $(, )$ (parentheses) \label{def:parentheses}
+            \item For every $n \geq 1$, a (possible empty) set of $n$-ary function symbols \label{def:function_symbols}
+            \item For every $n \geq 1$, a (possible empty) set of $n$-ary relation symbols \label{def:relation_symbols}
+            \item a (possible empty) set of constant symbols \label{def:constant_symbols}
+        \end{enumerate}
+    \end{definition}
+    Let $\bA$ be the set of symbols \ref{def:variables} to \ref{def:parentheses}.
+    Let $S$ be the set of symbols \ref{def:function_symbols}, \ref{def:relation_symbols}, and \ref{def:constant_symbols}. 
+    The set $S$ determines the first-order language, for convenience, we denote $\bA_S$ as the alphabet of the first-order language.
+\end{frame}
+
+\begin{frame}
+    \frametitle{Alphabets of First-Order Logic}
+
+    Question:
+    Assume that $S$ is a countable set. Is $\bA_S$ countable?
+
+\end{frame}
+
+\subsection{Terms and Formulas}
+
+\begin{frame}
+    \frametitle{Terms and Formulas}
+    
+    Ok, we define the alphabets of first-order logic. \\
+    We already know that not all strings over an alphabet are interpretable. \\
+    But, we don't define the meaning (semantics) of first-order logic yet. \\
+    \bigskip
+    \pause
+    We define the \textit{syntax} of first-order logic. It is the grammar of first-order logic. \\
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Terms and Formulas}
+    \begin{Definition}\label{def:terms}
+        $S$-terms ($T^S$) are precisely those strings in $\bA_S^{\star}$ that can be obtained by applying the following rules:
+        \begin{enumerate}
+            \item Every variable is an $S$-term.
+            \item Every constant symbol is an $S$-term.
+            \item If the strings $t_1, \cdots, t_n$ are $S$-terms and $f$ is an $n$-ary function symbol, then $f(t_1, \cdots, t_n)$ is an $S$-term.
+        \end{enumerate}
+    \end{Definition}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Terms and Formulas}
+
+    \begin{Definition}\label{def:formulas}
+        $S$-formulas ($L^S$) are precisely those strings in $\bA_S^{\star}$ that can be obtained by applying the following rules:
+        \begin{enumerate}
+            \item If $t_1$ and $t_2$ are $S$-terms, then $t_1 \equiv t_2$ is an $S$-formula.
+            \item If $t_1, \cdots t_n$ are $S$-terms and $R$ is an $n$-ary relation symbol, then $R(t_1, \cdots, t_n)$ is an $S$-formula.
+            \item If $\phi$ is an $S$-formula, then $\neg \phi$ is an $S$-formula.
+            \item If $\phi$ and $\rho$ are $S$-formulas, then $(\phi \wedge \rho)$, $(\phi \vee \rho)$, $(\phi \rightarrow \rho)$, and $(\phi \leftrightarrow \rho)$ are $S$-formulas.
+            \item If $\phi$ is an $S$-formula and $x$ is variable, then $\forall x \phi$ and $\exists x \phi$ are $S$-formulas.
+        \end{enumerate}
+    \end{Definition}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Terms and Formulas}
+    
+    We might wonder why we need to define the syntax of first-order logic. \\
+    \bigskip
+    \pause
+    The syntax of first-order logic is construction of strings in first-order logic. \\
+    The terms and formulas are the different types of strings in first-order logic. \\
+    \bigskip
+    \pause
+    We borrow the idea from next lecture 'semantics' of first-order logic, the terms are the 'objects' and the formulas are the 'properties' of the objects. \\
+    Note that, we don't define the meaning of the terms and formulas yet. Keep in mind it. \\
+\end{frame}
+
+\subsection{Induction in the Calculi of Terms and Formulas}
+
+\begin{frame}
+    \frametitle{Induction in the Calculi of Terms and Formulas}
+
+    Let $S$ be the set of symbols and $Z \subseteq \bA_S^{\star}$ be the set of strings over the alphabet $\bA_S$. \\
+    \bigskip
+    \pause
+    We want to construct that from symbol set $S$ to the terms $T^S$ \ref{def:terms} and formulas $L^S$ \ref{def:formulas}. \\
+    We have the rules to construct the terms and formulas!
+\end{frame}
+
+\begin{frame}
+    \frametitle{Induction in the Calculi of Terms and Formulas}
+    
+    We can construct the terms and formulas by inductions. Let's the induction begin! \\
+    \bigskip
+    \pause
+    Assume that $\zeta_1, \cdots , \zeta_n$ all belong to $Z$. Then also $\zeta$ belongs to $Z$ writing as following \\
+    \begin{equation}
+        \frac{\zeta_1, \cdots , \zeta_n}{\zeta}
+    \end{equation}
+    \bigskip
+    \pause
+    We call this rule as \textit{inference rule}. \\
+    It allows $n=0$, the first sort of rules in \ref{def:terms} and \ref{def:formulas} is "premise-free" rules. \\
+\end{frame}
+
+\begin{frame}
+    \frametitle{Induction in the Calculi of Terms and Formulas}
+
+    The calculus $\mathbf{C}$ (rule) of terms $T^S$ as follows: 
+    \begin{align}\label{def:calculus_terms}
+        \frac{\square}{x} & \\
+        \frac{\square}{c}, & c \in S \\
+        \frac{t_1, \cdots, t_n}{f(t_1, \cdots, t_n)},& f \in S, f \text{ is $n$-ary function symbol}
+    \end{align}
+
+    We can prove that some strings are terms by using the inference rules it is called \textit{induction over calculus $\mathbf{C}$}. \\
+\end{frame}
+
+\begin{frame}
+    \frametitle{Induction in the Calculi of Terms and Formulas}
+
+    The calculus $\mathbf{C}$ (rule) of formulas $L^S$ as follows:
+    \begin{align}\label{def:calculus_formulas}
+        \frac{t_1, t_2}{t_1 \equiv t_2} & \\
+        \frac{t_1, \cdots, t_n}{R(t_1, \cdots, t_n)}, R \in S&, \quad R \text{ is $n$-ary relation symbol} \\
+        \frac{\phi}{\neg \phi}, & \\
+        \frac{\phi, \rho}{(\phi \star \rho)}, & \quad \text{where} \star = \vee, \wedge, \rightarrow, \leftrightarrow \\
+        \frac{\phi}{\forall x \phi}, & \\
+        \frac{\phi}{\exists x \phi}, &
+    \end{align}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Induction in the Calculi of Terms and Formulas}
+
+    \begin{Definition}\label{def:variables}
+        The function $\textrm{var}$, which associates with each $S$-terms the set of variables ocurring in it:
+        \begin{align*}
+            \var({x}) &:= \{x\} \\
+            \var({c}) &:= \emptyset \\
+            \var({f(t_1, \cdots, t_n)}) &:= \var{t_1} \cup \cdots \cup \var{t_n}
+        \end{align*}
+    \end{Definition}
+    
+\end{frame}
+
+\begin{frame}
+    \frametitle{Induction in the Calculi of Terms and Formulas}
+
+    \begin{definition}\label{def:subformulas}
+        The function $\SF$, which assigns to each formula the set of its subformulas as following:
+        \begin{align*}
+            \SF(t_1 \equiv t_2) &:= \{t_1 \equiv t_2\} \\
+            \SF(R(t_1, \cdots, t_n)) &:= \{R(t_1, \cdots, t_n)\} \\
+            \SF(\neg \phi) &:= \{\neg \phi\} \cup \SF(\phi) \\
+            \SF((\phi \star \rho)) &:= \{(\phi \star \rho)\} \cup \SF(\phi) \cup \SF(\rho) & \quad \text{where} \star = \vee, \wedge, \rightarrow, \leftrightarrow \\
+            \SF(\forall x \phi) &:= \{\forall x \phi\} \cup \SF(\phi) \\
+            \SF(\exists x \phi) &:= \{\exists x \phi\} \cup \SF(\phi)
+        \end{align*}
+    \end{definition}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Free variables}
+
+    \begin{definition}\label{def:free}
+        The function $\free$, which assigns to each formula the set of its free variables as following:
+        \begin{align*}
+            \free(t_1 \equiv t_2) &:= \var(t_1) \cup \var(t_2) \\
+            \free(R(t_1, \cdots, t_n)) &:= \var(t_1) \cup \cdots \cup \var(t_n) \\
+            \free(\neg \phi) &:= \free(\phi) \\
+            \free((\phi \star \rho)) &:= \free(\phi) \cup \free(\rho) & \quad \text{where} \star = \vee, \wedge, \rightarrow, \leftrightarrow \\
+            \free(\forall x \phi) &:= \free(\phi) \setminus \{x\} \\
+            \free(\exists x \phi) &:= \free(\phi) \setminus \{x\}
+        \end{align*}
+    \end{definition}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Summary}
+
+    For summary of this lecture, we have the following definitions:
+    \begin{itemize}
+        \item \textbf{Terms} $T^S$ \ref{def:terms}
+        \item \textbf{Formulas} $L^S$ \ref{def:formulas}
+        \item \textbf{Induction over calculus $\mathbf{C}$} \ref{def:calculus_terms} and \ref{def:calculus_formulas}
+        \item \textbf{Subformulas} \ref{def:subformulas}
+        \item \textbf{Free variables} \ref{def:free}
+    \end{itemize}
+    
+\end{frame}
