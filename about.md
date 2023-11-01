@@ -39,10 +39,11 @@ Topic: Image Attribution
 
 ## Teaching Activity
 
+- 2023 Fall: ITP112 Discrete Mathematics (TA, freshmen course)
+- 2023 Fall: ITP117 Introduction to AI Programming Ⅱ (TA, freshmen course)
 - 2023 Spring: AI502 Principles of Deep Learning (TA, graduate course)
 - 2022 Spring: CSE463 Machine Learning (TA, undergraduate course)
-- 2020-21 Winter, 2021-22 Winter: ABC: A Build CS skills winter school TA
-
+- 2020-21 Winter, 2021-22 Winter: ABC: A Build CS skills winter school (Tutor, sophomore who enter major CSE)
 
 ## Undergraduate Club Activity
 
