@@ -25,7 +25,7 @@ I am interested in Machine Learning and Computer Vision area.
 
 # Vita
 
-2022.3 - : M.S.-Ph.D Combined in UNIST [Graduate School of Artificial Intelligence](https://aigs.unist.ac.kr/web/index.php) 
+2022.3 - : M.S.-Ph.D Combined in UNIST [Graduate School of Artificial Intelligence](https://aigs.unist.ac.kr/web/index.php) (from 2024.3. Ph.D. candidate)
 
 2018.3 - 2022.2: Bachelor of Science, UNIST. Major in [Computer Science and Engineering](https://cse.unist.ac.kr). Cum laude
 
