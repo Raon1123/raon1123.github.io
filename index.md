@@ -3,31 +3,44 @@ layout: article
 titles: 소개
 ---
 
-Yunpyo An (안윤표, 安潤杓)
-
-![Profile](/assets/images/YunpyoAn_profile.jpg){: width="30%" height="30%"}
+**Yunpyo An (안윤표, 安潤杓)**
 
 Email: anyunpyo `at` unist `dot` ac `dot` kr
 
-Last Update: 2022. 01. 18.
+<div class="grid-container">
+<div class="grid grid--p-3">
+<div class="cell cell--12 cell--md-10 cell--lg-4" markdown="1">
 
-현재 UNIST 인공지능대학원 석박통합과정 2학년이 되는 안윤표 입니다.
-현재 머신러닝과 컴퓨터 비전 분야에 관심을 가지고 있습니다.
+![Profile](/assets/images/YunpyoAn_profile.jpg){: width="60%" height="60%"} 
 
-I am second year master student at UNIST AIGS from 2022. 3.
-I am interested in Machine Learning and Computer Vision area.
+</div>
+<div class="cell cell--12 cell--md-10 cell--lg-8" markdown="1">
+
+I'm currently pursuing Ph.D degree at Ulsan National Institute of Science and Technology (UNIST). I graduated Cum Laude with a B.Sc. in Computer Science and Engineering from UNIST in 2022. My research focus on robust machine learning and utilization of commonsense knowledge in computer vision. 
+
+</div>
+
+</div>
+</div>
+
+---
 
 # Topic of Interest
 
-- Machine Learning
-- Computer Vision
-- Logic
+- Robust Machine Learning and Computer Vision (primary)
+- Understanding Computer Vision Model (secondary)
+
+But, I'm not limited to above two topics. It's not a my research topic, but I'm interested in logic and history of computer science.
 
 # Vita
 
-2022.3 - : M.S.-Ph.D Combined in UNIST [Graduate School of Artificial Intelligence](https://aigs.unist.ac.kr/web/index.php) (from 2024.3. Ph.D. candidate)
+2022.3 - : M.S.-Ph.D Combined in UNIST [Graduate School of Artificial Intelligence](https://aigs.unist.ac.kr/web/index.php)
 
 2018.3 - 2022.2: Bachelor of Science, UNIST. Major in [Computer Science and Engineering](https://cse.unist.ac.kr). Cum laude
+
+# Publication List
+
+1. **Yunpyo An**, Suyeong Park, and Kwang in Kim. "*Active Learning Guided by Efficient Surrogate Learners*", [arXiv 2301.02761](https://arxiv.org/abs/2301.02761), 2024.
 
 ## Research Activity
 
@@ -50,3 +63,5 @@ Topic: Image Attribution
 1. 2018.3. - 2022.3.: UNIST Computer Science and Engineering Club, [HeXA](http://www.hexa.pro)
 2. 2020.9. - 2022.3.: UNIST AI Club, [brAIns](https://unist-brains.github.io)
 3. 2021.3. - 2022.3.: UNIST Problem Solving Club, [Almight](https://unist-almight.github.io)
+
+Last Update: 2024. 01. 16.
