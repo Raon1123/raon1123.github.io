@@ -34,8 +34,8 @@ But, I'm not limited to above two topics. It's not a my research topic, but I'm 
 
 # Vita
 
-2022.3 - : M.S.-Ph.D Combined in UNIST [Graduate School of Artificial Intelligence](https://aigs.unist.ac.kr/web/index.php) 
-2018.3 - 2022.2: Bachelor of Science, UNIST. Major in [Computer Science and Engineering](https://cse.unist.ac.kr). Cum laude
+- 2022.3 - : M.S.-Ph.D Combined in UNIST [Graduate School of Artificial Intelligence](https://aigs.unist.ac.kr/web/index.php) 
+- 2018.3 - 2022.2: Bachelor of Science, UNIST. Major in [Computer Science and Engineering](https://cse.unist.ac.kr). Cum laude
 
 ## Research Activity
 
