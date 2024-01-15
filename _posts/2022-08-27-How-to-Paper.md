@@ -91,7 +91,7 @@ Notion이나 Google docs와 같은 곳에 논문을 읽고 저의 생각을 모�
 
 # 참고문헌
 
-1. [How to read paper?](https://web.stanford.edu/class/ee384m/Handouts/HowtoReadPaper.pdf)
+1. [How to read paper?](http://ccr.sigcomm.org/online/files/p83-keshavA.pdf)
 2. [How to do Research at the MIT AI Lab](https://dspace.mit.edu/bitstream/handle/1721.1/41487/AI_WP_316.pdf)
 
 # Related sites
