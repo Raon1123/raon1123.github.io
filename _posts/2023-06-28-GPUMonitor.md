@@ -18,7 +18,10 @@ tags: [Server]
 
 # 구성
 
-우리는 총 3가지 도커 컨테이너를 활용할 것이다.
+본 블로그 글을 참고하여 작성하였습니다. [Prometheus + Grafana + Docker Compose 설치](https://www.devkuma.com/docs/prometheus/docker-compose-install/)
+{:.info}
+
+우리는 GPU를 모니터링 하기 위하여 아래 세 가지 docker를 활용할 예정입니다.
 
 1. [Nvidia-smi-exporter](https://github.com/utkuozdemir/nvidia_gpu_exporter): GPU 모니터링을 추가 프로그램을 설치하지 않고 `nvidia-smi`에 나오는 정보를 얻게 되는 컨테이너이다. 이를 통해 우리는 정해진 API 형식으로 `nvidia-smi` 정보를 얻을 수 있다.
 2. [Prometheus](https://prometheus.io/): 모니터링을 하는 도구로써, 시간에 따른 상태를 누적해서 저장하는 프로그램이다. 우리는 1.의 프로그램과 결합하여서 GPU에 대한 정보를 prometheus를 통해 관리할 것이다.
@@ -116,6 +119,7 @@ scrape_configs:
 
 ```
 `./prometheus/config/rule.yml`은 아래와 같이 작성한다.
+{% raw %}
 ```yaml
 groups:
 - name: example # 파일 내에서 unique 해야함
@@ -139,6 +143,7 @@ groups:
       summary: "High request latency on {{ $labels.instance }}"
       description: "{{ $labels.instance }} has a median request latency above 1s (current value: {{ $value }}s)"
 ```
+{% endraw %}
 
 이렇게 설정을 완료하였다면, docker에서 `prometheus` 디렉토리에 접근이 가능하도록 권한을 모두 읽기,쓰기,실행 권한을 부여하자
 ```
