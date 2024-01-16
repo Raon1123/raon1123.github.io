@@ -7,21 +7,24 @@ titles: 소개
 <span style="font-family: 'Sanchez'!important;">Yunpyo An (안윤표, 安潤杓)</span>
 </h1>
 
+<span style="font-family: 'Sanchez'!important;">
 Email: anyunpyo `at` unist `dot` ac `dot` kr
+</span>
 
 <div class="grid-container">
 <div class="grid grid--p-3">
-<div class="cell cell--12 cell--md-10 cell--lg-4" markdown="1">
+<div class="cell cell--12 cell--md-10 cell--lg-4 cell--center" markdown="1">
 
-![Profile](/assets/images/YunpyoAn_profile.jpg){: width="60%" height="60%"} 
+![Profile](/assets/images/YunpyoAn_profile.jpg){: width="80%" height="80%"} 
 
 </div>
 <div class="cell cell--12 cell--md-10 cell--lg-8" markdown="1">
 
+<span style="font-family: 'Sanchez'!important;">
 I'm currently pursuing Ph.D degree at Ulsan National Institute of Science and Technology (UNIST). I graduated Cum Laude with a B.Sc. in Computer Science and Engineering from UNIST in 2022. My research focus on robust machine learning and utilization of commonsense knowledge in computer vision. 
+</span>
 
 </div>
-
 </div>
 </div>
 
