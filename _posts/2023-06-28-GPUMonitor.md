@@ -116,6 +116,7 @@ scrape_configs:
 
 ```
 `./prometheus/config/rule.yml`은 아래와 같이 작성한다.
+{% raw %}
 ```yaml
 groups:
 - name: example # 파일 내에서 unique 해야함
@@ -139,6 +140,7 @@ groups:
       summary: "High request latency on {{ $labels.instance }}"
       description: "{{ $labels.instance }} has a median request latency above 1s (current value: {{ $value }}s)"
 ```
+{% endraw %}
 
 이렇게 설정을 완료하였다면, docker에서 `prometheus` 디렉토리에 접근이 가능하도록 권한을 모두 읽기,쓰기,실행 권한을 부여하자
 ```
