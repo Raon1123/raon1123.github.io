@@ -44,13 +44,9 @@ But, I'm not limited to above two topics. It's not a my research topic, but I'm 
 - 2022.3 - : M.S.-Ph.D Combined in UNIST [Graduate School of Artificial Intelligence](https://aigs.unist.ac.kr/web/index.php), Advisor [Prof. Kwang In Kim](https://sites.google.com/view/kimki)
 - 2018.3 - 2022.2: Bachelor of Science, UNIST. Major in [Computer Science and Engineering](https://cse.unist.ac.kr). Cum laude
 
-### Research Activity
+### Publication
 
-2020.9. - 2021.2: UNIST [Graduate School of Artificial Intelligence](https://aigs.unist.ac.kr) MLV Lab: Undergraduate Intern (Unpaid, PI: [Prof. Kwang In Kim](https://sites.google.com/view/kimki))
-Topic: Adversarial Example
-
-2021.9. - 2022.2: UNIST [Graduate School of Artificial Intelligence](https://aigs.unist.ac.kr) MLV Lab: Undergraduate Intern (Paid, PI: [Prof. Kwang In Kim](https://sites.google.com/view/kimki))
-Topic: Image Attribution
+1. Yunpyo An, Suyeong Park, and Kwang in Kim. “[Active Learning Guided by Efficient Surrogate Learners](https://arxiv.org/abs/2301.02761)”, AAAI 2024.
 
 ### Teaching Activity
 
