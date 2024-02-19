@@ -46,7 +46,12 @@ But, I'm not limited to above two topics. It's not a my research topic, but I'm 
 
 ### Publication
 
+<!---
+If you can read this line, you may see raw page.
+I don't want to show this paper anymore.
 1. Yunpyo An, Suyeong Park, and Kwang in Kim. “[Active Learning Guided by Efficient Surrogate Learners](https://arxiv.org/abs/2301.02761)”, AAAI 2024.
+--->
+.
 
 ### Teaching Activity
 
@@ -62,4 +67,4 @@ But, I'm not limited to above two topics. It's not a my research topic, but I'm 
 2. 2020.9. - 2022.3.: UNIST AI Club, [brAIns](https://unist-brains.github.io)
 3. 2021.3. - 2022.3.: UNIST Problem Solving Club, [Almight](https://unist-almight.github.io)
 
-Last Update: 2024. 02. 18.
+Last Update: 2024. 02. 19.
