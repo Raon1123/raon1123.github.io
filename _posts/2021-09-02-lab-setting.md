@@ -109,11 +109,13 @@ if { [ module-info mode load ] } {
 
 인공지능 연구실이니 GPU를 당연히 활용한다. 
 보통은(99%...) NVIDIA의 CUDA 라이브러리를 활용하게 된다.
+CUDA는 이러한 GPU 하드웨어를 활용하게 만들어주는 라이브러리라고 생각하면 된다.
 
 [CUDA Doc](https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/)
 [cuDNN Doc](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html)
 
-
+CUDA는 Download 페이지 [CUDA Toolkit Download](https://developer.nvidia.com/cuda-downloads)에서 밑 Archive of Previous CUDA releases를 선택하여 원하는 버전을 다운 받도록 하자.
+문제는 너무 최신 버전의 경우 이를 지원하는 Python 라이브러리가 없는 한계점이 존재한다. 또한, 머신러닝 실험에서 각 CUDA 버전별로 성능의 차이가 있어 이를 맞추어서 실행해야 재현을 할 수 있을 것이다.
 
 # Docker와 WSL
 
