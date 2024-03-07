@@ -51,7 +51,7 @@ If you can read this line, you may see raw page.
 I don't want to show this paper anymore.
 1. Yunpyo An, Suyeong Park, and Kwang in Kim. “[Active Learning Guided by Efficient Surrogate Learners](https://arxiv.org/abs/2301.02761)”, AAAI 2024.
 --->
-.
+In detail, [DBLP](https://dblp.org/pid/337/1619.html)
 
 ### Teaching Activity
 
