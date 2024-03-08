@@ -80,6 +80,7 @@ networks:
 ```
 mkdir prometheus
 mkdir prometheus/config
+touch prometheus/config/query_log_file.log
 ```
 이후 `./prometheus/config/prometheus.yml` 이라는 파일을 아래와 같이 생성하자
 ```yaml

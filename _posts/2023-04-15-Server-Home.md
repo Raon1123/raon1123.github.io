@@ -20,6 +20,7 @@ tags: [Server]
 
 - [Slurm 사용법]({% post_url 2022-09-04-Intro-Slurm %})
 - [서버관리 관련 용어]({% post_url 2023-08-01-Server01 %})
+- [Environment Modules]({% post_url 2024-03-07-server-env %})
 
 # 관련 링크
 
