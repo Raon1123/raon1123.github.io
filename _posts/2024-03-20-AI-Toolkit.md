@@ -21,7 +21,7 @@ tags: [AI, Machine Learning, Study]
 ## 선형 대수학
 
 1. Gilbert Strang, "Introduction to Linear Algebra" - 만약 선형 대수학에 대한 내용이 처음이시거나, 완전히 까먹으셨다면 추천드립니다. 선형대수학의 기본을 다질 수 있으며, MIT OCW를 통해 Youtube에 저자분의 강의가 올라와 있습니다.
-2. Sheldon Axler, "[Linear Algebra Done Right](https://linear.axler.net/index.html)" - Hoffman & Kunze나 Friedberg와 같은 수학적 엄밀함을 추구하는 선형대수학 고전이 있지만, 최근 들어서는 Axler의 done right 책이 그 자리를 대신하는 듯 하다. 이전의 활용 측면이 아닌 추상적으로 들어가기에는 이 책을 권한다.
+2. Sheldon Axler, "[Linear Algebra Done Right](https://linear.axler.net/index.html)" - Hoffman & Kunze나 Friedberg와 같은 수학적 엄밀함을 추구하는 선형대수학 고전이 있지만, 최근 들어서는 Axler의 done right 책이 그 자리를 대신하는 듯 하다. 이전의 활용 측면이 아닌 추상적으로 들어가기에는 이 책을 권합니다.
 3. Lloyd N. Trefethen and David Bau, III, "Numerical Linear Algebra" - 선형대수에 대한 개념을 알았다면 이에 대한 계산을 어떻게 효과적으로 하는지에 대한 강의록입니다. 부담없이 읽기 편함
 4. Peter D. Lax, "Linear Algebra: and its Applications", Wiley 2007.
 5. Roger A. Horn and Charles R. Johnson, "Matrix Analysis", CUP 2012.
@@ -62,4 +62,4 @@ tags: [AI, Machine Learning, Study]
 
 # 참고문헌
 
-마지막 수정일: 2024. 3. 22.
+마지막 수정일: 2024. 3. 23.
