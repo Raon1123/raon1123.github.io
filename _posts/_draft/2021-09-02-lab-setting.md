@@ -50,9 +50,6 @@ conda create -n pytorch_env python=3.7
 
 [PyTorch](https://pytorch.org/get-started/locally/)
 
-# 관련 포스트
-
-- [Environment Modules]({% post_url 2024-03-07-server-env %})
 
 # 참고한 자료들
 
