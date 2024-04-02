@@ -3,7 +3,7 @@ title: 연구실 세팅 작업
 tags: [Lab] 
 ---
 
-마지막 수정일자: 2024. 03. 29.
+마지막 수정일자: 2024. 4. 2.
 
 인공지능을 활용, 연구를 하면서 빼놓을 수 없는 것이 CUDA® 입니다.
 그렇다면 CUDA는 무엇이고 이를 어떻게 활용할 수 있을까요?
@@ -23,14 +23,17 @@ NVIDIA에서 공개한 CPU와 GPU를 비교하는 영상입니다.
 하드웨어 레벨로 들어가서 보다 상세하게 GPU의 동작 과정을 설명하는 영상입니다.
 [Youtube Link](https://youtu.be/ZdITviTD3VM?si=pj98yU9wsU4ViVoH)
 
-# CUDA의 설치와 관리
+# CUDA의 설치
+
+만약 Anaconda 환경 아래의 PyTorch에서 CUDA를 설치한다면, 별도로 아래 과정을 거치실 필요는 없습니다. (Nvidia Driver는 필요할 수 있음.) CUDA와 관련된 내용을 이미 함께 다운로드 했기 때문입니다. [PyTorch Install](https://pytorch.org/get-started/locally/)에서 `Compute Platform`에 필요한 CUDA 버전을 선택하여 설치하시면 됩니다. 이 경우 conda 가상환경과 연동되어서 버전을 관리할 수 있고, 발생될 수 있는 충돌을 pytorch에서 포함하여 컴파일했기에 방지할 수 있습니다.
+{:.info}
 
 CUDA의 설치는 생각 외로 간단합니다.
 아래 페이지에서 OS, Architecture, Distribution을 택하면 끝입니다.
 [CUDA Toolkit Downlaods](https://developer.nvidia.com/cuda-downloads)
 
 보통 제가 활용되는 서버는 Linux, x86_64, Ubuntu이니 이를 택하면 됩니다.
-이후 OS의 버전을 선택하시고 installer type을 선택 (저는 `runfile`이 간단하여 선호합니다.) 이후 실행하시면 됩니다.
+이후 OS의 버전을 선택하시고 installer type을 선택 (저는 `runfile`이 간단하여 선호합니다.) 이후 실행하시면 됩니다. (저는 Ubuntu 20.04)
 아마도 처음 설치하신다면 운영체제와 NVIDIA GPU 하드웨어 사이의 연결을 하는 하드웨어 드라이버(NVIDIA Driver)도 설치하셔야 합니다. 드라이버의 경우 CUDA 별로 요구되는 버전이 다르니 이 점에 유의해 주세요.
 
 ![cuda_install](/assets/images/240329_cudainstall.png)
@@ -65,6 +68,37 @@ sudo sh ./cuda_10.2.89_440.33.01_linux.run --silent --toolkit --override --libra
 `runfile` 의 다운로드는 이전과 동일하게 `wget`으로 실행합니다. 그 디렉토리에서 다운받은 runfile의 이름을 통해 실행을 시키는데 뒤의 `--` 는 실행 시 옵션을 의미합니다. 
 `--silent`는 출력이 없이 실행하고, `--toolkit`은 CUDA tookit만을 설치를, `--override`는 이미 CUDA를 설치하였으나 다른 버전도 설치를 의미합니다.
 마지막 `--librarypath`는 설치될 위치인데, 개인적으로는 `/usr/local/cuda-<version>`으로 관리하고 있습니다. `<version>`은 각 버전 명으로 상황에 맞게 바꾸시면 됩니다.
+
+## cudnn의 설치
+
+cuDNN (NVIDIA CUDA® Deep Neural Network library) 는 CUDA에 더해서, deep neural network에 최적화된 기능을 제공하는 라이브러리 입니다. 이 또한 딥러닝 학습의 가속을 위해서 필요한 라이브러리입니다.
+CUDA와 동일한 방식으로 다운로드를 받을 수 있습니다. 설치의 경우 아래에서 상세히 다루겠습니다.
+
+[cuDNN Downloads](https://developer.nvidia.com/cudnn-downloads)
+
+![cuda_install](/assets/images/240329_cudnninstall.png)
+
+저는 이전과 달리 `Distribution`에서 `Tarball`을 선택하였습니다. 이렇게 할 경우, 여러 CUDA 버전에 맞추어서 각각에 설치할 수 있는 이점이 있습니다.
+
+아래의 `wget ~~` 내용을 따라 다운로드 받으시면 됩니다. 
+이후 `tar cvf`를 통해 tarball을 풀으시면 됩니다. (Note. Tarball은 여러 파일을 하나로 일렬로 모아놓은 파일입니다.)
+
+저는 아래 스크립트를 따로 작성해서 다운로드 받아 활용하고 있습니다. `#` 뒤의 내용이 각 줄에 대한 주석으로 설명입니다.
+```bash
+ver=${1} # 설치할 버전
+echo ${ver} # 설치할 버전의 출력
+# 아래 내용은 필요한 라이브러리 내용을 해당 디렉토리로 복사합니다. sudo 권한이 필요합니다.
+sudo cp ./include/cudnn*.h /usr/local/cuda-${ver}/include
+sudo cp -P ./lib/libcudnn* /usr/local/cuda-${ver}/lib64
+sudo chmod a+r /usr/local/cuda-${ver}/include/cudnn*.h /usr/local/cuda-${ver}/lib64/libcudnn*
+```
+이를 예를 들어 `./cudnn.sh`라 하였고 이를 tarball에 풀어진 디렉토리에 넣었습니다. 이를 CUDA11.8 버전에 설치하고 싶다면. (앞선 방법으로 `/usr/local/cuda-11.8` 에 설치되어있다면) 아래 과정을 통해 전체적으로 설치할 수 있습니다.
+```
+tar cvf ./cudnn-linux-x86_64-8.5.0.96_cuda11-archive.tar.xz
+cd ./cudnn-linux-x86_64-8.5.0.96_cuda11-archive
+vi cudnn.sh # 여기서 위의 스크립트를 붙여넣어주세요.
+./cudnn.sh 11.8 # 11.8이 ${1} 의 내용입니다.
+```
 
 # CUDA의 관리
 
