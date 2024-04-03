@@ -32,7 +32,8 @@ tags: [AI, Machine Learning, Study]
 
 ## 다변수 미적분학
 
-1. Thomas Hillen, "[*Elements of Applied Functional Analysis*](https://era.library.ualberta.ca/items/b5368495-8f45-4c63-b895-25a423bc66fa)".
+1. Tong Zhang, "[Mathematical Analysis of Machine Learning Algorithms](https://tongzhang-ml.org/lt-book.html)", CUP, 2023.
+2. Thomas Hillen, "[*Elements of Applied Functional Analysis*](https://era.library.ualberta.ca/items/b5368495-8f45-4c63-b895-25a423bc66fa)".
 
 ## 확률, 통계학, 정보이론
 
