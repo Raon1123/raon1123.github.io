@@ -140,3 +140,4 @@ prepend-path    MANPATH              $prefix/doc/man
 
 - [CUDA Doc](https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/)
 - [cuDNN Doc](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html)
+- [CUDA and cuDNN inside a Conda env](https://jrkwon.com/2022/11/22/cuda-and-cudnn-inside-a-conda-env/)
