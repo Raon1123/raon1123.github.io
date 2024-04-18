@@ -18,6 +18,10 @@ tags: [AI, Machine Learning, Study]
 전반적으로는 아래 "*Mathematics for Machine Learning*"을 추천드립니다. 흔히 MML 책이라고 불리우는 책으로써, 기계 학습을 공부하는데 필요한 수학적 지식 전반을 다루고 있는 책입니다.
 - Marc Peter Deisenroth, A. Aldo Faisal, and Cheng Soon Ong."*[Mathematics for Machine Learning](https://mml-book.github.io/)*". Cambridge University Press. 2020.
 
+---
+
+여기서부터는 각 분야별로, 기초적인 내용을 다 알고 있을 때, 한 걸음 더 나아갈 때 참고하기 좋은 책들입니다. 이 책을 모두 읽는 것을 권하는게 아니라. 필요할 때 참고할 수 있기를 바랍니다.
+
 ## 선형 대수학
 
 1. Gilbert Strang, "Introduction to Linear Algebra" - 만약 선형 대수학에 대한 내용이 처음이시거나, 완전히 까먹으셨다면 추천드립니다. 선형대수학의 기본을 다질 수 있으며, MIT OCW를 통해 Youtube에 저자분의 강의가 올라와 있습니다.
