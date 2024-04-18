@@ -36,6 +36,9 @@ tags: [AI, Machine Learning, Study]
 
 ## 다변수 미적분학
 
+미적분학 내용의 경우, 기존의 미적분학 책을 복습하시는 것을 강하게 추천드립니다. Thomas' Calulus나 Stewart 같은 책들이 잘 구비가 되어 있어서...
+아래 내용은 기초적인 내용보다는 좀 더 들어갈 때 도움이 되겠습니다. 
+
 1. Tong Zhang, "[Mathematical Analysis of Machine Learning Algorithms](https://tongzhang-ml.org/lt-book.html)", CUP, 2023.
 2. Thomas Hillen, "[*Elements of Applied Functional Analysis*](https://era.library.ualberta.ca/items/b5368495-8f45-4c63-b895-25a423bc66fa)".
 
@@ -67,4 +70,4 @@ tags: [AI, Machine Learning, Study]
 
 # 참고문헌
 
-마지막 수정일: 2024. 3. 23.
+마지막 수정일: 2024. 4. 18.
