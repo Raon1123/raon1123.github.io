@@ -18,6 +18,10 @@ tags: [AI, Machine Learning, Study]
 전반적으로는 아래 "*Mathematics for Machine Learning*"을 추천드립니다. 흔히 MML 책이라고 불리우는 책으로써, 기계 학습을 공부하는데 필요한 수학적 지식 전반을 다루고 있는 책입니다.
 - Marc Peter Deisenroth, A. Aldo Faisal, and Cheng Soon Ong."*[Mathematics for Machine Learning](https://mml-book.github.io/)*". Cambridge University Press. 2020.
 
+---
+
+여기서부터는 각 분야별로, 기초적인 내용을 다 알고 있을 때, 한 걸음 더 나아갈 때 참고하기 좋은 책들입니다. 이 책을 모두 읽는 것을 권하는게 아니라. 필요할 때 참고할 수 있기를 바랍니다.
+
 ## 선형 대수학
 
 1. Gilbert Strang, "Introduction to Linear Algebra" - 만약 선형 대수학에 대한 내용이 처음이시거나, 완전히 까먹으셨다면 추천드립니다. 선형대수학의 기본을 다질 수 있으며, MIT OCW를 통해 Youtube에 저자분의 강의가 올라와 있습니다.
@@ -32,7 +36,11 @@ tags: [AI, Machine Learning, Study]
 
 ## 다변수 미적분학
 
-1. Thomas Hillen, "[*Elements of Applied Functional Analysis*](https://era.library.ualberta.ca/items/b5368495-8f45-4c63-b895-25a423bc66fa)".
+미적분학 내용의 경우, 기존의 미적분학 책을 복습하시는 것을 강하게 추천드립니다. Thomas' Calulus나 Stewart 같은 책들이 잘 구비가 되어 있어서...
+아래 내용은 기초적인 내용보다는 좀 더 들어갈 때 도움이 되겠습니다. 
+
+1. Tong Zhang, "[Mathematical Analysis of Machine Learning Algorithms](https://tongzhang-ml.org/lt-book.html)", CUP, 2023.
+2. Thomas Hillen, "[*Elements of Applied Functional Analysis*](https://era.library.ualberta.ca/items/b5368495-8f45-4c63-b895-25a423bc66fa)".
 
 ## 확률, 통계학, 정보이론
 
@@ -62,4 +70,4 @@ tags: [AI, Machine Learning, Study]
 
 # 참고문헌
 
-마지막 수정일: 2024. 3. 23.
+마지막 수정일: 2024. 4. 18.
