@@ -4,6 +4,7 @@ tags: [AI, Machine Learning, Study]
 ---
 
 인공지능 및 기계 학습을 공부하고자 책을 펼쳐보면, 어디서 부터 시작해야 할지 막막한 경우가 많습니다. 혹은 이미 수업 등을 통해 배운 내용이지만 시간이 흘러 까먹은 경우도 있을 것입니다.
+인공지능은 빠르게 변화하고 발전하고 있습니다. 이러한 과정 속에서 앞으로 어떠한 모델이 등장하고, 이에 필요한 내용을 미리 배우는 것은 상당히 어려운 일입니다. 그러기에 핵심이 되는-지금나온 모델의 공통된-내용을 터득한다면 새로운 내용을 배울때 보다 빠르게 흡수 할 수 있으리라 기대합니다.
 이 글은 기계 학습을 포함한 인공지능을 공부하고, 활용하는데 필요한 도구들을 정리하고자 합니다. 이러한 정리된 도구를 통해 공부와 활용의 출발지점으로 삼고자 합니다.
 
 제가 재학 중인 UNIST의 경우는 "AI Toolkit"(인공지능 대학원) 혹은 "인공지능을 위한 기초수학" (산업공학, 전기전자공학, 컴퓨터공학 전공) 등으로 이러한 내용을 수업하고 있습니다. 다른 대학도 비슷하겠지만 한 학기만에 모든 내용을 심도있게 다루기는 어렵고, 전반적인 흐름에서 부족한 부분을 스스로 매꿔야 하기에 이러한 부분에서 이 글이 도움이 되기를 바랍니다.
@@ -24,6 +25,18 @@ tags: [AI, Machine Learning, Study]
 
 ## 선형 대수학
 
+### 포스팅
+
+(시간이 허락한다면 이 순서대로 작성 예정입니다...)
+1. 왜 선형모델인가?
+2. 선형 대수학의 추상적 개념들 - 체(field), 벡터공간 (vector space), 기저 (basis), 선형 변환 (linear transformation)
+3. 내적 공간 (inner product space) - 거리 (distance), 노름 (norm), 
+4. 고유값과 고유벡터 - 고유값과 고유벡터 (eigenvalue and eigenvector), 고유값 분해 (eigenvalue decomposition)
+5. 특이값 분해 (Singular Value Decomposition) 와 그 활용 - Principal Component Analysis and Least Square Problem
+6. 쌍대 공간 (dual space)
+
+### 관련도서
+
 1. Gilbert Strang, "Introduction to Linear Algebra" - 만약 선형 대수학에 대한 내용이 처음이시거나, 완전히 까먹으셨다면 추천드립니다. 선형대수학의 기본을 다질 수 있으며, MIT OCW를 통해 Youtube에 저자분의 강의가 올라와 있습니다.
 2. Sheldon Axler, "[Linear Algebra Done Right](https://linear.axler.net/index.html)" - Hoffman & Kunze나 Friedberg와 같은 수학적 엄밀함을 추구하는 선형대수학 고전이 있지만, 최근 들어서는 Axler의 done right 책이 그 자리를 대신하는 듯 하다. 이전의 활용 측면이 아닌 추상적으로 들어가기에는 이 책을 권합니다.
 3. Lloyd N. Trefethen and David Bau, III, "Numerical Linear Algebra" - 선형대수에 대한 개념을 알았다면 이에 대한 계산을 어떻게 효과적으로 하는지에 대한 강의록입니다. 부담없이 읽기 편함
@@ -36,6 +49,14 @@ tags: [AI, Machine Learning, Study]
 
 ## 다변수 미적분학
 
+### 포스팅
+
+1. 미분과 다변수, 행렬로의 확장 - gradient, 편미분
+2. 연쇄 법칙 (Chain rule)
+3. 자동 미분 (auto differentiation)
+
+### 관련도서
+
 미적분학 내용의 경우, 기존의 미적분학 책을 복습하시는 것을 강하게 추천드립니다. Thomas' Calulus나 Stewart 같은 책들이 잘 구비가 되어 있어서...
 아래 내용은 기초적인 내용보다는 좀 더 들어갈 때 도움이 되겠습니다. 
 
@@ -44,12 +65,32 @@ tags: [AI, Machine Learning, Study]
 
 ## 확률, 통계학, 정보이론
 
+### 포스팅
+
+1. 확률의 정의 - Axiom of Probability, Probability space, measure
+2. 통계 - 통계란 무엇인가? 통계분포들 (정규 분포 등.)
+3. 정보이론 - 엔트로피, 의사결정나무(Decision Tree)
+4. 확률에서의 부등식 - Markov, Chebyshev, Hoeffding Inequality
+5. Markov process
+6. Gaussian process
+
+### 관련도서
+
 1. Sheldon Ross, "*A First Course in Probability*", Pearson 2019.
 2. Mor Harchol-Balter, "[Introduction to Probability for Computing](https://www.cs.cmu.edu/~harchol/Probability/book.html)", Cambridge University Press, 2024.
 3. Chris Piech, "*[Probability for Computer Scientists](https://chrispiech.github.io/probabilityForComputerScientists/en/)*"
 4. David MacKay, "Information Theory, Inference, and Learning Algorithms", CUP 2003.
 
 ## 최적화 이론
+
+### 포스팅
+
+1. 볼록하다? 볼록한 공간에서의 최적화 문제
+2. 경사 하강법, 확률적 경사 하강법
+3. 볼록 문제의 해석적 해결법
+4. 볼록 문제의 쌍대적 해결법
+
+### 관련도서
 
 1. Stephen P. Boyd and Lieven Vandenberghe, "[*Convex Optimization*](https://web.stanford.edu/~boyd/cvxbook/)", CUP 2004.
 
@@ -70,4 +111,4 @@ tags: [AI, Machine Learning, Study]
 
 # 참고문헌
 
-마지막 수정일: 2024. 4. 18.
+마지막 수정일: 2024. 4. 19.
