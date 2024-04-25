@@ -108,6 +108,7 @@ tags: [AI, Machine Learning, Study]
 - CMU F18: [Mathematical and Computational Foundations for Machine Learning](https://www.cs.cmu.edu/~mgormley/courses/606-607-f18/index.html)
 - Stanford: [Convex Optimization 1](https://web.stanford.edu/class/ee364a/) [Convex Optimization 2](https://web.stanford.edu/class/ee364b/)
 - TTIC: [Mathematical Toolkit](https://home.ttic.edu/~madhurt/courses/toolkit2021/index.html)
+- Princeton COS 302 / SML 305: [Mathematics for Numerical Computing and Machine Learning](https://www.cs.princeton.edu/courses/archive/spring20/cos302/)
 
 # 참고문헌
 
