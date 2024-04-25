@@ -71,3 +71,7 @@ tmux attach -t <session_name>
 ```
 
 tmux 세션의 설정은 `~/.tmux.conf` 에 저장하면 시작 시 불러오게 된다.
+
+## 스크롤하기
+
+터미널을 스크롤 하기 위해서는 `Ctrl`+`b`, `[` 을 통해 할 수 있다.
