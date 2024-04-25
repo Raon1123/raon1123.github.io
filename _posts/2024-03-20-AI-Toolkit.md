@@ -3,6 +3,8 @@ title: 인공지능에 필요한 배경지식 모음
 tags: [AI, Machine Learning, Study]
 ---
 
+마지막 수정일: 2024. 4. 25.
+
 인공지능 및 기계 학습을 공부하고자 책을 펼쳐보면, 어디서 부터 시작해야 할지 막막한 경우가 많습니다. 혹은 이미 수업 등을 통해 배운 내용이지만 시간이 흘러 까먹은 경우도 있을 것입니다.
 인공지능은 빠르게 변화하고 발전하고 있습니다. 이러한 과정 속에서 앞으로 어떠한 모델이 등장하고, 이에 필요한 내용을 미리 배우는 것은 상당히 어려운 일입니다. 그러기에 핵심이 되는-지금나온 모델의 공통된-내용을 터득한다면 새로운 내용을 배울때 보다 빠르게 흡수 할 수 있으리라 기대합니다.
 이 글은 기계 학습을 포함한 인공지능을 공부하고, 활용하는데 필요한 도구들을 정리하고자 합니다. 이러한 정리된 도구를 통해 공부와 활용의 출발지점으로 삼고자 합니다.
@@ -110,6 +112,3 @@ tags: [AI, Machine Learning, Study]
 - TTIC: [Mathematical Toolkit](https://home.ttic.edu/~madhurt/courses/toolkit2021/index.html)
 - Princeton COS 302 / SML 305: [Mathematics for Numerical Computing and Machine Learning](https://www.cs.princeton.edu/courses/archive/spring20/cos302/)
 
-# 참고문헌
-
-마지막 수정일: 2024. 4. 25.
