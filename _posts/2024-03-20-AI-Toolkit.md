@@ -3,7 +3,15 @@ title: 인공지능에 필요한 배경지식 모음
 tags: [AI, Machine Learning, Study]
 ---
 
-마지막 수정일: 2024. 5. 5.
+마지막 수정일: 2024. 5. 6.
+
+---
+
+수정 내용
+
+- 24.05.06. : Twitter의 제이미님(`@theeluwin`) 조언을 얻어 해당 부분을 삽입하였습니다. 확률 및 통계의 중요성과 필요한 내용으로 약간의 정리를 더했습니다. [Source](https://x.com/theeluwin/status/1787151118403031114)
+  
+---
 
 # 들어가며
 
@@ -57,8 +65,9 @@ tags: [AI, Machine Learning, Study]
 7. Zico Kotler "[Linear Algebra Review and Reference](https://www.cs.cmu.edu/afs/cs/academic/class/15859n-s20/RelatedWork/Kolter-AlebraReview.pdf)" - 이 글도 위와 같이 옆에 두기에 좋습니다.
 8. David P. Woodruff "[Sketching as a Tool for Numerical Linear Algebra](https://arxiv.org/abs/1411.4357)" - 수치선형대수와 관련된 내용을 정리한 글입니다.
 
-
 ## 다변수 미적분학
+
+이공계에서 가장 먼저 다루게 되는 수학이 미적분학이 아닐까 싶습니다. 관련 지식이 없다면, 미적분학을 공부하는 경험은 여러모로 도움이 될 듯합니다. 미적분학 내용의 경우, 기존의 미적분학 책을 복습하시는 것을 강하게 추천드립니다. Thomas' Calulus나 Stewart 같은 책들이 잘 구비가 되어 있어서... 참고하면서 연습문제를 풀어보시면 쉽게 늘어날 것입니다.
 
 ### 포스팅
 
@@ -68,21 +77,30 @@ tags: [AI, Machine Learning, Study]
 
 ### 관련도서
 
-미적분학 내용의 경우, 기존의 미적분학 책을 복습하시는 것을 강하게 추천드립니다. Thomas' Calulus나 Stewart 같은 책들이 잘 구비가 되어 있어서...
+
 아래 내용은 기초적인 내용보다는 좀 더 들어갈 때 도움이 되겠습니다. 
 
 1. **기초** James Stewart et al. "Calculus (or Early Transcendentals)", Cengage. (판은 무관) - 미적분학의 경우 Thomas Calculus도 있습니다만, 공학적인 이해에는 이 책이 도움이 되었습니다. Early Transcendentals의 경우는 초월함수가 먼저 나오느냐, 챕터의 순서 차이입니다. edition은 무관하게 잡히는 데로 공부하면 됩니다.
 2. Marsden, Jerrold "Vector Calculus", W. H. Freeman : 만약 미적분학을 이미 수강하셨는데 다변수 부분만 보고 싶다면 이 책이 좋을 듯 합니다. 절판이 되었나... 구하기 쉽지는 않더라고요
 3. John Hubbard et al. "Vector Calculus, Linear Algebra, and Differential Forms: A Unified Approach".
 4. Michael Spivak "Calculus" - 위의 책과 비슷하게 미적분학과 추상적인 부분의 간극을 매울 수 있는 좋은 책입니다. 이 친구는 1학년을 대상으로 쓰여진 듯 하고 위의 책(Hubbard)은 이미 어느정도 알고 있으면서, 최신의 응용 내용을 담고 있습니다.
-5. *상급* Michael Spivak "Calculus on Manifold" - 다변수로 넘어가기 위한 책이긴 합니다만, 책이 너무 얇아서... 단독으로 읽기에는 어려울 수 있습니다.
-6. *상급* Tom Apostol. "Calculus Vol 1 and 2", - 공업수학에 대한 모든 것을 다 때려박은 책입니다. 1학년을 위한 책이라고는 하는데... 있을건 다 있긴 하나 좀 진도가 빠른 감이 있어 약간은 추천하지 않습니다. 국내 어떤 대학에서는 이것을 쓴다고는 들었습니다.
-7. *상급* Tom Apostol. "Mathematical Analysis", 해석학을 공부할때 Rudin을 많이 쓰긴 하는데 그 책은 너무 얇고, 내용이 압축되어 있는 느낌이라 혼자 공부하기 어려웠습니다. 그래서 저는 이 책으로 했는데, 상대적으로 이해는 할 수 있게 잘 풀이되어 있습니다.
-8. *상급* James Munkres. "Analysis on Manifolds", Topology로 유명한 Munkres 교수님 책입니다. Spivak Manifold가 어려워서... 약간 설명이 많은 이 책이 도움 되었습니다.
-9. *상급* Tong Zhang, "[Mathematical Analysis of Machine Learning Algorithms](https://tongzhang-ml.org/lt-book.html)", CUP, 2023.
-10. *상급* Thomas Hillen, "[*Elements of Applied Functional Analysis*](https://era.library.ualberta.ca/items/b5368495-8f45-4c63-b895-25a423bc66fa)".
+
+#### 좀 더 나아간 책 
+
+해석학에 가까운 내용은 (*상급*) 직접 필요성이 느껴지실 때-논문을 주의 깊게 읽다가 발견 했을 때-공부하러 돌아와도 늦지는 않을 듯 합니다. 가성비가 떨어진다는 표현이 가장 적절할 듯 합니다. [Source](https://x.com/theeluwin/status/1787151118403031114)
+
+1. *상급* Michael Spivak "Calculus on Manifold" - 다변수로 넘어가기 위한 책이긴 합니다만, 책이 너무 얇아서... 단독으로 읽기에는 어려울 수 있습니다.
+2. *상급* Tom Apostol. "Calculus Vol 1 and 2", - 공업수학에 대한 모든 것을 다 때려박은 책입니다. 1학년을 위한 책이라고는 하는데... 있을건 다 있긴 하나 좀 진도가 빠른 감이 있어 약간은 추천하지 않습니다. 국내 어떤 대학에서는 이것을 쓴다고는 들었습니다.
+3. *상급* Tom Apostol. "Mathematical Analysis", 해석학을 공부할때 Rudin을 많이 쓰긴 하는데 그 책은 너무 얇고, 내용이 압축되어 있는 느낌이라 혼자 공부하기 어려웠습니다. 그래서 저는 이 책으로 했는데, 상대적으로 이해는 할 수 있게 잘 풀이되어 있습니다.
+4. *상급* James Munkres. "Analysis on Manifolds", Topology로 유명한 Munkres 교수님 책입니다. Spivak Manifold가 어려워서... 약간 설명이 많은 이 책이 도움 되었습니다.
+5.  *상급* Tong Zhang, "[Mathematical Analysis of Machine Learning Algorithms](https://tongzhang-ml.org/lt-book.html)", CUP, 2023.
+6.  *상급* Thomas Hillen, "[*Elements of Applied Functional Analysis*](https://era.library.ualberta.ca/items/b5368495-8f45-4c63-b895-25a423bc66fa)".
+
 
 ## 확률, 통계학, 정보이론
+
+다른 분의 조언에 따르면, 아마도 확률 및 통계가 우선순위가 높아질 듯 합니다. [Source](https://x.com/theeluwin/status/1787151118403031114)
+이 부분을 공부할 때 유념하면 좋을 부분은... 1) 모델이 아닌 그 모델을 검증하고 평가하는 방법에 대해 생각해보자. (가설 검증 등) 2) **직접 수식을 풀어 써보자** 저가 개인적으로 어려웠던게, 이쪽 부분은 수식을 적고 서술하는 경우가 많은데, 고개만 끄덕이면 당연해 보이지만 손에 익지는 못합니다. 직접 연습문제 등을 풀어보는게 더 도움이 될 듯 합니다. 
 
 ### 포스팅
 
@@ -98,7 +116,16 @@ tags: [AI, Machine Learning, Study]
 1. **기초** Sheldon Ross, "*A First Course in Probability*", Pearson 2019.
 2. Mor Harchol-Balter, "[Introduction to Probability for Computing](https://www.cs.cmu.edu/~harchol/Probability/book.html)", Cambridge University Press, 2024.
 3. Chris Piech, "*[Probability for Computer Scientists](https://chrispiech.github.io/probabilityForComputerScientists/en/)*"
-4. David MacKay, "Information Theory, Inference, and Learning Algorithms", CUP 2003.
+4. Dimitri P. Bertsekas and John N. Tsitsiklis, "[*Introduction to Probability*](http://www.athenasc.com/probbook.html)", Athena Scientific, 2008. 
+5. David MacKay, "Information Theory, Inference, and Learning Algorithms", CUP 2003.
+6. **기초** Robert V. Hogg et al., "Probability and Statistical Inference", Pearson.
+7.  Robert V. Hogg et al., "Introduction to Mathematical Statistics", Pearson. - 얼핏 듣기로는 5번 책을 읽고 6번을 읽는다고 하는데, 저는 6번으로 바로 넘어왔습니다. 8판으로 넘어오면서 R을 통한 실습도 추가되어서 응용적으로도 활용 가능성이 높은 책입니다. 다만 7판 국제판의 경우 일부 내용이 누락되어 있으니 주의바랍니다.
+
+#### 좀 더 나아간 책 
+
+1. Geoffrey R. Grimmett and David R. Stirzaker, "Probability and Random Processes", OUP.
+2. E. T. Jaynes "Probability Theory: The Logic of Science", CUP.
+3. George Casella and Roger L. Berger "Statistical Inference", Duxbury. - 이 책은 인공지능 대학원에서도 통계 추론 교과목 등에서도 잘 활용되는 책입니다.
 
 ## 최적화 이론
 
@@ -113,7 +140,9 @@ tags: [AI, Machine Learning, Study]
 
 다변수 미적분학을 어느정도 공부하시면 최적화에 대한 내용 (Newton method 등) 의 기초를 알 수 있습니다.
 
-1. Stephen P. Boyd and Lieven Vandenberghe, "[*Convex Optimization*](https://web.stanford.edu/~boyd/cvxbook/)", CUP 2004.
+1. Stephen P. Boyd and Lieven Vandenberghe, "[*Convex Optimization*](https://web.stanford.edu/~boyd/cvxbook/)", CUP 2004. - 볼록 최적화 하면 이 책을 정독하는게... 좋습니다.
+2. David G. Luenberger, "[*Optimization by Vector Space Methods*](https://www.wiley.com/en-us/Optimization+by+Vector+Space+Methods-p-9780471181170)", Wiley, 1997.
+3. Jonathan Borwein and Adrian Lewis, "[*Convex Analysis and Nonlinear Optimization*](https://link.springer.com/book/10.1007/978-0-387-31256-9)", 
 
 # 코딩
 
