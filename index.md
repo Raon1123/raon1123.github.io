@@ -51,7 +51,7 @@ But, I'm not limited to above two topics. It's not a my research topic, but I'm 
 <!---
 If you can read this line, you may see raw HTML page
 I don't want to show this paper anymore.
-If you want to contact relate to this paper, please contact Prof. Kwang In Kim (kimkin@postech.ac.kr) who is previous advisor. I kicked the MLV lab for unavoidable reasons.
+If you want to contact relate to this paper, please contact Prof. Kwang In Kim (kimkin@postech.ac.kr) who is previous advisor. I got a pink slip the MLV lab for unavoidable reasons.
 1. Yunpyo An, Suyeong Park, and Kwang in Kim. “[Active Learning Guided by Efficient Surrogate Learners](https://arxiv.org/abs/2301.02761)”, AAAI 2024.
 --->
 In detail, [DBLP](https://dblp.org/pid/337/1619.html)
