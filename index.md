@@ -80,7 +80,7 @@ span {
   font-family: 'Sanchez'!important;
 }
 
-p, ul {
+p, ul, ol {
   font-family: 'Sanchez'!important;
 }
 </style>
