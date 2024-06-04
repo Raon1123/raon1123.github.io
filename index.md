@@ -30,9 +30,8 @@ I'm currently pursuing Ph.D degree at Ulsan National Institute of Science and Te
 
 ---
 
-<span style="font-family: 'Sanchez'!important;">
-
 ## Topic of Interest
+
 
 - Robust Machine Learning and Computer Vision (primary)
 - Understanding Computer Vision Model (secondary)
@@ -70,6 +69,18 @@ In detail, [DBLP](https://dblp.org/pid/337/1619.html)
 2. 2020.9. - 2022.3.: UNIST AI Club, [brAIns](https://unist-brains.github.io)
 3. 2021.3. - 2022.3.: UNIST Problem Solving Club, [Almight](https://unist-almight.github.io)
 
-Last Update: 2024. 03. 07.
+Last Update: 2024. 06. 04.
 
-</span>
+<style>
+h1, h2, h3 {
+  font-family: 'Sanchez'!important;
+}
+
+span {
+  font-family: 'Sanchez'!important;
+}
+
+p, ul {
+  font-family: 'Sanchez'!important;
+}
+</style>
