@@ -57,13 +57,14 @@ tags: [AI, Machine Learning, Study]
 ### 관련도서
 
 1. **기초** Gilbert Strang, "Introduction to Linear Algebra" - 만약 선형 대수학에 대한 내용이 처음이시거나, 완전히 까먹으셨다면 추천드립니다. 선형대수학의 기본을 다질 수 있으며, MIT OCW를 통해 Youtube에 저자분의 강의가 올라와 있습니다.
-2. Sheldon Axler, "[Linear Algebra Done Right](https://linear.axler.net/index.html)" - Hoffman & Kunze나 Friedberg와 같은 수학적 엄밀함을 추구하는 선형대수학 고전이 있지만, 최근 들어서는 Axler의 done right 책이 그 자리를 대신하는 듯 하다. 이전의 활용 측면이 아닌 추상적으로 들어가기에는 이 책을 권합니다.
-3. Lloyd N. Trefethen and David Bau, III, "Numerical Linear Algebra" - 선형대수에 대한 개념을 알았다면 이에 대한 계산을 어떻게 효과적으로 하는지에 대한 강의록입니다. 부담없이 읽기 편함
-4. Peter D. Lax, "Linear Algebra: and its Applications", Wiley 2007.
-5. *상급* Roger A. Horn and Charles R. Johnson, "Matrix Analysis", CUP 2012.
-6. Kaare B. Petersen and Michael S. Pedersen, "[The Matrix Cookbook](https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf)" - 공부하는 책이라기 보다는 옆에 두고 참고하기 좋은 내용인 듯 합니다.
-7. Zico Kotler "[Linear Algebra Review and Reference](https://www.cs.cmu.edu/afs/cs/academic/class/15859n-s20/RelatedWork/Kolter-AlebraReview.pdf)" - 이 글도 위와 같이 옆에 두기에 좋습니다.
-8. David P. Woodruff "[Sketching as a Tool for Numerical Linear Algebra](https://arxiv.org/abs/1411.4357)" - 수치선형대수와 관련된 내용을 정리한 글입니다.
+2. Stephen Boyd and Lieven Vandenberghe, "[*Introduction to Applied Linear Algebra*](https://web.stanford.edu/~boyd/vmls/)", CUP - Convex Optimization으로 유명한 Boyd 교수님의 교재입니다. 최신적인 내용과 함께 응용적인 측면에서 잘 다루고 있는 책입니다.
+3. Sheldon Axler, "[Linear Algebra Done Right](https://linear.axler.net/index.html)" - Hoffman & Kunze나 Friedberg와 같은 수학적 엄밀함을 추구하는 선형대수학 고전이 있지만, 최근 들어서는 Axler의 done right 책이 그 자리를 대신하는 듯 하다. 이전의 활용 측면이 아닌 추상적으로 들어가기에는 이 책을 권합니다.
+4. Lloyd N. Trefethen and David Bau, III, "Numerical Linear Algebra" - 선형대수에 대한 개념을 알았다면 이에 대한 계산을 어떻게 효과적으로 하는지에 대한 강의록입니다. 부담없이 읽기 편함
+5. Peter D. Lax, "Linear Algebra: and its Applications", Wiley 2007.
+6. *상급* Roger A. Horn and Charles R. Johnson, "Matrix Analysis", CUP 2012.
+7. Kaare B. Petersen and Michael S. Pedersen, "[The Matrix Cookbook](https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf)" - 공부하는 책이라기 보다는 옆에 두고 참고하기 좋은 내용인 듯 합니다.
+8. Zico Kotler "[Linear Algebra Review and Reference](https://www.cs.cmu.edu/afs/cs/academic/class/15859n-s20/RelatedWork/Kolter-AlebraReview.pdf)" - 이 글도 위와 같이 옆에 두기에 좋습니다.
+9. David P. Woodruff "[Sketching as a Tool for Numerical Linear Algebra](https://arxiv.org/abs/1411.4357)" - 수치선형대수와 관련된 내용을 정리한 글입니다.
 
 ## 다변수 미적분학
 
