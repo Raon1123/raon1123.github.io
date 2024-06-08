@@ -3,29 +3,34 @@ layout: article
 titles: 소개
 ---
 
-<h1>
-<span style="font-family: 'Sanchez'!important;">Yunpyo An (안윤표, 安潤杓)</span>
-</h1>
+
 
 <span style="font-family: 'Sanchez'!important;">
 Email: anyunpyo `at` unist `dot` ac `dot` kr
 </span>
 
-<div class="grid-container">
-<div class="grid grid--p-3">
-<div class="cell cell--12 cell--md-10 cell--lg-4 cell--center" markdown="1">
+<!--![Profile](/assets/images/YunpyoAn_profile.jpg){: width="80%" height="80%"}-->
+<div class="item">
+  <div class="item__image">
+    <img class="image" src="/assets/images/YunpyoAn_profile.jpg"/>
+  </div>
+  <div class="item__content">
+  <div class="item__header">
 
-![Profile](/assets/images/YunpyoAn_profile.jpg){: width="80%" height="80%"} 
+  <h1>
+  <span style="font-family: 'Sanchez'!important;">Yunpyo An (안윤표, 安潤杓)</span>
+  </h1>
 
-</div>
-<div class="cell cell--12 cell--md-10 cell--lg-8" markdown="1">
+  </div>
+  <div class="item__description">
 
-<span style="font-family: 'Sanchez'!important;">
-I'm currently pursuing Ph.D degree at Ulsan National Institute of Science and Technology (UNIST). I graduated Cum Laude with a B.Sc. in Computer Science and Engineering from UNIST in 2022. My research focus on robust machine learning and utilization of commonsense knowledge in computer vision. 
-</span>
+  <p>
+  I'm currently pursuing Ph.D degree at Ulsan National Institute of Science and Technology (UNIST). I graduated Cum Laude with a B.Sc. in Computer Science and Engineering from UNIST in 2022. My research focus on robust machine learning and utilization of commonsense knowledge in computer vision.
+  </p>
 
-</div>
-</div>
+  </div>
+  </div>
+
 </div>
 
 ---
