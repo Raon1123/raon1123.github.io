@@ -24,29 +24,46 @@ tags: [CompSci, CSE, Study]
 - Kleinberg, J. & Tardos, É. (2006). _Algorithm design_. Addison-Wesley. ISBN 978-0-321-29535-4.  
 - S. Dasgupta, C. Papadimitriou, and U. Vazirani. _Algorithms_. McGraw-Hill Higher Education. 2006
 - Knuth, D.A. (2011). _The Art of Computer Programming_. Addison-Wesley. ISBN 978-0-321-75104-1. - 고전(?)이라고 불릴만한 책입니다 TAOCP라고 불리우는 책으로 크누스 교수님께서 집필하고 있는 시리즈입니다.
+
+
+<details>
+
+<summary> Approximation and randomized algorithms </summary>
+
 - Vijay V. Vazirani. Approximation Algorithms, Springer, Second edition, 2003.
 - _Michael Mitzenmacher and Eli Upfal. Probability and Computing: Randomized Algorithms and Probabilistic Analysis., Cambridge University Press, 2nd edition._
 - _David P. Williamson and David B. Shmoys. The Design of Approximation Algorithms, Cambridge University Press, 2011_
 - [Randomized Algorithms](http://books.google.com/books/about/Randomized_Algorithms.html?id=QKVY4mDivBEC) by Motwani and Raghavan,
 - [The Probabilistic Method](http://books.google.com/books/about/The_Probabilistic_Method.html?id=q3lUjheWiMoC) by Alon and Spencer.
-- [Mark Berg](https://link.springer.com/book/10.1007/978-3-540-77974-2#author-0-0),[Otfried Cheong](https://link.springer.com/book/10.1007/978-3-540-77974-2#author-0-1) ,[Marc Kreveld](https://link.springer.com/book/10.1007/978-3-540-77974-2#author-0-2) ,[Mark Overmars](https://link.springer.com/book/10.1007/978-3-540-77974-2#author-0-3) "Computational Geometry: Algorithms and Applications", Springer 2008. [Link](https://link.springer.com/book/10.1007/978-3-540-77974-2)
--  J. Matousek, _[Lectures on Discrete Geometry](https://link.springer.com/book/10.1007/978-1-4613-0039-7)_, Springer, 2002
--   F. P. Preparata and M. I. Shamos, _[Computational Geometry: An Introduction](https://link.springer.com/book/10.1007/978-1-4612-1098-6)_, Springer, 1985
--  J. Goodman, J. O'Rourke, and C. D. Toth (eds.), _[Handbook of Discrete and Computational Geometry](http://www.csun.edu/~ctoth/Handbook/HDCG3.html)_ (3rd ed.), CRC Press, 2017
+
+</details>
+
+
+<details>
+
+  <summary> Computational geometry </summary>
+
+  - Mark Berg, Otfried Cheong, Marc Kreveld, and Mark Overmars. "Computational Geometry: Algorithms and Applications", Springer 2008. [Link](https://link.springer.com/book/10.1007/978-3-540-77974-2)
+  -  J. Matousek, [_Lectures on Discrete Geometry_](https://link.springer.com/book/10.1007/978-1-4613-0039-7), Springer, 2002
+  -   F. P. Preparata and M. I. Shamos, _[Computational Geometry: An Introduction](https://link.springer.com/book/10.1007/978-1-4612-1098-6)_, Springer, 1985
+  -  J. Goodman, J. O'Rourke, and C. D. Toth (eds.), [_Handbook of Discrete and Computational Geometry_](http://www.csun.edu/~ctoth/Handbook/HDCG3.html) (3rd ed.), CRC Press, 2017
+  
+</details>
+
 
 #### 계산이론
 
 - **핵심** Michael Sipser, "[_Introduction to the Theory of Computation_](https://math.mit.edu/~sipser/book.html)" 
-- Arora, Sanjeev, and Boaz Barak. _Computational Complexity: A Modern Approach_. Cambridge University Press, 2009.
 - Moore, Cristopher, and Stephan Mertens. _The Nature of Computation_. Oxford University Press, 2011. ISBN: 9780199233212. - 꽤 두꺼운 책입니다만, 천천히 읽어볼만한 책이라고 생각합니다.
+- Arora, Sanjeev, and Boaz Barak. _Computational Complexity: A Modern Approach_. Cambridge University Press, 2009.
 - Christos H. Papadimitriou: Computational Complexity. Addison Wesley 1994.
+- Oded Goldreich. Computational Complexity, Cambridge University press.
+  
 - Robert I. Soare: Recursively Enumerable Sets and Degrees. Springer-Verlag, 1987.
 - Uwe Schoening: Gems of Theoretical Computer Science.
-- Arora, Barak. Computational Complexity. Cambridge University Press, 2009.
-- I Wegener. Complexity Theory, Springer, 2005.
-- C H Papadimitriou. Computational Complexity, Addison-Wesley, 1994.
 - M R Garey and D S Johnson. Computers and Intractability: A Guide to the Theory of NP-Completeness, Freeman, 1979.
-- Oded Goldreich. Computational Complexity, Cambridge University press.
+
+
 
 #### 형식언어와 오토마타이론
 
