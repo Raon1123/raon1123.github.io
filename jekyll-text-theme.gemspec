@@ -3,10 +3,10 @@
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-text-theme"
   spec.version       = "2.2.6"
-  spec.authors       = ["Tian Qi"]
-  spec.email         = ["kitian616@outlook.com"]
+  spec.authors       = ["Yunpyo An"]
+  spec.email         = ["anyunpyo@unist.ac.kr"]
 
-  spec.summary       = %q{A super customizable Jekyll theme for personal site, team site, blog, project, documentation, etc.}
+  spec.summary       = "Yunpyo An website with Jekyll."
   spec.homepage      = "https://github.com/kitian616/jekyll-TeXt-theme"
   spec.license       = "MIT"
 
