@@ -3,25 +3,48 @@ title: 전산학 공부자료
 tags: [CompSci, CSE, Study]
 ---
 
-마지막 업데이트 2024. 6. 9.
+마지막 업데이트 2024. 6. 10.
+
+현재 계속 내용을 추가하는 중입니다.
+{:.warning}
 
 # 들어가며
 
 [이전 글]({% post_url 2024-06-09-What-Computing %})을 통해서 전산학에 대한 전반적인 문제를 알아보았습니다. 이번 글에서는 각 세부분야별 해결하고자 하는 물음을 알아보고, 이와 관련된 자료를 모아보고자 합니다. 
 
-아마도 전산학을 전공한다는 가정 아래에서 가장 필요한 것을 나열해 본다면 1) 알고리즘과 데이터구조 2) 컴퓨터 구조 3) 운영체제 이 셋을 가장 먼저 꼽을 것이고 나머지 각 분야를 둘러보겠습니다.
-
 아마도 긁어모은 것이다보니, 과한 책들이 많습니다. 핵심이 되는 교재나 자료의 경우 **핵심** 표시를 해두었습니다.
 
-# 컴퓨터공학 이론
+# 알고리듬과 데이터구조
+
+이론 컴퓨터 과학(TCS, Theoretical Computer Science)는 추상적인 객체를 다루고 있으며, 계산에 대한 수학적인 기반을 제공합니다. 엄밀한 기반을 제공하는 것에 그 목적을 두고 있어, 전산학과 수학이 만나는 지점에 있습니다. 이 꼭지에서는 아래 아코디언에서 나열된 모든 것이 아닌 **알고리듬과 데이터 구조**를 중심으로 살펴보도록 하겠습니다.
+
+<details markdown="1">
+<summary>TCS 분야에 대한 소개</summary>
+
+> 이론 컴퓨터과학은 다음과 같은 다양한 주제를 다루고 있습니다: 알고리듬, 데이터구조, 계산 복잡도, 병렬과 분산 계산, 확률적 계산, 양자 계산, 오토마타 이론, 정보이론, 암호학, 프로그램 의미론과 증명, 기계 학습, 계산 생물학, 계산 경제학, 계산 기하학 그리고 계산 정수론과 대수. 이 분야의 작업은 때로는 수학적인 기술과 엄밀함을 강조하는 것으로 구별되곤 합니다.
+>> TCS covers a wide variety of topics including algorithms, data structures, computational complexity, parallel and distributed computation, probabilistic computation, quantum computation, automata theory, information theory, cryptography, program semantics and verification, machine learning, computational biology, computational economics, computational geometry, and computational number theory and algebra. Work in this field is often distinguished by its emphasis on mathematical technique and rigor.
+>> - From SIGACT, ACM Special Interest Group on Algorithms and Computation Theory [Source](https://www.sigact.org/)
+
+</details>
+
+## 주요 질문
+
+주요 질문은 거의 Denning report에서 가져왔습니다.
+
+- 주어진 문제에 대해서 가장 최선의 알고리듬(해결방법)은 무엇인가?
+- 주어진 알고리듬에 대해서 자원(저장 공간 및 실행 시간)이 소모되는가?
+- 저장 공간과 실행 시간 사이의 trade-off가 있는가?
+- 어떠한 방법으로 데이터를 저장하고 접근하는 것이 가장 효과적인가?
+- 최악의 경우에 대해서의 최선의 알고리듬은 무엇인가?
+- 일반적으로 알고리즘은 어떻게 동작하는가? 
 
 ## 교재
 
 #### 알고리즘
 
-- **핵심** Cormen, T.H., Leiserson, C.D., Rivest, R.L. & Stein, C. (2009). _Introduction to Algorithms_. MIT Press (3rd ed.). ISBN 978-0-262-53305-8  - CLRS로 알려진 책으로 학부 초창기 부터 대학원까지 거의 대부분의 과정이 담겨져 있습니다. 필요한 부분을 골라서 읽는 것을 강하게 권합니다. 
-- Sedgewick, R., Wayne, K. (2011). _Algorithms_. Addison-Wesley. ISBN 978-0-321-57351-3. - Princeton에서 사용되는 교재로, 유튜브나 저자의 사이트에서 볼 수 있습니다. 또한 강의도 올라와 있습니다.
-- Kleinberg, J. & Tardos, É. (2006). _Algorithm design_. Addison-Wesley. ISBN 978-0-321-29535-4.  
+- **핵심** Cormen, T.H., Leiserson, C.D., Rivest, R.L. & Stein, C. (2009). "Introduction to Algorithms". MIT Press (3rd ed.). - CLRS로 알려진 책으로 학부 초창기 부터 대학원까지 거의 대부분의 과정이 담겨져 있습니다. 필요한 부분을 골라서 읽는 것을 강하게 권합니다. 
+- Sedgewick, R., Wayne, K. (2011). _Algorithms_. Addison-Wesley. ISBN 978-0-321-57351-3. - Princeton에서 사용되는 교재로, 유튜브나 저자의 사이트에서 볼 수 있습니다. 또한 강의도 올라와 있습니다. [Page](https://algs4.cs.princeton.edu/home/)
+- Kleinberg, J. and Tardos, É. "Algorithm design". Addison-Wesley. ISBN 978-0-321-29535-4.  
 - S. Dasgupta, C. Papadimitriou, and U. Vazirani. _Algorithms_. McGraw-Hill Higher Education. 2006
 - Knuth, D.A. (2011). _The Art of Computer Programming_. Addison-Wesley. ISBN 978-0-321-75104-1. - 고전(?)이라고 불릴만한 책입니다 TAOCP라고 불리우는 책으로 크누스 교수님께서 집필하고 있는 시리즈입니다.
 
@@ -56,20 +79,22 @@ tags: [CompSci, CSE, Study]
 - Christos H. Papadimitriou: Computational Complexity. Addison Wesley 1994.
 - Oded Goldreich. Computational Complexity, Cambridge University press.
   
+<!---
 - Robert I. Soare: Recursively Enumerable Sets and Degrees. Springer-Verlag, 1987.
 - Uwe Schoening: Gems of Theoretical Computer Science.
 - M R Garey and D S Johnson. Computers and Intractability: A Guide to the Theory of NP-Completeness, Freeman, 1979.
+--->
 
+<details markdown="1">
+<summary>계산 가능성 이론</summary>
 
+컴퓨터의 이론적 기반에 대한 가장 첫 물음은 "무엇이 계산하는 것인가?" 라는 질문일 것입니다. 우리가 알고 있는 튜링 머신이 그러한 계산기(컴퓨터)이기는 합니다. 처치-튜링 논제(Church-Turing thesis)를 통해서 우리는 튜링머신을 통해 효과적으로 자연수 문제를 연산할 수 있다고 정의하였습니다. 그렇지만 딱히 *효과적으로*를 엄밀하게 들어갈 방법은 없으니 이게 참이라고 받아들여집니다. 혹은 이와 **동치**인 다른 방법론을 통해 들여다볼 수 있습니다.
 
-#### 형식언어와 오토마타이론
-
-- Linz, An Introduction to Formal Languages and Automata. 
-- Hopcroft, Motwani and Ullman, Introduction to Automata Theory, Languages, and Computation, 3rd ed. 
-- Lewis and Papadimitriou, Elements of the Theory of Computation, 2nd ed. 
-- Du and Ko, Problem Solving in Automata, Languages, and Complexity.
+- Nigel Cutland, "Computability: An Introduction to Recursive Function Theory" : 저는 이 책으로 공부했는데, Turing machine에서 시작하는 것이 아닌 다른 방법을 통해 계산을 정의합니다. 솔직히 Turing machine과 테이프로 시작하면 현대 컴퓨터의 동작 방식과의 약간의 괴리가 있어... Unlimited Register Machine과 기본적인 연산을 통해 정의하는 것이 저에게는 자연스러웠습니다. 물론 이는 Turing machine과 동치임을 Ch3.에서 보입니다.
 
 계산 가능성 이론에 관심이 있다면, [Recursion theory text, alternative to Soare](https://math.stackexchange.com/questions/29418/recursion-theory-text-alternative-to-soare)을 참고해도 좋겠습니다.
+
+</details>
 
 ## 관련 강의
 
@@ -109,15 +134,39 @@ CS Theory Toolkit 교과목은 Great Ideas in TCS와 달리 컴퓨터공학과 �
 
 [Why Study Programming Languages?](https://www.andrew.cmu.edu/course/15-312/phil.html)
 
+한국어로는 허기홍 교수님의 [PL Wiki](https://github.com/prosyslab/pl-wiki)에 관련된 개념들이 잘 정리되어 있습니다.
+
+## 주요 질문
+
+- 프로그래밍 언어를 통해 표현되는 가상 머신의 (virtual machine) 가능한 구조는 무엇인가? 예를 들어, 데이터의 타입, 연산, 제어 구조, 새로운 타입과 연산이 제안되는 방식은 무엇일까?
+- 이러한 추상적인 내용을 컴퓨터에서 어떻게 구현할 것인가?
+- 어떠한 표기법(통사론, syntax)이 컴퓨터가 실제로 동작하는데 효과적이고 효율적으로 사용될 수 있는가?
+
 ## 교재
+
+- Bruce A. Tate, "Seven Languages in Seven Weeks: A Pragmatic Guide to Learning Programming Languages", Pragmatic Bookshelf (2010). - 국문 번역으로는 [브루스 테이트의 세븐 랭귀지: 프로그래머라면 알아야 할 미래를 품은 7가지 언어](https://www.hanbit.co.kr/store/books/look.php?p_code=B4078611297)가 있습니다. 
+
+#### 형식언어와 오토마타이론
+
+- Linz, An Introduction to Formal Languages and Automata. 
+- Hopcroft, Motwani and Ullman, Introduction to Automata Theory, Languages, and Computation, 3rd ed. 
+- Lewis and Papadimitriou, Elements of the Theory of Computation, 2nd ed. 
+- Du and Ko, Problem Solving in Automata, Languages, and Complexity.
 
 ## 관련 강의
 
-### 서울대학교: 프로그래밍 언어
+#### 서울대학교: 프로그래밍 언어
 
 - [강의 사이트](http://ropas.snu.ac.kr/~kwang/4190.310/24/)
 
 # 컴퓨터 구조
+
+## 주요 질문
+
+- 컴퓨터의 구성 요소인 프로세서, 메모리, 통신을 어떻게 효과적으로 구현할 것인가?
+- 거대한 계산 시스템과 어떻게 설계하고 제어할 것인가? 그리고 이러한 시스템이 오류와 실패에도 불구하고 의도한데로 잘 동작한다는 것을 입증할 것인가?
+- 어떠한 형태의 구조가 효과적으로 동시에 많은 프로세싱 요소를 포함하여 동시에 연산할 수 있을까?
+- 어떻게 성능을 측정할 것인가?
 
 ## 교재
 
@@ -127,62 +176,12 @@ CS Theory Toolkit 교과목은 Great Ideas in TCS와 달리 컴퓨터공학과 �
 
 ## 관련 강의
 
-### CMU: Introduction to Computer Systems
+#### CMU: Introduction to Computer Systems
 
 - [강의 사이트](https://www.andrew.cmu.edu/course/15-312/phil.html)
 - [교재: Computer Systems: A Programmer's Perspective](https://csapp.cs.cmu.edu/)
 
 컴퓨터공학의 시스템 분야에서 기초가 되는 수업입니다. 아마도 한국에서는 "시스템프로그래밍" 이라는 교과목 등으로 개설이 되고 있습니다. 
-
-# 운영체제
-
-## 교재
-
-- [Operating System Concepts](https://os-book.com): a.k.a. 공룡책으로 운영체제 하면 가장 먼저 떠오르는 책입니다.
-- [Operating Systems: Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/): OSTEP으로 불리우며, 무료로 공개되어 있습니다. (티셔츠와 같은 굿즈도 팝니다...)
-- [PintOS](https://web.stanford.edu/class/cs140/projects/pintos/pintos.html): 운영체제를 직접 만들어 보는 과제 입니다. 개인적으로 이 과제를 운영체제 공부 측면을 넘어서서, 프로젝트를 수행하는 방법을 배울 수 있었습니다. 예를 들자면, 제가 코드를 처음부터 끝까지 짜는 경우는 없습니다. 기존의 라이브러리 등을 활용하는데, 한정된 자원과 라이브러리 속에서 어떻게 효과적인 코드를 짜면 좋을지에 대해 알아볼 수 있는 기회였습니다.
-
-## 관련 강의
-
-# 소프트웨어 방법론과 그 공학
-
-## 교재
-
-## 관련 강의
-
-# 데이터 베이스
-
-## 교재
-
-- Ramakrishan and Gehrke. Database Management Systems, McGraw-Hill, 2002 (3rd ed).
-- Garcia-Molina, Ullman, Widom. Database Systems: The Complete Book. Prentice Hall, 2002 (or 2008, 2nd ed).
-
-## 관련 강의
-
-### CMU: Database
-
-- [유튜브 재생목록](https://youtube.com/playlist?list=PLSE8ODhjZXjbohkNBWQs_otTrBTrjyohi)
-- [강의 사이트](https://15445.courses.cs.cmu.edu/fall2019/)
-
-# 인공지능과 로봇학
-
-## 교재
-
-## 관련 강의
-
-# 인간-컴퓨터 상호작용
-
-이 부분은 제가 직접 수업을 듣거나, 공부를 하지는 않아 서술하기 어렵습니다...
-얼핏 들은 이야기를 보면, 직접적으로 책을 보면서 공부하기 보다는 과제나 프로젝트를 통해 어떠한 문제가 있고 직접 해결하는 과정을 통해 얻는 지식이 더 많아보이는 분야였습니다.
-
-# 기타
-
-아마도 위의 분류에 딱 맞는 것이 없어서 고민한 분야들입니다.
-
-## 컴퓨터 그래픽스
-
-- [유튜브 재생목록](https://www.youtube.com/playlist?list=PL9_jI1bdZmz2emSh0UQ5iOdT2xRHFHL7E)
-- [강의 사이트](http://15462.courses.cs.cmu.edu/spring2024/)
 
 ## 컴퓨터 네트워크
 
@@ -196,15 +195,82 @@ CS Theory Toolkit 교과목은 Great Ideas in TCS와 달리 컴퓨터공학과 �
 - William Stallings, Data and Computer Communications, Fifth Edition, Prentice Hall, ISBN 0-02-415425-3, 1997.  
 - William Stallings, SNMP, SNMPv2, SNMPv3 and RMON 1 and 2, Third Edition, Addison-Wesley, 1999.
 
-## 잡다한 내용들
+# 운영체제
 
-### Awesome
+## 주요 질문
+
+- 
+
+## 교재
+
+- [Operating System Concepts](https://os-book.com): a.k.a. 공룡책으로 운영체제 하면 가장 먼저 떠오르는 책입니다.
+- [Operating Systems: Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/): OSTEP으로 불리우며, 무료로 공개되어 있습니다. (티셔츠와 같은 굿즈도 팝니다...)
+- [PintOS](https://web.stanford.edu/class/cs140/projects/pintos/pintos.html): 운영체제를 직접 만들어 보는 과제 입니다. 개인적으로 이 과제를 운영체제 공부 측면을 넘어서서, 프로젝트를 수행하는 방법을 배울 수 있었습니다. 예를 들자면, 제가 코드를 처음부터 끝까지 짜는 경우는 없습니다. 기존의 라이브러리 등을 활용하는데, 한정된 자원과 라이브러리 속에서 어떻게 효과적인 코드를 짜면 좋을지에 대해 알아볼 수 있는 기회였습니다.
+
+## 관련 강의
+
+# 소프트웨어 방법론과 그 공학
+
+## 주요 질문
+
+## 교재
+
+## 관련 강의
+
+# 데이터 베이스
+
+## 주요 질문
+
+## 교재
+
+- Ramakrishan and Gehrke. Database Management Systems, McGraw-Hill, 2002 (3rd ed).
+- Garcia-Molina, Ullman, Widom. Database Systems: The Complete Book. Prentice Hall, 2002 (or 2008, 2nd ed).
+
+## 관련 강의
+
+#### CMU: Database
+
+- [유튜브 재생목록](https://youtube.com/playlist?list=PLSE8ODhjZXjbohkNBWQs_otTrBTrjyohi)
+- [강의 사이트](https://15445.courses.cs.cmu.edu/fall2019/)
+
+# 인공지능과 로봇학
+
+## 주요 질문
+
+## 교재
+
+## 관련 강의
+
+# 인간-컴퓨터 상호작용
+
+이 부분은 제가 직접 수업을 듣거나, 공부를 하지는 않아 서술하기 어렵습니다...
+얼핏 들은 이야기를 보면, 직접적으로 책을 보면서 공부하기 보다는 과제나 프로젝트를 통해 어떠한 문제가 있고 직접 해결하는 과정을 통해 얻는 지식이 더 많아보이는 분야였습니다.
+
+## 주요 질문
+
+- 어떻게 효과적으로 현실의 객체를 표현하고, 우리가 바라보는 것을 생성할 수 있을까?
+- 어떻게 효과적으로 인간으로부터 입력을 받고 결과물을 나타낼 것인가?
+- 어떻게 잘못 인지하는 경우와 사람의 실수에 대한 리스크를 최소화 할 수 있는가?
+- 어떻게 그래픽스 및 다른 도구가 데이터셋에 있는 정보로 표현된 물리적 현상에 대한 이해를 도울 것인가?
+
+## 교재
+
+## 관련 교과목
+
+#### CMU: Computer Graphics
+
+- [유튜브 재생목록](https://www.youtube.com/playlist?list=PL9_jI1bdZmz2emSh0UQ5iOdT2xRHFHL7E)
+- [강의 사이트](http://15462.courses.cs.cmu.edu/spring2024/)
+
+# 잡다한 내용들
+
+#### Awesome
 
 [Awesome](https://github.com/prakhar1989/awesome-courses#cs-theory)
 Awesome이라는 태그를 달고 있는 시리즈 중에서 컴퓨터공학 수업을 모아둔 Github 레파지토리이다. 
 일반적으로 awesome 태그가 있으면 그와 관련된 주제 중에서 여러 사람들이 좋다고 생각하는 경우 올라오게 된다.
 
-### MIT: Missing Semester
+#### MIT: Missing Semester
 
 [유튜브 재생목록](https://youtube.com/playlist?list=PLyzOVJj3bHQuloKGG59rS43e29ro7I57J)
 
@@ -215,10 +281,18 @@ Awesome이라는 태그를 달고 있는 시리즈 중에서 컴퓨터공학 수
 실제로 Git 사용법, Vim 사용법과 같은 각종 툴의 사용법부터 컴퓨터 보안에 대한 개략적인 소개까지 수업에서는 다루기 힘들지만, 알아두면 크게 도움이 되는 내용을 모아두고 있다.
 실재로 UNIST 컴퓨터공학과 에서는 ABC Winter School이라는 이름으로 이 내용을 알려주는 튜터링이 개설되어 있다.
 
-### Stanford: Practical Unix
+#### Stanford: Practical Unix
 
 [강의 사이트](https://practicalunix.org/)
 
 Unix 시스템에 대해서는 익숙하지 않은 사람이 대부분이다. 위의 Missing Semester와 마찬가지로, 이를 현명하게 다루기 위해 알아야 할 지식들을 모은 수업이다.
 
 # 맺으며
+
+만약 궁금한 사항이나, 잘못된 부분이 있다면 편히 이메일이나 [Github Issue](https://github.com/Raon1123/raon1123.github.io/issues)에 올려주세요. (`New issue` 버튼 > Title과 description 작성)시간이 나면 답을 시도해 보겠습니다.
+
+# 참고문헌
+
+본 블로그 글은 아래 글을 참고하여 작성되었습니다.
+
+1. P. J. Denning et al. "*[Computing as a Discipline](https://ieeexplore.ieee.org/document/19833/)*", Computer, Volume 22. Issue 2, 1989.
