@@ -26,8 +26,7 @@ tags: [CompSci, CSE, Study]
 - Knuth, D.A. (2011). _The Art of Computer Programming_. Addison-Wesley. ISBN 978-0-321-75104-1. - 고전(?)이라고 불릴만한 책입니다 TAOCP라고 불리우는 책으로 크누스 교수님께서 집필하고 있는 시리즈입니다.
 
 
-<details>
-
+<details markdown="1">
 <summary> Approximation and randomized algorithms </summary>
 
 - Vijay V. Vazirani. Approximation Algorithms, Springer, Second edition, 2003.
@@ -38,10 +37,8 @@ tags: [CompSci, CSE, Study]
 
 </details>
 
-
-<details>
-
-  <summary> Computational geometry </summary>
+<details markdown="1">
+<summary> Computational geometry </summary>
 
   - Mark Berg, Otfried Cheong, Marc Kreveld, and Mark Overmars. "Computational Geometry: Algorithms and Applications", Springer 2008. [Link](https://link.springer.com/book/10.1007/978-3-540-77974-2)
   -  J. Matousek, [_Lectures on Discrete Geometry_](https://link.springer.com/book/10.1007/978-1-4613-0039-7), Springer, 2002

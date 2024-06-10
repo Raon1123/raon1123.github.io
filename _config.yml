@@ -177,7 +177,7 @@ analytics:
 
 ## => Build
 ##############################
-markdown    : Redcarpet
+markdown    : CommonMark
 highlighter : rouge
 permalink   : none
 
