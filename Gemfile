@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 gem 'jekyll'
 gem 'html-proofer'
-gem 'redcarpet'
+gem 'commonmarker'
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 gem 'wdm', '>= 0.1.0'
