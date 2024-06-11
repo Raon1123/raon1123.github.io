@@ -10,9 +10,7 @@ tags: [CompSci, CSE, Study]
 
 # 들어가며
 
-[이전 글]({% post_url 2024-06-09-What-Computing %})을 통해서 전산학에 대한 전반적인 문제를 알아보았습니다. 이번 글에서는 각 세부분야별 해결하고자 하는 물음을 알아보고, 이와 관련된 자료를 모아보고자 합니다. 
-
-아마도 긁어모은 것이다보니, 과한 책들이 많습니다. 핵심이 되는 교재나 자료의 경우 **핵심** 표시를 해두었습니다.
+[이전 글]({% post_url 2024-06-09-What-Computing %})을 통해서 전산학에 대한 전반적인 문제를 알아보았습니다. 이번 글에서는 각 세부분야별 해결하고자 하는 물음을 알아보고, 이와 관련된 자료를 모아보고자 합니다. 저는 컴퓨터공학을 전공하였지만, 세부 전공으로는 인공지능 특히 기계학습 분야를 전공하고 있습니다. 그렇다보니 다른 분야의 경우 서술의 한계점이 있을 수 있으니 너른 양해와, 부족한 부분이 있다면 메일이나 하단의 issue에 올려주시면 반영하도록 하겠습니다. 자료의 경우 평소에 관심을 두었던 책이나, 추천받은 책, 공개된 강의 계획서 등을 참고하여 작성되었습니다. 많은 자료가 나열되어 있지만 *모든 자료를 다 읽으실 필요는 없습니다* 핵심이 되는 교재나 자료의 경우 **핵심** 표시를 해두었습니다. 또한, 보다 살펴보고 싶으신 분들을 위하여 아코디언 ▶을 누르시면 보다 상세한 내용이 있으니 읽으실 때 참고 부탁드립니다.
 
 # 알고리듬과 데이터구조
 
@@ -36,7 +34,7 @@ tags: [CompSci, CSE, Study]
 - 저장 공간과 실행 시간 사이의 trade-off가 있는가?
 - 어떠한 방법으로 데이터를 저장하고 접근하는 것이 가장 효과적인가?
 - 최악의 경우에 대해서의 최선의 알고리듬은 무엇인가?
-- 일반적으로 알고리즘은 어떻게 동작하는가? 
+- 일반인 상황에서 알고리즘은 어떻게 동작하는가? (평균적으로 어느정도 시간이 소요되는가?)
 
 ## 교재
 
@@ -103,32 +101,53 @@ tags: [CompSci, CSE, Study]
 - [강의 홈페이지](https://www.anilada.com/courses/15251f19/www/index.html)
 - [유튜브 재생목록](https://youtube.com/playlist?list=PLm3J0oaFux3aafQm568blS9blxtA_EWQv)
 
-CMU에서 컴퓨터공학 이론을 입문하는 입장에서 서술된 교과목입니다.
-보통의 대학에서는 이산수학이라는 교과목하고 상당부분 겹치지만, 계산가능성, 튜링머신 등 계산이론의 기초적인 부분도 함께 다루고 있습니다.
-이에 더 나아가서 More Great Ideas in TCS라는 교과목도 CMU에 개설이 되어 있습니다.
+CMU의 경우 전산학이 단과대학으로 구성될 수 있을 만큼 규모가 크고, 다양한 전공이 있는 대학입니다. 이 Great Ideas in TCS의 경우 막 전공에 들어온 2학년을 대상으로 이론 컴퓨터과학을 입문하는 교과목입니다. 우리나라에서는 이렇게 구성된 교과목이 별로 없는 것으로 파악되고 있습니다만, 이산구조, 이산수학과 같은 교과목과 어느정도 겹치는 부분이 있습니다. 이론 컴퓨터과학에서 필요한 핵심적인 수학적 증명 방법과 도구들을 배우는 교과목입니다. 그렇지만 한 걸음 더 나아가 계산가능성, 튜링머신 등 계산이론의 기초적인 부분도 함께 다루고 있습니다. 이에 더 나아가서 More Great Ideas in TCS라는 교과목도 CMU에 개설이 되어 있습니다.
 
 #### MIT: Introduction to Algorithms
 
 - [강의 사이트](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/)
 - [유튜브 재생목록](https://youtube.com/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
 
-알고리즘을 공부하기위한 대학 교재로 자주 사용이 되는 책은 [CLRS](https://ko.wikipedia.org/wiki/Introduction_to_Algorithms)이라 불리우는 책이다.
-한 권의 책 안에 알고리즘에 대한 전반적인 내용이 담겨져 있는 책으로 곁에 두고 읽기 좋은 책이다.
-단점은, 전반적인 내용의 범위가 학부 수준부터 대학원 수준까지 다양하게 활요이 되는 터라 초심자는 어느정도 챕터를 생략하는 것이 좋다.
-특이하게 MIT에서는 데이터구조 교과목이 별도로 개설이 되지 않고 바로 Intro to Algorithm으로 진입을 한다.
+알고리즘을 전공한다고 하면 보통은 [CLRS](https://ko.wikipedia.org/wiki/Introduction_to_Algorithms)를 가장 먼저 꼽게 됩니다. 알고리즘에 대한 많은 주제를 다루고 있으며, 이 중 일부를 수업에 활용을 하게 됩니다.
+MIT에서는 [MIT OCW](https://ocw.mit.edu)에서 관련된 강의 자료 및 영상을 제공하고 있습니다. 아마도 간판(?)쯤 되는 교과목이 이 Introduction to Algorithm입니다. 보통의 대학에서는 데이터구조를 듣고 알고리듬을 듣는 형식이지만, MIT의 경우에는 데이터구조와 합쳐서 알고리듬 수업에서 가르치고 있습니다. 부담없이 처음 들으시는 분이더라도 따라 듣기 좋은 형태입니다.
+
+알고리듬 수업에서는 다음과 같은 물음을 중심으로 공부를 하시면 보다 수월하게 공부를 하실 수 있으실 것입니다. "*주어진 문제에 대해서 가장 최선의 알고리듬(해결방법)은 무엇인가?*", "*어떠한 방법으로 데이터를 저장하고 접근하는 것이 가장 효과적인가?*", "*일반인 상황에서 알고리즘은 어떻게 동작하는가? (평균적으로 어느정도 시간이 소요되는가?)*". 더 나아가 남은 질문인 복잡도에 대해서도 어느정도 생각을 하면서 공부를 하시면 활용에 더 좋은 경험을 하실 수 있으실 것입니다.
+
+<details markdown="1">
+<summary> MIT Algorithm Series </summary>
+
+MIT에서는 다양한 알고리듬 강의가 열리는데 아래와 같은 순서로 수강을 권유하고 있습니다.
+
+1. 6.006 Introduction to Algorithms [2020](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/)
+2. 6.046J Design and Analysis of Algorithms [2015](https://ocw.mit.edu/courses/6-046j-design-and-analysis-of-algorithms-spring-2015/)
+3. 6.854J Advanced Algorithms [2008](https://ocw.mit.edu/courses/6-854j-advanced-algorithms-fall-2008/)
+
+</details>
 
 #### CMU: Complexity Theory
 
 - [학부 유튜브 재생목록](https://youtube.com/playlist?list=PLm3J0oaFux3YL5vLXpzOyJiLtqLp6dCW2)
 - [대학원 유튜브 재생목록](https://youtube.com/playlist?list=PLm3J0oaFux3b8Gg1DdaJOzYNsaXYLAOKH)
 
-계산 이론의 경우 대한민국에서는 전공하시는 교수님이 드문 편이십니다.
 
 #### CMU: CS Theory Toolkit
 
 - [유튜브 재생목록](https://youtube.com/playlist?list=PLm3J0oaFux3ZYpFLwwrlv_EHH9wtH6pnX)
 
 CS Theory Toolkit 교과목은 Great Ideas in TCS와 달리 컴퓨터공학과 대학원 학생을 대상으로 하는 강의입니다. 기존에 알고 있었던 내용에 더불어서 어떻게 컴퓨터공학 이론을 연구하고 읽을지에 대해 배우는 교과목입니다. 대학원 교과목이다 보니, 좀 더 들어가고 싶으신 분이 아니시라면 반드시 공부할 필요는 없겠습니다.
+
+## 문제 해결 전략
+
+취업 등에 관심을 가지고 있거나, 정보올림피아드 등을 통해 Problem Solving에 관심을 가지는 경우가 있습니다. Problem solving은 주어진 문제를 주어진 제약조건 (시간, 메모리 등) 아래에서 해결하는 코드를 제출하는 방식으로 이루어 집니다. 한정된 시간 내에 이를 겨루는 대회 ([ACM-ICPC](https://icpckorea.org/), [SCPC](https://research.samsung.com/scpc), [UCPC](https://ucpc.me/)) 대학에서 열리곤 합니다. 간혹은 일부 대학에서 `문제해결전략` 이라는 교과목 등으로도 개설이 되고 있습니다. 이러한 문제를 해결하는 사이트로는 국내에서는 [BOJ: 백준 온라인 저지](https://www.acmicpc.net/)가 대표적이며 해외에서는 [leetcode](https://leetcode.com/)가 있습니다. 대회로는 [Codeforce](https://codeforces.com/)에서도 온라인으로 참가가 가능합니다.
+
+알고리듬 공부를 포함하고 있지만 약간 다른 부분이 있다면, 알고리듬을 실제 구현하는 것 까지 완성을 하여야 합니다. 이렇게 완성된 코드가 올바르게 문제를 해결하고 주어진 제약조건을 만족하는 것 또한 필요합니다. 위의 알고리듬을 책으로 공부하면서 어떻게 적용할지에 대해 망설인다면 이 부분을 연습해보는게 좋겠습니다.
+
+아마도 이 분야에 관심을 가지고 있으시다면 아래와 같은 사이트 및 책을 참고하시면 좋겠습니다.
+
+1. [Solved.ac](https://solved.ac/): 문제해결전략에 입문을 하시게 된다면, 가장 먼저 이 사이트를 추천해드리고자 합니다. 다양한 문제 카테고리 별로 연습을 하는 이정표가 되어주며, 랭킹 시스템을 통해 다른 사람과 경쟁을 할 수도 있습니다. 
+2. 안티 라크소넨, [알고리즘 트레이닝 : 프로그래밍 대회 입문 가이드](https://ebook.insightbook.co.kr/book/85)
+3. 와타노베 유타카, [프로그래밍 대회 공략을 위한 알고리즘과 자료 구조 입문](https://ebook.insightbook.co.kr/book/106)
+4. 구종만, [프로그래밍 대회에서 배우는 알고리즘 문제해결전략](https://book.algospot.com/): 종만북이라 불리우는 책입니다.
 
 # 프로그래밍 언어
 
@@ -293,6 +312,7 @@ Unix 시스템에 대해서는 익숙하지 않은 사람이 대부분이다. �
 
 # 참고문헌
 
-본 블로그 글은 아래 글을 참고하여 작성되었습니다.
+본 블로그 글은 아래 글 혹은 웹페이지를 참고하여 작성되었습니다.
 
 1. P. J. Denning et al. "*[Computing as a Discipline](https://ieeexplore.ieee.org/document/19833/)*", Computer, Volume 22. Issue 2, 1989.
+2. [MIT OCW](https://ocw.mit.edu)
