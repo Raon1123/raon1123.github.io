@@ -73,6 +73,7 @@ tags: [CompSci, CSE, Study]
 
 - **핵심** Michael Sipser, "[_Introduction to the Theory of Computation_](https://math.mit.edu/~sipser/book.html)" 
 - Moore, Cristopher, and Stephan Mertens. _The Nature of Computation_. Oxford University Press, 2011. ISBN: 9780199233212. - 꽤 두꺼운 책입니다만, 천천히 읽어볼만한 책이라고 생각합니다.
+- Avi Wigderson, "Mathematics and Computation", Princeton University Press. - 아벨상, 튜링상 수상자이신 Avi 교수님이 계산 이론 분야에 대한 입문 서적입니다.
 - Arora, Sanjeev, and Boaz Barak. _Computational Complexity: A Modern Approach_. Cambridge University Press, 2009.
 - Christos H. Papadimitriou: Computational Complexity. Addison Wesley 1994.
 - Oded Goldreich. Computational Complexity, Cambridge University press.
@@ -144,7 +145,7 @@ CS Theory Toolkit 교과목은 Great Ideas in TCS와 달리 컴퓨터공학과 �
 
 아마도 이 분야에 관심을 가지고 있으시다면 아래와 같은 사이트 및 책을 참고하시면 좋겠습니다.
 
-1. [Solved.ac](https://solved.ac/): 문제해결전략에 입문을 하시게 된다면, 가장 먼저 이 사이트를 추천해드리고자 합니다. 다양한 문제 카테고리 별로 연습을 하는 이정표가 되어주며, 랭킹 시스템을 통해 다른 사람과 경쟁을 할 수도 있습니다. 
+1. [Solved.ac](https://solved.ac/): 문제해결전략에 입문을 하시게 된다면, 가장 먼저 이 사이트를 추천해드리고자 합니다. 다양한 문제 카테고리 별로 연습을 하는 이정표가 되어주며, 랭킹 시스템을 통해 다른 사람과 경쟁을 할 수도 있습니다. UNIST 내 동아리인 Almight에서 소개글을 읽어보시면 도움이 됩니다. [solved.ac 소개](https://almight.notion.site/Almight-Home-Korean-e5bdb0661be64a038260298f26613eaf?p=c4e17b82607f4aa682b83c0e03cf2823&pm=c)
 2. 안티 라크소넨, [알고리즘 트레이닝 : 프로그래밍 대회 입문 가이드](https://ebook.insightbook.co.kr/book/85)
 3. 와타노베 유타카, [프로그래밍 대회 공략을 위한 알고리즘과 자료 구조 입문](https://ebook.insightbook.co.kr/book/106)
 4. 구종만, [프로그래밍 대회에서 배우는 알고리즘 문제해결전략](https://book.algospot.com/): 종만북이라 불리우는 책입니다.
