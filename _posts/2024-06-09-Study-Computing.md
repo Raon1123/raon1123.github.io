@@ -192,7 +192,6 @@ CS Theory Toolkit 교과목은 Great Ideas in TCS와 달리 컴퓨터공학과 �
 
 - [Computer Organization and Design](https://www.elsevier.com/books-and-journals/book-companion/9780128201091)
 - [Computer Architecture, Sixth Edition: A Quantitative Approach](https://dl.acm.org/doi/book/10.5555/3207796)
-- 
 
 ## 관련 강의
 
@@ -203,17 +202,6 @@ CS Theory Toolkit 교과목은 Great Ideas in TCS와 달리 컴퓨터공학과 �
 
 컴퓨터공학의 시스템 분야에서 기초가 되는 수업입니다. 아마도 한국에서는 "시스템프로그래밍" 이라는 교과목 등으로 개설이 되고 있습니다. 
 
-## 컴퓨터 네트워크
-
-전자과에도 동일한 명칭의 교과목이 열리지만, 순서가 반대라고 생각하시면 됩니다. 컴퓨터공학과는 사람이 사용하는 응용계층부터, 전자과는 물리계층부터 시작합니다. Top-down이냐 bottom-up이나 차이긴 합니다.
-
-- [Computer Networking: A Top-Down Approach](https://gaia.cs.umass.edu/kurose_ross/online_lectures.htm)
-- Richard Stevens, TCP/IP Illustrated, Volume 1: The Protocols, Addison-Wesley, ISBN: 0-201-63346-9, 1994.  
-- Douglas E. Comer, Computer Networks and Internets, Prentice Hall, ISBN 0-13-599010-6, 1997.  
-- D. Comer, Internetworking with TCP/IP, Vol I: Principles, Protocols, and Architecture, Second edition, Prentice-Hall, Englewood Cliffs, NJ, ISBN 0-13-468505-9 1991.  
-- D. Comer and D. Stevens, Internetworking with TCP/IP, Vol II: Design, Implementation, and Internals,Prentice-Hall, Englewood Cliffs, NJ, ISBN 0-13-472242-6 1991.  
-- William Stallings, Data and Computer Communications, Fifth Edition, Prentice Hall, ISBN 0-02-415425-3, 1997.  
-- William Stallings, SNMP, SNMPv2, SNMPv3 and RMON 1 and 2, Third Edition, Addison-Wesley, 1999.
 
 # 운영체제
 
@@ -239,9 +227,26 @@ CS Theory Toolkit 교과목은 Great Ideas in TCS와 달리 컴퓨터공학과 �
 
 ## 관련 강의
 
+## 컴퓨터 네트워크
+
+전자과에도 동일한 명칭의 교과목이 열리지만, 순서가 반대라고 생각하시면 됩니다. 컴퓨터공학과는 사람이 사용하는 응용계층부터, 전자과는 물리계층부터 시작합니다. Top-down이냐 bottom-up이나 차이긴 합니다.
+
+- [Computer Networking: A Top-Down Approach](https://gaia.cs.umass.edu/kurose_ross/online_lectures.htm)
+- Richard Stevens, TCP/IP Illustrated, Volume 1: The Protocols, Addison-Wesley, ISBN: 0-201-63346-9, 1994.  
+- Douglas E. Comer, Computer Networks and Internets, Prentice Hall, ISBN 0-13-599010-6, 1997.  
+- D. Comer, Internetworking with TCP/IP, Vol I: Principles, Protocols, and Architecture, Second edition, Prentice-Hall, Englewood Cliffs, NJ, ISBN 0-13-468505-9 1991.  
+- D. Comer and D. Stevens, Internetworking with TCP/IP, Vol II: Design, Implementation, and Internals,Prentice-Hall, Englewood Cliffs, NJ, ISBN 0-13-472242-6 1991.  
+- William Stallings, Data and Computer Communications, Fifth Edition, Prentice Hall, ISBN 0-02-415425-3, 1997.  
+- William Stallings, SNMP, SNMPv2, SNMPv3 and RMON 1 and 2, Third Edition, Addison-Wesley, 1999.
+
 # 소프트웨어 방법론과 그 공학
 
 ## 주요 질문
+
+- 프로그램의 개발과 프로그래밍 시스템의 배경이 되는 기본적인 원리는 무엇인가?
+- 어떻게 우리의 프로그램, 시스템이 요구사항을 충족하는지 알 수 있는가?
+- 중요한 사례를 빠뜨리지 않고 안전성을 분석할 수 있는 방법은 무엇인가?
+- 어떠한 설계 방법이 소프트웨어를 보다 이해하기 쉽고 수정하기 쉽게 만드는가?
 
 ## 교재
 
@@ -250,6 +255,15 @@ CS Theory Toolkit 교과목은 Great Ideas in TCS와 달리 컴퓨터공학과 �
 # 데이터 베이스
 
 ## 주요 질문
+
+- 데이터 요소와 그 관계를 나타내기 위해 어떤 모델링 개념을 사용해야 하는가?
+- 저장, 위치 찾기, 일치 및 검색과 같은 기본 작업을 어떻게 결합하여 효과적인 트랜잭션을 달성할 수 있는가?
+- 이러한 트랜잭션을 유저와 어떻게 상호작용 할 수 있는가?
+- 어떠한 구조가 효과적인 검색과 업데이트를 이끌어 낼 수 있는가?
+- 데이터를 무단으로 접근, 공개, 삭제하는 행위로 부터 어떻게 보호할 수 있는가?
+- 대규모 데이터베이스를 동시 업데이트로 인한 불일치로부터 어떻게 보호할 수 있는가?
+- 데이터가 여러 곳으로 분산된 상황에서 어떻게 보호하고 좋은 성능을 달성할 것인가?
+- 효과적인 검색을 위해 텍스트는 어떻게 색인되고 분류될 수 있는가?
 
 ## 교재
 
@@ -265,11 +279,6 @@ CS Theory Toolkit 교과목은 Great Ideas in TCS와 달리 컴퓨터공학과 �
 
 # 인공지능과 로봇학
 
-## 주요 질문
-
-## 교재
-
-## 관련 강의
 
 # 인간-컴퓨터 상호작용
 
