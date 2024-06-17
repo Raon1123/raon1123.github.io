@@ -86,7 +86,8 @@ tags: [AI, Machine Learning, Study]
 3. John Hubbard et al. "Vector Calculus, Linear Algebra, and Differential Forms: A Unified Approach".
 4. Michael Spivak "Calculus" - 위의 책과 비슷하게 미적분학과 추상적인 부분의 간극을 매울 수 있는 좋은 책입니다. 이 친구는 1학년을 대상으로 쓰여진 듯 하고 위의 책(Hubbard)은 이미 어느정도 알고 있으면서, 최신의 응용 내용을 담고 있습니다.
 
-#### 좀 더 나아간 책 
+<details markdown="1">
+<summary>좀 더 나아간 책</summary>
 
 해석학에 가까운 내용은 (*상급*) 직접 필요성이 느껴지실 때-논문을 주의 깊게 읽다가 발견 했을 때-공부하러 돌아와도 늦지는 않을 듯 합니다. 가성비가 떨어진다는 표현이 가장 적절할 듯 합니다. [Source](https://x.com/theeluwin/status/1787151118403031114)
 
@@ -97,6 +98,7 @@ tags: [AI, Machine Learning, Study]
 5.  *상급* Tong Zhang, "[Mathematical Analysis of Machine Learning Algorithms](https://tongzhang-ml.org/lt-book.html)", CUP, 2023.
 6.  *상급* Thomas Hillen, "[*Elements of Applied Functional Analysis*](https://era.library.ualberta.ca/items/b5368495-8f45-4c63-b895-25a423bc66fa)".
 
+</details>
 
 ## 확률, 통계학, 정보이론
 
@@ -151,7 +153,6 @@ tags: [AI, Machine Learning, Study]
 
 - [Numpy Quickstart](https://numpy.org/doc/stable/user/quickstart.html)
 - [PyTorch Quickstart](https://pytorch.org/tutorials/beginner/basics/quickstart_tutorial.html)
-
 - Aston Zhang et al. "[*Dive into Deep Learning*](https://d2l.ai/)", preprint.
 
 # 관련된 수업 모음
