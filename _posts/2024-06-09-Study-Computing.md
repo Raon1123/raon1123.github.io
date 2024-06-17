@@ -45,6 +45,7 @@ tags: [CompSci, CSE, Study]
 - Kleinberg, J. and Tardos, É. "Algorithm design". Addison-Wesley. ISBN 978-0-321-29535-4.  
 - S. Dasgupta, C. Papadimitriou, and U. Vazirani. _Algorithms_. McGraw-Hill Higher Education. 2006
 - Knuth, D.A. (2011). _The Art of Computer Programming_. Addison-Wesley. ISBN 978-0-321-75104-1. - 고전(?)이라고 불릴만한 책입니다 TAOCP라고 불리우는 책으로 크누스 교수님께서 집필하고 있는 시리즈입니다.
+- Open Data Structures [Project page](http://www.opendatastructures.org/)
 
 
 <details markdown="1">
@@ -279,6 +280,9 @@ CS Theory Toolkit 교과목은 Great Ideas in TCS와 달리 컴퓨터공학과 �
 
 # 인공지능과 로봇학
 
+다음 두 포스트를 참고해주세요
+- [인공지능에 필요한 배경지식 모음]({% post_url 2024-03-20-AI-Toolkit %})
+- [인공지능 공부자료]({% post_url 2024-06-17-Study-AI %})
 
 # 인간-컴퓨터 상호작용
 
