@@ -280,6 +280,9 @@ CS Theory Toolkit 교과목은 Great Ideas in TCS와 달리 컴퓨터공학과 �
 
 # 인공지능과 로봇학
 
+다음 두 포스트를 참고해주세요
+- [인공지능에 필요한 배경지식 모음]({% post_url 2024-03-20-AI-Toolkit %})
+- [인공지능 공부자료]({% post_url 2024-06-17-Study-AI %})
 
 # 인간-컴퓨터 상호작용
 
