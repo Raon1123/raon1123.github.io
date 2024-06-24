@@ -212,6 +212,9 @@ CS Theory Toolkit 교과목은 Great Ideas in TCS와 달리 컴퓨터공학과 �
 
 컴퓨터공학의 시스템 분야에서 기초가 되는 수업입니다. 어떤 대학에서는 "시스템프로그래밍" 이라는 교과목 등으로 개설이 되고 있습니다. 교재인 `CS:APP`의 경우 컴퓨터 시스템 전반에 대한 이해를 할 수 있는 참고하기 좋은 책입니다.
 
+- [CMU 15-418/618: Parallel Computer Architecture and Programming](https://www.cs.cmu.edu/~15418/)
+- [CMU 15-440/640: Distributed Systems](https://www.synergylabs.org/courses/15-440/)
+- [Parallel Computing MIT OCW](https://ocw.mit.edu/courses/18-337j-parallel-computing-fall-2011/)
 
 # 운영체제
 
