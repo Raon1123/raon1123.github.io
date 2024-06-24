@@ -10,7 +10,7 @@ tags: [CompSci, CSE, Study]
 
 # 들어가며
 
-[이전 글]({% post_url 2024-06-09-What-Computing %})을 통해서 전산학에 대한 전반적인 문제를 알아보았습니다. 이번 글에서는 각 세부분야별 해결하고자 하는 물음을 알아보고, 이와 관련된 자료를 모아보고자 합니다. 저는 컴퓨터공학을 전공하였지만, 세부 전공으로는 인공지능 특히 기계학습 분야를 전공하고 있습니다. 그렇다보니 다른 분야의 경우 서술의 한계점이 있을 수 있으니 너른 양해와, 부족한 부분이 있다면 메일이나 하단의 issue에 올려주시면 반영하도록 하겠습니다. 자료의 경우 평소에 관심을 두었던 책이나, 추천받은 책, 공개된 강의 계획서 등을 참고하여 작성되었습니다. 많은 자료가 나열되어 있지만 *모든 자료를 다 읽으실 필요는 없습니다* 핵심이 되는 교재나 자료의 경우 **핵심** 표시를 해두었습니다. 또한, 보다 살펴보고 싶으신 분들을 위하여 아코디언 ▶을 누르시면 보다 상세한 내용이 있으니 읽으실 때 참고 부탁드립니다.
+[이전 글]({% post_url 2024-06-09-What-Computing %})을 통해서 전산학에 대한 전반적인 문제를 알아보았습니다. 이번 글에서는 각 세부분야별 해결하고자 하는 물음을 알아보고, 이와 관련된 자료를 모아보고자 합니다. 저는 컴퓨터공학을 전공하였지만, 세부 전공으로는 인공지능 특히 기계학습 분야를 전공하고 있습니다. 그렇다보니 다른 분야의 경우 서술의 한계점이 있을 수 있습니다. 또한 명쾌히 한 분야로 분류되지 않는 분야도 있을 수 있습니다. 부족한 부분이 있다면 메일이나 하단의 issue에 올려주시면 반영하도록 하겠습니다. 자료의 경우 평소에 관심을 두었던 책이나, 추천받은 책, 공개된 강의 계획서 등을 참고하여 작성되었습니다. 많은 자료가 나열되어 있지만 *모든 자료를 다 읽으실 필요는 없습니다* 핵심이 되는 교재나 자료의 경우 **핵심** 표시를 해두었습니다. 또한, 보다 살펴보고 싶으신 분들을 위하여 아코디언 ▶을 누르시면 보다 상세한 내용이 있으니 읽으실 때 참고 부탁드립니다.
 
 # 알고리듬과 데이터구조
 
@@ -165,7 +165,11 @@ CS Theory Toolkit 교과목은 Great Ideas in TCS와 달리 컴퓨터공학과 �
 
 ## 교재
 
-- Bruce A. Tate, "Seven Languages in Seven Weeks: A Pragmatic Guide to Learning Programming Languages", Pragmatic Bookshelf (2010). - 국문 번역으로는 [브루스 테이트의 세븐 랭귀지: 프로그래머라면 알아야 할 미래를 품은 7가지 언어](https://www.hanbit.co.kr/store/books/look.php?p_code=B4078611297)가 있습니다. 
+- Bruce A. Tate, "Seven Languages in Seven Weeks: A Pragmatic Guide to Learning Programming Languages", Pragmatic Bookshelf (2010). : 국문 번역으로는 [브루스 테이트의 세븐 랭귀지: 프로그래머라면 알아야 할 미래를 품은 7가지 언어](https://www.hanbit.co.kr/store/books/look.php?p_code=B4078611297)가 있습니다. 
+
+#### 컴파일러
+
+- [Compilers: Principles, Techniques, and Tools](https://suif.stanford.edu/dragonbook/): `Dragon book` 이라 불리우는 컴파일러 분야 고전 교재입니다. 링크에 들어가시면 관련된 강의도 볼 수 있습니다.
 
 #### 형식언어와 오토마타이론
 
@@ -178,7 +182,11 @@ CS Theory Toolkit 교과목은 Great Ideas in TCS와 달리 컴퓨터공학과 �
 
 #### 서울대학교: 프로그래밍 언어
 
-- [강의 사이트](http://ropas.snu.ac.kr/~kwang/4190.310/24/)
+- [강의 사이트](http://ropas.snu.ac.kr/~kwang/4190.310/24/)\
+
+#### CMU: Compiler Design
+
+- [강의 사이트](https://www.cs.cmu.edu/afs/cs/academic/class/15411-f20/www/index.html)
 
 # 컴퓨터 구조
 
@@ -227,11 +235,7 @@ CS Theory Toolkit 교과목은 Great Ideas in TCS와 달리 컴퓨터공학과 �
 - [Operating Systems: Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/): OSTEP으로 불리우며, 무료로 공개되어 있습니다. (티셔츠와 같은 굿즈도 팝니다...)
 - [PintOS](https://web.stanford.edu/class/cs140/projects/pintos/pintos.html): 운영체제를 직접 만들어 보는 과제 입니다. 개인적으로 이 과제를 운영체제 공부 측면을 넘어서서, 프로젝트를 수행하는 방법을 배울 수 있었습니다. 예를 들자면, 제가 코드를 처음부터 끝까지 짜는 경우는 없습니다. 기존의 라이브러리 등을 활용하는데, 한정된 자원과 라이브러리 속에서 어떻게 효과적인 코드를 짜면 좋을지에 대해 알아볼 수 있는 기회였습니다.
 
-## 관련 강의
-
-## 컴퓨터 네트워크
-
-전자과에도 동일한 명칭의 교과목이 열리지만, 순서가 반대라고 생각하시면 됩니다. 컴퓨터공학과는 사람이 사용하는 응용계층부터, 전자과는 물리계층부터 시작합니다. Top-down이냐 bottom-up이나 차이긴 합니다.
+#### 컴퓨터 네트워크
 
 - [Computer Networking: A Top-Down Approach](https://gaia.cs.umass.edu/kurose_ross/online_lectures.htm)
 - Richard Stevens, TCP/IP Illustrated, Volume 1: The Protocols, Addison-Wesley, ISBN: 0-201-63346-9, 1994.  
@@ -240,6 +244,12 @@ CS Theory Toolkit 교과목은 Great Ideas in TCS와 달리 컴퓨터공학과 �
 - D. Comer and D. Stevens, Internetworking with TCP/IP, Vol II: Design, Implementation, and Internals,Prentice-Hall, Englewood Cliffs, NJ, ISBN 0-13-472242-6 1991.  
 - William Stallings, Data and Computer Communications, Fifth Edition, Prentice Hall, ISBN 0-02-415425-3, 1997.  
 - William Stallings, SNMP, SNMPv2, SNMPv3 and RMON 1 and 2, Third Edition, Addison-Wesley, 1999.
+
+## 관련 강의
+
+#### 컴퓨터 네트워크
+
+전자과에도 동일한 명칭의 교과목이 열리지만, 순서가 반대라고 생각하시면 됩니다. 컴퓨터공학과는 사람이 사용하는 응용계층부터, 전자과는 물리계층부터 시작합니다. Top-down이냐 bottom-up이나 차이긴 합니다.
 
 # 소프트웨어 방법론과 그 공학
 
