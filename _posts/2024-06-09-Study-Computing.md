@@ -69,7 +69,6 @@ tags: [CompSci, CSE, Study]
   
 </details>
 
-
 #### 계산이론
 
 - **핵심** Michael Sipser, "[_Introduction to the Theory of Computation_](https://math.mit.edu/~sipser/book.html)" 
@@ -146,10 +145,17 @@ CS Theory Toolkit 교과목은 Great Ideas in TCS와 달리 컴퓨터공학과 �
 
 아마도 이 분야에 관심을 가지고 있으시다면 아래와 같은 사이트 및 책을 참고하시면 좋겠습니다.
 
-1. [Solved.ac](https://solved.ac/): 문제해결전략에 입문을 하시게 된다면, 가장 먼저 이 사이트를 추천해드리고자 합니다. 다양한 문제 카테고리 별로 연습을 하는 이정표가 되어주며, 랭킹 시스템을 통해 다른 사람과 경쟁을 할 수도 있습니다. UNIST 내 동아리인 Almight에서 소개글을 읽어보시면 도움이 됩니다. [solved.ac 소개](https://almight.notion.site/Almight-Home-Korean-e5bdb0661be64a038260298f26613eaf?p=c4e17b82607f4aa682b83c0e03cf2823&pm=c)
-2. 안티 라크소넨, [알고리즘 트레이닝 : 프로그래밍 대회 입문 가이드](https://ebook.insightbook.co.kr/book/85)
-3. 와타노베 유타카, [프로그래밍 대회 공략을 위한 알고리즘과 자료 구조 입문](https://ebook.insightbook.co.kr/book/106)
-4. 구종만, [프로그래밍 대회에서 배우는 알고리즘 문제해결전략](https://book.algospot.com/): 종만북이라 불리우는 책입니다.
+- [Solved.ac](https://solved.ac/): 문제해결전략에 입문을 하시게 된다면, 가장 먼저 이 사이트를 추천해드리고자 합니다. 다양한 문제 카테고리 별로 연습을 하는 이정표가 되어주며, 랭킹 시스템을 통해 다른 사람과 경쟁을 할 수도 있습니다. UNIST 내 동아리인 Almight에서 소개글을 읽어보시면 도움이 됩니다. [solved.ac 소개](https://almight.notion.site/Almight-Home-Korean-e5bdb0661be64a038260298f26613eaf?p=c4e17b82607f4aa682b83c0e03cf2823&pm=c)
+- 안티 라크소넨, [알고리즘 트레이닝 : 프로그래밍 대회 입문 가이드](https://ebook.insightbook.co.kr/book/85)
+- 와타노베 유타카, [프로그래밍 대회 공략을 위한 알고리즘과 자료 구조 입문](https://ebook.insightbook.co.kr/book/106)
+- 구종만, [프로그래밍 대회에서 배우는 알고리즘 문제해결전략](https://book.algospot.com/): 종만북이라 불리우는 책입니다.
+
+## 양자컴퓨팅
+
+새롭게 떠오르는 분야입니다. 어느 분야로 넣을지 고민을 했습니다만, 현재는 관련된 이론 및 양자 알고리즘 분야로 연구가 활발히 되고 있어 알고리즘으로 분류하였습니다. [양자정보경진대회](https://qhackathon.kr/)도 있으니 참고하면 좋겠습니다.
+
+- [Quantum Computing since Democritus](https://www.cambridge.org/core/books/quantum-computing-since-democritus/197A4CD13738E10AAD787DBB78D8E92C): 입문하기 적절한 책일듯 합니다.
+- Preskill [PH219/CS219 Quantum Computing](http://theory.caltech.edu/~preskill/ph229/): Caltech에서 쓰이는 lecture note입니다.
 
 # 프로그래밍 언어
 
@@ -321,7 +327,9 @@ CS Theory Toolkit 교과목은 Great Ideas in TCS와 달리 컴퓨터공학과 �
 
 # 잡다한 내용들
 
-위의 분류에는 맞아 떨어지지는 않는 마이너한 tip의 모음입니다.
+위의 분류에는 맞아 떨어지지는 않는 분야 (여러 분야에 걸쳐 있거나, 일반론적인 내용들)
+
+## Tips
 
 #### Awesome
 
