@@ -3,7 +3,7 @@ title: 전산학 공부자료
 tags: [CompSci, CSE, Study]
 ---
 
-마지막 업데이트 2024. 6. 10.
+마지막 업데이트 2024. 6. 24.
 
 현재 계속 내용을 추가하는 중입니다.
 {:.warning}
@@ -191,6 +191,7 @@ CS Theory Toolkit 교과목은 Great Ideas in TCS와 달리 컴퓨터공학과 �
 
 ## 교재
 
+- **기본** [Computer Systems: A Programmer's Perspective](https://csapp.cs.cmu.edu/)
 - [Computer Organization and Design](https://www.elsevier.com/books-and-journals/book-companion/9780128201091)
 - [Computer Architecture, Sixth Edition: A Quantitative Approach](https://dl.acm.org/doi/book/10.5555/3207796)
 
@@ -201,7 +202,7 @@ CS Theory Toolkit 교과목은 Great Ideas in TCS와 달리 컴퓨터공학과 �
 - [강의 사이트](https://www.andrew.cmu.edu/course/15-312/phil.html)
 - [교재: Computer Systems: A Programmer's Perspective](https://csapp.cs.cmu.edu/)
 
-컴퓨터공학의 시스템 분야에서 기초가 되는 수업입니다. 아마도 한국에서는 "시스템프로그래밍" 이라는 교과목 등으로 개설이 되고 있습니다. 
+컴퓨터공학의 시스템 분야에서 기초가 되는 수업입니다. 어떤 대학에서는 "시스템프로그래밍" 이라는 교과목 등으로 개설이 되고 있습니다. 교재인 `CS:APP`의 경우 컴퓨터 시스템 전반에 대한 이해를 할 수 있는 참고하기 좋은 책입니다.
 
 
 # 운영체제
