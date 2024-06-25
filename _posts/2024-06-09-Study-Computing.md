@@ -3,14 +3,14 @@ title: 전산학 공부자료
 tags: [CompSci, CSE, Study]
 ---
 
-마지막 업데이트 2024. 6. 10.
+마지막 업데이트 2024. 6. 24.
 
 현재 계속 내용을 추가하는 중입니다.
 {:.warning}
 
 # 들어가며
 
-[이전 글]({% post_url 2024-06-09-What-Computing %})을 통해서 전산학에 대한 전반적인 문제를 알아보았습니다. 이번 글에서는 각 세부분야별 해결하고자 하는 물음을 알아보고, 이와 관련된 자료를 모아보고자 합니다. 저는 컴퓨터공학을 전공하였지만, 세부 전공으로는 인공지능 특히 기계학습 분야를 전공하고 있습니다. 그렇다보니 다른 분야의 경우 서술의 한계점이 있을 수 있으니 너른 양해와, 부족한 부분이 있다면 메일이나 하단의 issue에 올려주시면 반영하도록 하겠습니다. 자료의 경우 평소에 관심을 두었던 책이나, 추천받은 책, 공개된 강의 계획서 등을 참고하여 작성되었습니다. 많은 자료가 나열되어 있지만 *모든 자료를 다 읽으실 필요는 없습니다* 핵심이 되는 교재나 자료의 경우 **핵심** 표시를 해두었습니다. 또한, 보다 살펴보고 싶으신 분들을 위하여 아코디언 ▶을 누르시면 보다 상세한 내용이 있으니 읽으실 때 참고 부탁드립니다.
+[이전 글]({% post_url 2024-06-09-What-Computing %})을 통해서 전산학에 대한 전반적인 문제를 알아보았습니다. 이번 글에서는 각 세부분야별 해결하고자 하는 물음을 알아보고, 이와 관련된 자료를 모아보고자 합니다. 저는 컴퓨터공학을 전공하였지만, 세부 전공으로는 인공지능 특히 기계학습 분야를 전공하고 있습니다. 그렇다보니 다른 분야의 경우 서술의 한계점이 있을 수 있습니다. 또한 명쾌히 한 분야로 분류되지 않는 분야도 있을 수 있습니다. 부족한 부분이 있다면 메일이나 하단의 issue에 올려주시면 반영하도록 하겠습니다. 자료의 경우 평소에 관심을 두었던 책이나, 추천받은 책, 공개된 강의 계획서 등을 참고하여 작성되었습니다. 많은 자료가 나열되어 있지만 *모든 자료를 다 읽으실 필요는 없습니다* 핵심이 되는 교재나 자료의 경우 **핵심** 표시를 해두었습니다. 또한, 보다 살펴보고 싶으신 분들을 위하여 아코디언 ▶을 누르시면 보다 상세한 내용이 있으니 읽으실 때 참고 부탁드립니다.
 
 # 알고리듬과 데이터구조
 
@@ -68,7 +68,6 @@ tags: [CompSci, CSE, Study]
   -  J. Goodman, J. O'Rourke, and C. D. Toth (eds.), [_Handbook of Discrete and Computational Geometry_](http://www.csun.edu/~ctoth/Handbook/HDCG3.html) (3rd ed.), CRC Press, 2017
   
 </details>
-
 
 #### 계산이론
 
@@ -146,10 +145,17 @@ CS Theory Toolkit 교과목은 Great Ideas in TCS와 달리 컴퓨터공학과 �
 
 아마도 이 분야에 관심을 가지고 있으시다면 아래와 같은 사이트 및 책을 참고하시면 좋겠습니다.
 
-1. [Solved.ac](https://solved.ac/): 문제해결전략에 입문을 하시게 된다면, 가장 먼저 이 사이트를 추천해드리고자 합니다. 다양한 문제 카테고리 별로 연습을 하는 이정표가 되어주며, 랭킹 시스템을 통해 다른 사람과 경쟁을 할 수도 있습니다. UNIST 내 동아리인 Almight에서 소개글을 읽어보시면 도움이 됩니다. [solved.ac 소개](https://almight.notion.site/Almight-Home-Korean-e5bdb0661be64a038260298f26613eaf?p=c4e17b82607f4aa682b83c0e03cf2823&pm=c)
-2. 안티 라크소넨, [알고리즘 트레이닝 : 프로그래밍 대회 입문 가이드](https://ebook.insightbook.co.kr/book/85)
-3. 와타노베 유타카, [프로그래밍 대회 공략을 위한 알고리즘과 자료 구조 입문](https://ebook.insightbook.co.kr/book/106)
-4. 구종만, [프로그래밍 대회에서 배우는 알고리즘 문제해결전략](https://book.algospot.com/): 종만북이라 불리우는 책입니다.
+- [Solved.ac](https://solved.ac/): 문제해결전략에 입문을 하시게 된다면, 가장 먼저 이 사이트를 추천해드리고자 합니다. 다양한 문제 카테고리 별로 연습을 하는 이정표가 되어주며, 랭킹 시스템을 통해 다른 사람과 경쟁을 할 수도 있습니다. UNIST 내 동아리인 Almight에서 소개글을 읽어보시면 도움이 됩니다. [solved.ac 소개](https://almight.notion.site/Almight-Home-Korean-e5bdb0661be64a038260298f26613eaf?p=c4e17b82607f4aa682b83c0e03cf2823&pm=c)
+- 안티 라크소넨, [알고리즘 트레이닝 : 프로그래밍 대회 입문 가이드](https://ebook.insightbook.co.kr/book/85)
+- 와타노베 유타카, [프로그래밍 대회 공략을 위한 알고리즘과 자료 구조 입문](https://ebook.insightbook.co.kr/book/106)
+- 구종만, [프로그래밍 대회에서 배우는 알고리즘 문제해결전략](https://book.algospot.com/): 종만북이라 불리우는 책입니다.
+
+## 양자컴퓨팅
+
+새롭게 떠오르는 분야입니다. 어느 분야로 넣을지 고민을 했습니다만, 현재는 관련된 이론 및 양자 알고리즘 분야로 연구가 활발히 되고 있어 알고리즘으로 분류하였습니다. [양자정보경진대회](https://qhackathon.kr/)도 있으니 참고하면 좋겠습니다.
+
+- [Quantum Computing since Democritus](https://www.cambridge.org/core/books/quantum-computing-since-democritus/197A4CD13738E10AAD787DBB78D8E92C): 입문하기 적절한 책일듯 합니다.
+- Preskill [PH219/CS219 Quantum Computing](http://theory.caltech.edu/~preskill/ph229/): Caltech에서 쓰이는 lecture note입니다.
 
 # 프로그래밍 언어
 
@@ -165,7 +171,11 @@ CS Theory Toolkit 교과목은 Great Ideas in TCS와 달리 컴퓨터공학과 �
 
 ## 교재
 
-- Bruce A. Tate, "Seven Languages in Seven Weeks: A Pragmatic Guide to Learning Programming Languages", Pragmatic Bookshelf (2010). - 국문 번역으로는 [브루스 테이트의 세븐 랭귀지: 프로그래머라면 알아야 할 미래를 품은 7가지 언어](https://www.hanbit.co.kr/store/books/look.php?p_code=B4078611297)가 있습니다. 
+- Bruce A. Tate, "Seven Languages in Seven Weeks: A Pragmatic Guide to Learning Programming Languages", Pragmatic Bookshelf (2010). : 국문 번역으로는 [브루스 테이트의 세븐 랭귀지: 프로그래머라면 알아야 할 미래를 품은 7가지 언어](https://www.hanbit.co.kr/store/books/look.php?p_code=B4078611297)가 있습니다. 
+
+#### 컴파일러
+
+- [Compilers: Principles, Techniques, and Tools](https://suif.stanford.edu/dragonbook/): `Dragon book` 이라 불리우는 컴파일러 분야 고전 교재입니다. 링크에 들어가시면 관련된 강의도 볼 수 있습니다.
 
 #### 형식언어와 오토마타이론
 
@@ -178,7 +188,11 @@ CS Theory Toolkit 교과목은 Great Ideas in TCS와 달리 컴퓨터공학과 �
 
 #### 서울대학교: 프로그래밍 언어
 
-- [강의 사이트](http://ropas.snu.ac.kr/~kwang/4190.310/24/)
+- [강의 사이트](http://ropas.snu.ac.kr/~kwang/4190.310/24/)\
+
+#### CMU: Compiler Design
+
+- [강의 사이트](https://www.cs.cmu.edu/afs/cs/academic/class/15411-f20/www/index.html)
 
 # 컴퓨터 구조
 
@@ -191,6 +205,7 @@ CS Theory Toolkit 교과목은 Great Ideas in TCS와 달리 컴퓨터공학과 �
 
 ## 교재
 
+- **기본** [Computer Systems: A Programmer's Perspective](https://csapp.cs.cmu.edu/)
 - [Computer Organization and Design](https://www.elsevier.com/books-and-journals/book-companion/9780128201091)
 - [Computer Architecture, Sixth Edition: A Quantitative Approach](https://dl.acm.org/doi/book/10.5555/3207796)
 
@@ -201,8 +216,11 @@ CS Theory Toolkit 교과목은 Great Ideas in TCS와 달리 컴퓨터공학과 �
 - [강의 사이트](https://www.andrew.cmu.edu/course/15-312/phil.html)
 - [교재: Computer Systems: A Programmer's Perspective](https://csapp.cs.cmu.edu/)
 
-컴퓨터공학의 시스템 분야에서 기초가 되는 수업입니다. 아마도 한국에서는 "시스템프로그래밍" 이라는 교과목 등으로 개설이 되고 있습니다. 
+컴퓨터공학의 시스템 분야에서 기초가 되는 수업입니다. 어떤 대학에서는 "시스템프로그래밍" 이라는 교과목 등으로 개설이 되고 있습니다. 교재인 `CS:APP`의 경우 컴퓨터 시스템 전반에 대한 이해를 할 수 있는 참고하기 좋은 책입니다.
 
+- [CMU 15-418/618: Parallel Computer Architecture and Programming](https://www.cs.cmu.edu/~15418/)
+- [CMU 15-440/640: Distributed Systems](https://www.synergylabs.org/courses/15-440/)
+- [Parallel Computing MIT OCW](https://ocw.mit.edu/courses/18-337j-parallel-computing-fall-2011/)
 
 # 운영체제
 
@@ -226,11 +244,7 @@ CS Theory Toolkit 교과목은 Great Ideas in TCS와 달리 컴퓨터공학과 �
 - [Operating Systems: Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/): OSTEP으로 불리우며, 무료로 공개되어 있습니다. (티셔츠와 같은 굿즈도 팝니다...)
 - [PintOS](https://web.stanford.edu/class/cs140/projects/pintos/pintos.html): 운영체제를 직접 만들어 보는 과제 입니다. 개인적으로 이 과제를 운영체제 공부 측면을 넘어서서, 프로젝트를 수행하는 방법을 배울 수 있었습니다. 예를 들자면, 제가 코드를 처음부터 끝까지 짜는 경우는 없습니다. 기존의 라이브러리 등을 활용하는데, 한정된 자원과 라이브러리 속에서 어떻게 효과적인 코드를 짜면 좋을지에 대해 알아볼 수 있는 기회였습니다.
 
-## 관련 강의
-
-## 컴퓨터 네트워크
-
-전자과에도 동일한 명칭의 교과목이 열리지만, 순서가 반대라고 생각하시면 됩니다. 컴퓨터공학과는 사람이 사용하는 응용계층부터, 전자과는 물리계층부터 시작합니다. Top-down이냐 bottom-up이나 차이긴 합니다.
+#### 컴퓨터 네트워크
 
 - [Computer Networking: A Top-Down Approach](https://gaia.cs.umass.edu/kurose_ross/online_lectures.htm)
 - Richard Stevens, TCP/IP Illustrated, Volume 1: The Protocols, Addison-Wesley, ISBN: 0-201-63346-9, 1994.  
@@ -239,6 +253,12 @@ CS Theory Toolkit 교과목은 Great Ideas in TCS와 달리 컴퓨터공학과 �
 - D. Comer and D. Stevens, Internetworking with TCP/IP, Vol II: Design, Implementation, and Internals,Prentice-Hall, Englewood Cliffs, NJ, ISBN 0-13-472242-6 1991.  
 - William Stallings, Data and Computer Communications, Fifth Edition, Prentice Hall, ISBN 0-02-415425-3, 1997.  
 - William Stallings, SNMP, SNMPv2, SNMPv3 and RMON 1 and 2, Third Edition, Addison-Wesley, 1999.
+
+## 관련 강의
+
+#### 컴퓨터 네트워크
+
+전자과에도 동일한 명칭의 교과목이 열리지만, 순서가 반대라고 생각하시면 됩니다. 컴퓨터공학과는 사람이 사용하는 응용계층부터, 전자과는 물리계층부터 시작합니다. Top-down이냐 bottom-up이나 차이긴 합니다.
 
 # 소프트웨어 방법론과 그 공학
 
@@ -307,7 +327,9 @@ CS Theory Toolkit 교과목은 Great Ideas in TCS와 달리 컴퓨터공학과 �
 
 # 잡다한 내용들
 
-위의 분류에는 맞아 떨어지지는 않는 마이너한 tip의 모음입니다.
+위의 분류에는 맞아 떨어지지는 않는 분야 (여러 분야에 걸쳐 있거나, 일반론적인 내용들)
+
+## Tips
 
 #### Awesome
 
