@@ -81,6 +81,7 @@ tags: [AI, Study]
 
 - GPT
 - LLaMA
+- Edward J. Hu et al. "[*LoRA: Low-Rank Adaptation of Large Language Models*](https://arxiv.org/abs/2106.09685)"
 
 # Generation Models (From Bayesian To Diffusion)
 
