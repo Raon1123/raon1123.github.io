@@ -3,7 +3,7 @@ title: 인공지능에 필요한 배경지식 모음
 tags: [AI, Machine Learning, Study]
 ---
 
-마지막 수정일: 2024. 5. 6.
+마지막 수정일: 2024. 7. 2.
 
 ---
 
@@ -65,6 +65,7 @@ tags: [AI, Machine Learning, Study]
 7. Kaare B. Petersen and Michael S. Pedersen, "[The Matrix Cookbook](https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf)" - 공부하는 책이라기 보다는 옆에 두고 참고하기 좋은 내용인 듯 합니다.
 8. Zico Kotler "[Linear Algebra Review and Reference](https://www.cs.cmu.edu/afs/cs/academic/class/15859n-s20/RelatedWork/Kolter-AlebraReview.pdf)" - 이 글도 위와 같이 옆에 두기에 좋습니다.
 9. David P. Woodruff "[Sketching as a Tool for Numerical Linear Algebra](https://arxiv.org/abs/1411.4357)" - 수치선형대수와 관련된 내용을 정리한 글입니다.
+10. Jean Gallier and Jocelyn Quaintance, "[Linear Algebra for Computer Vision, Robotics, and Machine Learning](https://www.cis.upenn.edu/~cis5150/linalg-I-f.pdf)"
 
 ## 다변수 미적분학
 
