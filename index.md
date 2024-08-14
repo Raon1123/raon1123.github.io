@@ -37,17 +37,21 @@ Email: anyunpyo `at` unist `dot` ac `dot` kr
 
 ## Topic of Interest
 
-
 - Robust Machine Learning and Computer Vision (primary)
 - Understanding Computer Vision Model (secondary)
 
 But, I'm not limited to above two topics. It's not a my research topic, but I'm interested in logic and history of computer science.
 
+## Current Projects
+
+- AI Literacy with Ulsan Metropolitan Office of Education
+- Autonomous Lab Project with Dept. of Chemistry at UNIST.
+
 ## Vita
 
 ### Education
 
-- 2022.3 - : M.S.-Ph.D Combined in UNIST [Graduate School of Artificial Intelligence](https://aigs.unist.ac.kr/web/index.php) (Advisor: [Jooyeon Kim](https://jyscardioid.github.io/))
+- 2022.3 - : M.S.-Ph.D Combined in UNIST [Graduate School of Artificial Intelligence](https://aigs.unist.ac.kr/web/index.php) 
 - 2018.3 - 2022.2: Bachelor of Science, UNIST. Major in [Computer Science and Engineering](https://cse.unist.ac.kr). Cum laude 
 
 ### Publication
@@ -60,6 +64,16 @@ If you want to contact relate to this paper, please contact Prof. Kwang In Kim (
 --->
 In detail, [DBLP](https://dblp.org/pid/337/1619.html)
 
+### Skills
+
+I use tools related to machine learning and deep learning.
+- Python (usually with PyTorch library)
+- Matlab 
+
+### Academic Service
+
+- 2024 CVPR reviewer
+
 ### Teaching Activity
 
 - 2023 Fall: ITP112 Discrete Mathematics (TA, freshmen course)
@@ -70,9 +84,9 @@ In detail, [DBLP](https://dblp.org/pid/337/1619.html)
 
 ### Undergraduate Club Activity
 
-1. 2018.3. - 2022.3.: UNIST Computer Science and Engineering Club, [HeXA](http://www.hexa.pro)
-2. 2020.9. - 2022.3.: UNIST AI Club, [brAIns](https://unist-brains.github.io)
-3. 2021.3. - 2022.3.: UNIST Problem Solving Club, [Almight](https://unist-almight.github.io)
+1. 2018.3. - 2022.3.: UNIST Computer Science and Engineering Club, [HeXA](http://www.hexa.pro), President in 2019.
+2. 2020.9. - 2022.3.: UNIST AI Club, [brAIns](https://unist-brains.github.io), Promoter
+3. 2021.3. - 2022.3.: UNIST Problem Solving Club, [Almight](https://unist-almight.github.io), Promoter
 
 Last Update: 2024. 06. 04.
 
