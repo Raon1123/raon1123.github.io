@@ -3,8 +3,6 @@ layout: article
 titles: 소개
 ---
 
-
-
 <span style="font-family: 'Sanchez'!important;">
 Email: anyunpyo `at` unist `dot` ac `dot` kr
 </span>
@@ -56,13 +54,7 @@ But, I'm not limited to above two topics. It's not a my research topic, but I'm 
 
 ### Publication
 
-<!---
-If you can read this line, you may see raw HTML page
-I don't want to show this paper anymore.
-If you want to contact relate to this paper, please contact Prof. Kwang In Kim (kimkin@postech.ac.kr) who is previous advisor. I got a pink slip the MLV lab for unavoidable reasons.
 1. Yunpyo An, Suyeong Park, and Kwang in Kim. “[Active Learning Guided by Efficient Surrogate Learners](https://arxiv.org/abs/2301.02761)”, AAAI 2024.
---->
-In detail, [DBLP](https://dblp.org/pid/337/1619.html)
 
 ### Skills
 
@@ -88,7 +80,7 @@ I use tools related to machine learning and deep learning.
 2. 2020.9. - 2022.3.: UNIST AI Club, [brAIns](https://unist-brains.github.io), Promoter
 3. 2021.3. - 2022.3.: UNIST Problem Solving Club, [Almight](https://unist-almight.github.io), Promoter
 
-Last Update: 2024. 06. 04.
+Last Update: 2024. 08. 14.
 
 <style>
 h1, h2, h3 {
