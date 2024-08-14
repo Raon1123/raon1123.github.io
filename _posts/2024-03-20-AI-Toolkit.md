@@ -162,4 +162,4 @@ tags: [AI, Machine Learning, Study]
 - Stanford: [Convex Optimization 1](https://web.stanford.edu/class/ee364a/) [Convex Optimization 2](https://web.stanford.edu/class/ee364b/)
 - TTIC: [Mathematical Toolkit](https://home.ttic.edu/~madhurt/courses/toolkit2021/index.html)
 - Princeton COS 302 / SML 305: [Mathematics for Numerical Computing and Machine Learning](https://www.cs.princeton.edu/courses/archive/spring20/cos302/)
-
+- NYU [Mathematics for Data Science](https://cds.nyu.edu/math-tools/)
