@@ -50,7 +50,7 @@ But, I'm not limited to above two topics. It's not a my research topic, but I'm 
 ### Education
 
 - 2022.3 - : M.S.-Ph.D Combined in UNIST [Graduate School of Artificial Intelligence](https://aigs.unist.ac.kr/web/index.php) 
-- 2018.3 - 2022.2: Bachelor of Science, UNIST. Major in [Computer Science and Engineering](https://cse.unist.ac.kr). Cum laude 
+- 2018.3 - 2022.2: Bachelor of Science, UNIST. Major in [Computer Science and Engineering](https://cse.unist.ac.kr). Cum laude.
 
 ### Publication
 
@@ -66,6 +66,10 @@ I use tools related to machine learning and deep learning.
 
 - 2024 CVPR reviewer
 
+### Lab Experience
+
+- 2021.9 - 2024. 2.: MLV Group at UNIST. Research topic: attribute estimation, active learning, federated learning.
+
 ### Teaching Activity
 
 - 2023 Fall: ITP112 Discrete Mathematics (TA, freshmen course)
@@ -80,7 +84,7 @@ I use tools related to machine learning and deep learning.
 2. 2020.9. - 2022.3.: UNIST AI Club, [brAIns](https://unist-brains.github.io), Promoter
 3. 2021.3. - 2022.3.: UNIST Problem Solving Club, [Almight](https://unist-almight.github.io), Promoter
 
-Last Update: 2024. 08. 14.
+Last Update: 2024. 08. 23.
 
 <style>
 h1, h2, h3 {
