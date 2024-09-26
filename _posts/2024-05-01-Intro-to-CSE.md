@@ -1,5 +1,5 @@
 ---
-title: 전산학 이란?
+title: 전산학 공부자료 관련 모음
 tags: [CompSci, CSE, Study]
 ---
 
