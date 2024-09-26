@@ -70,7 +70,8 @@ I use tools related to machine learning and deep learning.
 
 ### Lab Experience
 
-- 2021.9 - 2024. 2.: MLV Group at UNIST. Research topic: attribute estimation, adversarial example, active learning, federated learning.
+- 2024.3. - current: IMIL at UNIST.
+- 2021.9. - 2024. 2.: MLV Group at UNIST. Research topic: attribute estimation, adversarial example, active learning, federated learning.
 
 ### Teaching Activity
 
