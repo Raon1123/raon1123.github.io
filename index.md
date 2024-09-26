@@ -43,7 +43,7 @@ But, I'm not limited to above two topics. It's not a my research topic, but I'm 
 ## Current Projects
 
 - AI Literacy with Ulsan Metropolitan Office of Education
-- Autonomous Lab Project with Dept. of Chemistry at UNIST.
+- Autonomous Lab Project with Dept. of Chemistry at UNIST. (focus on estimate synthesis results and active learning on this field)
 
 ## Vita
 
@@ -61,6 +61,8 @@ But, I'm not limited to above two topics. It's not a my research topic, but I'm 
 I use tools related to machine learning and deep learning.
 - Python (usually with PyTorch library)
 - Matlab 
+- Slurm (for scheduling and multi-processing)
+- Wandb (for monitoring and sweeping research project)
 
 ### Academic Service
 
@@ -68,7 +70,7 @@ I use tools related to machine learning and deep learning.
 
 ### Lab Experience
 
-- 2021.9 - 2024. 2.: MLV Group at UNIST. Research topic: attribute estimation, active learning, federated learning.
+- 2021.9 - 2024. 2.: MLV Group at UNIST. Research topic: attribute estimation, adversarial example, active learning, federated learning.
 
 ### Teaching Activity
 
@@ -84,7 +86,7 @@ I use tools related to machine learning and deep learning.
 2. 2020.9. - 2022.3.: UNIST AI Club, [brAIns](https://unist-brains.github.io), Promoter
 3. 2021.3. - 2022.3.: UNIST Problem Solving Club, [Almight](https://unist-almight.github.io), Promoter
 
-Last Update: 2024. 08. 23.
+Last Update: 2024. 09. 26.
 
 <style>
 h1, h2, h3 {
