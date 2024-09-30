@@ -3,12 +3,17 @@ title: GPU 모니터링
 tags: [Server] 
 ---
 
+24. 9. 30. UID, GID 관련 내용 추가.
+
+---
+
 인공지능을 연구함에 있어 그래픽카드는 비싼 물건이면서, 반드시 필요한 물건이다.
 중요한 만큼 관리도 열심히 해야하는데, 그래픽카드가 잘 돌아가고는 있는지, 알고보니 0번만 일하고 나머지가 놀고 있는지 모니터링이 필요할 것이다.
 그렇지만, `nvidia-smi`를 출력하면 순간의 결과는 나오지만 이것이 누적되어서 관찰할 수는 없다.
 그래서 모니터링을 하는 도구를 모아서 이쁘게 웹서비스를 통해 시작을 하여보자.
-많은 내용을 [Prometheus + Grafana + Docker Compose 설치](https://www.devkuma.com/docs/prometheus/docker-compose-install/)에서 참고하였다.
-여기에 nvidia-smi-exporter와의 연결을 추가하여 작성하였다.
+
+많은 내용을 [Prometheus + Grafana + Docker Compose 설치](https://www.devkuma.com/docs/prometheus/docker-compose-install/)에서 참고하였습니다.
+저는 여기에 nvidia-smi-exporter와의 연결을 추가하여 작성하였습니다. 
 
 # 준비하기
 
@@ -26,6 +31,11 @@ tags: [Server]
 1. [Nvidia-smi-exporter](https://github.com/utkuozdemir/nvidia_gpu_exporter): GPU 모니터링을 추가 프로그램을 설치하지 않고 `nvidia-smi`에 나오는 정보를 얻게 되는 컨테이너이다. 이를 통해 우리는 정해진 API 형식으로 `nvidia-smi` 정보를 얻을 수 있다.
 2. [Prometheus](https://prometheus.io/): 모니터링을 하는 도구로써, 시간에 따른 상태를 누적해서 저장하는 프로그램이다. 우리는 1.의 프로그램과 결합하여서 GPU에 대한 정보를 prometheus를 통해 관리할 것이다.
 3. [Grafana](https://grafana.com/): 모니터링하는 정보를 시각적으로 보여주는 도구이다. 이를 통해서 2.에서 얻은 정보를 웹을 통해 시각적으로 보여줄 것이다.
+
+여기서 `"$UID:$GID"`는 설정 및 도커에서 관리하는 파일의 소유권한을 지정할 user 및 group이다. `$ id` 를 통해 자신의 UID와 GID를 알 수 있으며, 별도의 관리용 계정을 만든다면 그것의 UID, GID를 사용하면 된다. 이후, `./prometheus` 및 `./grafana` 디렉토리의 소유권한을 해당 uid, gid를 적용하면 된다.
+
+구조는 여러 도커가 실행되지만, 실제 연산 노드 (GPU로 연산을 수행하는 노드) 에서는 nvidia-exporter와 prometheus만 있으면 됩니다. 그리고 홈페이지를 호스팅할 서버에는 grafana만 있으면 됩니다. 이를 응용한다면, 연산 노드에서는 nvidia-exporter와 prometheus만을 yaml에 넣으면 되고 (grafana로 시작하는 부분을 지우고), 호스팅할 서버에서는 grafana 만을 남기는 방법이 있습니다. 이 경우 
+{:.info}
 
 ```yaml
 version: '3.7'  # 파일 규격 버전
@@ -49,6 +59,7 @@ services:       # 이 항목 밑에 실행하려는 컨테이너 들을 정의
   prometheus:
     image: prom/prometheus
     container_name: prometheus
+    user: "$UID:$GID"
     volumes:
       - ./prometheus/config:/etc/prometheus
       - ./prometheus/volume:/prometheus
@@ -63,7 +74,7 @@ services:       # 이 항목 밑에 실행하려는 컨테이너 들을 정의
   grafana:
     image: grafana/grafana
     container_name: grafana
-    user: "$GRA_UID:$GRA_GID"
+    user: "$UID:$GID"
     ports:
       - 3000:3000 # 접근 포트 설정 (컨테이너 외부:컨테이너 내부)
     volumes:
@@ -146,16 +157,42 @@ groups:
 ```
 {% endraw %}
 
-이렇게 설정을 완료하였다면, docker에서 `prometheus` 디렉토리에 접근이 가능하도록 권한을 모두 읽기,쓰기,실행 권한을 부여하자
-```
-sudo chmod -R 777 prometheus
-```
-
 이후 아래 명령어로 세 도커를 실행하도록 하자
 ```
 docker compose up -d
 ```
 
+# Grafana
+
+Grafana에 접속을 하는 방법은 웹 페이지에서 `<해당 서버 IP>:3000` 이다. 
+기본 ID/PW는 admin admin으로 로그인을 하면 바꾸게 되어 있다.
+
+먼저 우리의 nvidia-exporter에서의 data sources를 설정하자. 우측 상단 로고 아래 햄버거 버튼에서 Connections > Data Source에서 선택할 수 있다.
+
+![grafana](/assets/images/230628_grafana0.png)
+
+우측 "Add new data source" 버튼을 누르고 Prometheus를 누르자. 이후 Connection에서 서버의 ip와 port를 입력하면 data source에 추가된다.
+Name의 경우 추후, 여러 서버에서 모니터링할 내용이 있다면 헷갈릴 수 있으니 구분지을 수 있게 작성하도록 하자.
+
+![data_prometheus](/assets/images/230628_grafana1.png)
+
+Dashboard는 nvidia_exporter 제작자님께서 친절하게 만들어주셨다. 해당 템플릿을 바로 활용하면 된다. [Link](https://grafana.com/grafana/dashboards/14574-nvidia-gpu-metrics/)
+New > New dashboard > Import dashboard 에서 "14574" 숫자를 입력하고 옆 Load를 누르면 해당 템플릿을 바로 불러올 수 있다.
+이후 옵션에서 Name, prometheus에서 우리가 추가한 data source의 name을 선택하면 완료된다.
+
+
+![import_dashboard](/assets/images/230628_grafana2.png)
+
+Unique identifier의 경우 직접 설정이 가능합니다. 이후 이를 통해 링크가 생성되니, 서버 이름과 연관되어 지으면 편리합니다.
+{:.info}
+
+![example](https://grafana.com/api/dashboards/14574/images/10667/image)
+
+예시 이미지와 같이 여러 GPU를 볼 수 있으면 완성되었다.
+
+## 활용 관련 토막
+
+- 
 # 참고문헌
 
 - [Prometheus + Grafana + Docker Compose 설치](https://www.devkuma.com/docs/prometheus/docker-compose-install/)
