@@ -26,6 +26,20 @@ Email: anyunpyo `at` unist `dot` ac `dot` kr
   I'm currently pursuing Ph.D degree at Ulsan National Institute of Science and Technology (UNIST). I graduated Cum Laude with a B.Sc. in Computer Science and Engineering from UNIST in 2022. My research focus on robust machine learning and utilization of commonsense knowledge in computer vision.
   </p>
 
+  <a
+  id="cy-effective-orcid-url"
+  class="underline"
+  href="https://orcid.org/0000-0002-7402-4297"
+  target="orcid.widget"
+  rel="me noopener noreferrer"
+  style="vertical-align: top">
+    <img
+      src="https://orcid.org/sites/default/files/images/orcid_16x16.png"
+      style="width: 1em; margin-inline-start: 0.5em"
+      alt="ORCID iD icon"/>
+    https://orcid.org/0000-0002-7402-4297
+  </a>
+
   </div>
   </div>
 
