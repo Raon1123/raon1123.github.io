@@ -3,7 +3,7 @@ title: GPU 모니터링
 tags: [Server] 
 ---
 
-24. 9. 30. UID, GID 관련 내용 추가.
+마지막 업데이트 2024. 9. 30. UID, GID 관련 내용 추가.
 
 ---
 
@@ -190,9 +190,6 @@ Unique identifier의 경우 직접 설정이 가능합니다. 이후 이를 통�
 
 예시 이미지와 같이 여러 GPU를 볼 수 있으면 완성되었다.
 
-## 활용 관련 토막
-
-- 
 # 참고문헌
 
 - [Prometheus + Grafana + Docker Compose 설치](https://www.devkuma.com/docs/prometheus/docker-compose-install/)
