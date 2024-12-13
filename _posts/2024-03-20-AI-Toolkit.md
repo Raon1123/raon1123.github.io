@@ -126,6 +126,7 @@ tags: [AI, Machine Learning, Study]
 5. David MacKay, "Information Theory, Inference, and Learning Algorithms", CUP 2003.
 6. **기초** Robert V. Hogg et al., "Probability and Statistical Inference", Pearson.
 7.  Robert V. Hogg et al., "Introduction to Mathematical Statistics", Pearson. - 얼핏 듣기로는 5번 책을 읽고 6번을 읽는다고 하는데, 저는 6번으로 바로 넘어왔습니다. 8판으로 넘어오면서 R을 통한 실습도 추가되어서 응용적으로도 활용 가능성이 높은 책입니다. 다만 7판 국제판의 경우 일부 내용이 누락되어 있으니 주의바랍니다.
+8.  Richard Weber, "[Cambridge Statistics IB Course notes](https://www.statslab.cam.ac.uk/~rrw1/stats/Sa4.pdf)".
 
 #### 좀 더 나아간 책 
 
