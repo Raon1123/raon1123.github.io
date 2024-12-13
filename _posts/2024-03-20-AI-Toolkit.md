@@ -32,6 +32,7 @@ tags: [AI, Machine Learning, Study]
 
 전반적으로는 아래 "*Mathematics for Machine Learning*"을 추천드립니다. 흔히 MML 책이라고 불리우는 책으로써, 기계 학습을 공부하는데 필요한 수학적 지식 전반을 다루고 있는 책입니다.
 - Marc Peter Deisenroth, A. Aldo Faisal, and Cheng Soon Ong."*[Mathematics for Machine Learning](https://mml-book.github.io/)*". Cambridge University Press. 2020.
+- Justin Solomon, "[Mathematical Methods for Computer Vision, Robotics, and Graphics](https://graphics.stanford.edu/courses/cs205a-13-fall/assets/notes/cs205a_notes.pdf)".
 
 ## 글 모음의 범위
 
@@ -86,6 +87,7 @@ tags: [AI, Machine Learning, Study]
 2. Marsden, Jerrold "Vector Calculus", W. H. Freeman : 만약 미적분학을 이미 수강하셨는데 다변수 부분만 보고 싶다면 이 책이 좋을 듯 합니다. 절판이 되었나... 구하기 쉽지는 않더라고요
 3. John Hubbard et al. "Vector Calculus, Linear Algebra, and Differential Forms: A Unified Approach".
 4. Michael Spivak "Calculus" - 위의 책과 비슷하게 미적분학과 추상적인 부분의 간극을 매울 수 있는 좋은 책입니다. 이 친구는 1학년을 대상으로 쓰여진 듯 하고 위의 책(Hubbard)은 이미 어느정도 알고 있으면서, 최신의 응용 내용을 담고 있습니다.
+5. Terence Parr, Jeremy Howard, "[The Matrix Calculus You Need For Deep Learning](https://arxiv.org/abs/1802.01528)" [HTML version](https://explained.ai/matrix-calculus/index.html)
 
 <details markdown="1">
 <summary>좀 더 나아간 책</summary>
