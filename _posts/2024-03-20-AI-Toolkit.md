@@ -1,9 +1,9 @@
 ---
-title: 인공지능에 필요한 배경지식 모음
+title: 인공지능에 필요한 수학도구 모음
 tags: [AI, Machine Learning, Study]
 ---
 
-마지막 수정일: 2024. 7. 2.
+마지막 수정일: 2024. 12. 13.
 
 ---
 
@@ -32,6 +32,7 @@ tags: [AI, Machine Learning, Study]
 
 전반적으로는 아래 "*Mathematics for Machine Learning*"을 추천드립니다. 흔히 MML 책이라고 불리우는 책으로써, 기계 학습을 공부하는데 필요한 수학적 지식 전반을 다루고 있는 책입니다.
 - Marc Peter Deisenroth, A. Aldo Faisal, and Cheng Soon Ong."*[Mathematics for Machine Learning](https://mml-book.github.io/)*". Cambridge University Press. 2020.
+- Justin Solomon, "[Mathematical Methods for Computer Vision, Robotics, and Graphics](https://graphics.stanford.edu/courses/cs205a-13-fall/assets/notes/cs205a_notes.pdf)".
 
 ## 글 모음의 범위
 
@@ -86,6 +87,7 @@ tags: [AI, Machine Learning, Study]
 2. Marsden, Jerrold "Vector Calculus", W. H. Freeman : 만약 미적분학을 이미 수강하셨는데 다변수 부분만 보고 싶다면 이 책이 좋을 듯 합니다. 절판이 되었나... 구하기 쉽지는 않더라고요
 3. John Hubbard et al. "Vector Calculus, Linear Algebra, and Differential Forms: A Unified Approach".
 4. Michael Spivak "Calculus" - 위의 책과 비슷하게 미적분학과 추상적인 부분의 간극을 매울 수 있는 좋은 책입니다. 이 친구는 1학년을 대상으로 쓰여진 듯 하고 위의 책(Hubbard)은 이미 어느정도 알고 있으면서, 최신의 응용 내용을 담고 있습니다.
+5. Terence Parr, Jeremy Howard, "[The Matrix Calculus You Need For Deep Learning](https://arxiv.org/abs/1802.01528)" [HTML version](https://explained.ai/matrix-calculus/index.html)
 
 <details markdown="1">
 <summary>좀 더 나아간 책</summary>
@@ -124,6 +126,8 @@ tags: [AI, Machine Learning, Study]
 5. David MacKay, "Information Theory, Inference, and Learning Algorithms", CUP 2003.
 6. **기초** Robert V. Hogg et al., "Probability and Statistical Inference", Pearson.
 7.  Robert V. Hogg et al., "Introduction to Mathematical Statistics", Pearson. - 얼핏 듣기로는 5번 책을 읽고 6번을 읽는다고 하는데, 저는 6번으로 바로 넘어왔습니다. 8판으로 넘어오면서 R을 통한 실습도 추가되어서 응용적으로도 활용 가능성이 높은 책입니다. 다만 7판 국제판의 경우 일부 내용이 누락되어 있으니 주의바랍니다.
+8.  Richard Weber, "[Cambridge Statistics IB Course notes](https://www.statslab.cam.ac.uk/~rrw1/stats/Sa4.pdf)".
+9.  Philippe Rigollet, Jan-Christian H\"utter. "[High-Dimensional Statiscs](https://arxiv.org/pdf/2310.19244)"
 
 #### 좀 더 나아간 책 
 
