@@ -3,7 +3,7 @@ title: 전산학 공부자료
 tags: [CompSci, CSE, Study]
 ---
 
-마지막 업데이트 2024. 6. 24.
+마지막 업데이트 2025. 1. 15.
 
 현재 계속 내용을 추가하는 중입니다.
 {:.warning}
@@ -43,9 +43,9 @@ tags: [CompSci, CSE, Study]
 - **핵심** Cormen, T.H., Leiserson, C.D., Rivest, R.L. & Stein, C. (2009). "Introduction to Algorithms". MIT Press (3rd ed.). - CLRS로 알려진 책으로 학부 초창기 부터 대학원까지 거의 대부분의 과정이 담겨져 있습니다. 필요한 부분을 골라서 읽는 것을 강하게 권합니다. 
 - Sedgewick, R., Wayne, K. (2011). _Algorithms_. Addison-Wesley. ISBN 978-0-321-57351-3. - Princeton에서 사용되는 교재로, 유튜브나 저자의 사이트에서 볼 수 있습니다. 또한 강의도 올라와 있습니다. [Page](https://algs4.cs.princeton.edu/home/)
 - Kleinberg, J. and Tardos, É. "Algorithm design". Addison-Wesley. ISBN 978-0-321-29535-4.  
-- S. Dasgupta, C. Papadimitriou, and U. Vazirani. _Algorithms_. McGraw-Hill Higher Education. 2006
+- S. Dasgupta, C. Papadimitriou, and U. Vazirani. _Algorithms_. McGraw-Hill Higher Education. 2006 - POSTECH에서 주교재로 사용하는 책으로 알고 있습니다.
 - Knuth, D.A. (2011). _The Art of Computer Programming_. Addison-Wesley. ISBN 978-0-321-75104-1. - 고전(?)이라고 불릴만한 책입니다 TAOCP라고 불리우는 책으로 크누스 교수님께서 집필하고 있는 시리즈입니다.
-- Open Data Structures [Project page](http://www.opendatastructures.org/)
+- Open Data Structures [Project page](http://www.opendatastructures.org/) - 많은 자료구조를 알아볼 수 있고, 여기에 대한 구현도 엿볼 수 있습니다.
 
 
 <details markdown="1">
@@ -72,6 +72,7 @@ tags: [CompSci, CSE, Study]
 #### 계산이론
 
 - **핵심** Michael Sipser, "[_Introduction to the Theory of Computation_](https://math.mit.edu/~sipser/book.html)" 
+- **핵심** Boaz Barak, "[Introduction to Theoretical Computer Science](https://introtcs.org/public/)" - 아래 있는 Computational Complexity에 대한 책을 집필하신 교수님이 컴퓨터공학 이론 전반에 대한 소개를 하고 있습니다.
 - Moore, Cristopher, and Stephan Mertens. _The Nature of Computation_. Oxford University Press, 2011. ISBN: 9780199233212. - 꽤 두꺼운 책입니다만, 천천히 읽어볼만한 책이라고 생각합니다.
 - Avi Wigderson, "Mathematics and Computation", Princeton University Press. - 아벨상, 튜링상 수상자이신 Avi 교수님이 계산 이론 분야에 대한 입문 서적입니다.
 - Arora, Sanjeev, and Boaz Barak. _Computational Complexity: A Modern Approach_. Cambridge University Press, 2009.
@@ -205,9 +206,9 @@ CS Theory Toolkit 교과목은 Great Ideas in TCS와 달리 컴퓨터공학과 �
 
 ## 교재
 
-- **기본** [Computer Systems: A Programmer's Perspective](https://csapp.cs.cmu.edu/)
-- [Computer Organization and Design](https://www.elsevier.com/books-and-journals/book-companion/9780128201091)
-- [Computer Architecture, Sixth Edition: A Quantitative Approach](https://dl.acm.org/doi/book/10.5555/3207796)
+- **기본** [Computer Systems: A Programmer's Perspective](https://csapp.cs.cmu.edu/) - 컴퓨터 시스템에 들어가기 전에 읽게 되는 책입니다.
+- [Computer Organization and Design](https://www.elsevier.com/books-and-journals/book-companion/9780128201091) - 학부 컴퓨터 구조는 보통 이 책을 쓰기는 하나, MIPS, RISC-V 등 구조에 따라 책이 다르니 참고하시기 바랍니다.
+- [Computer Architecture, Sixth Edition: A Quantitative Approach](https://dl.acm.org/doi/book/10.5555/3207796) - 대학원쯤 가면 이 책으로 수업하는 듯 합니다.
 
 ## 관련 강의
 
