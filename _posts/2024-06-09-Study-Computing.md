@@ -3,7 +3,7 @@ title: 전산학 공부자료
 tags: [CompSci, CSE, Study]
 ---
 
-마지막 업데이트 2025. 1. 15.
+마지막 업데이트 2025. 1. 22.
 
 현재 계속 내용을 추가하는 중입니다.
 {:.warning}
@@ -12,12 +12,12 @@ tags: [CompSci, CSE, Study]
 
 [이전 글]({% post_url 2024-06-09-What-Computing %})을 통해서 전산학에 대한 전반적인 문제를 알아보았습니다. 이번 글에서는 각 세부분야별 해결하고자 하는 물음을 알아보고, 이와 관련된 자료를 모아보고자 합니다. 저는 컴퓨터공학을 전공하였지만, 세부 전공으로는 인공지능 특히 기계학습 분야를 전공하고 있습니다. 그렇다보니 다른 분야의 경우 서술의 한계점이 있을 수 있습니다. 또한 명쾌히 한 분야로 분류되지 않는 분야도 있을 수 있습니다. 부족한 부분이 있다면 메일이나 하단의 issue에 올려주시면 반영하도록 하겠습니다. 자료의 경우 평소에 관심을 두었던 책이나, 추천받은 책, 공개된 강의 계획서 등을 참고하여 작성되었습니다. 많은 자료가 나열되어 있지만 *모든 자료를 다 읽으실 필요는 없습니다* 핵심이 되는 교재나 자료의 경우 **핵심** 표시를 해두었습니다. 또한, 보다 살펴보고 싶으신 분들을 위하여 아코디언 ▶을 누르시면 보다 상세한 내용이 있으니 읽으실 때 참고 부탁드립니다.
 
-# 알고리듬과 데이터구조
+# 이론 컴퓨터 과학
 
 이론 컴퓨터 과학(TCS, Theoretical Computer Science)는 추상적인 객체를 다루고 있으며, 계산에 대한 수학적인 기반을 제공합니다. 엄밀한 기반을 제공하는 것에 그 목적을 두고 있어, 전산학과 수학이 만나는 지점에 있습니다. 이 꼭지에서는 아래 아코디언에서 나열된 모든 것이 아닌 **알고리듬과 데이터 구조**를 중심으로 살펴보도록 하겠습니다.
 
 <details markdown="1">
-<summary>TCS 분야에 대한 소개</summary>
+<summary>TCS 분야에 대한 소개 - From ACM SIGACT</summary>
 
 > 이론 컴퓨터과학은 다음과 같은 다양한 주제를 다루고 있습니다: 알고리듬, 데이터구조, 계산 복잡도, 병렬과 분산 계산, 확률적 계산, 양자 계산, 오토마타 이론, 정보이론, 암호학, 프로그램 의미론과 증명, 기계 학습, 계산 생물학, 계산 경제학, 계산 기하학 그리고 계산 정수론과 대수. 이 분야의 작업은 때로는 수학적인 기술과 엄밀함을 강조하는 것으로 구별되곤 합니다.
 >> TCS covers a wide variety of topics including algorithms, data structures, computational complexity, parallel and distributed computation, probabilistic computation, quantum computation, automata theory, information theory, cryptography, program semantics and verification, machine learning, computational biology, computational economics, computational geometry, and computational number theory and algebra. Work in this field is often distinguished by its emphasis on mathematical technique and rigor.
