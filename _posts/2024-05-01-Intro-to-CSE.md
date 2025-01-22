@@ -8,5 +8,12 @@ tags: [CompSci, CSE, Study]
 쓰다보니 내용이 길어져 전산학에 대한 자료와 공부자료 문서를 따로 분리하였습니다.
 {:.warning}
 
+## 전산학
+
 - [전산학이란 무엇인가: What is Computing]({% post_url 2024-06-09-What-Computing %})
 - [전산학 공부자료]({% post_url 2024-06-09-Study-Computing %})
+
+## 인공지능
+
+- [인공지능에 필요한 배경지식 모음]({% post_url 2024-03-20-AI-Toolkit %})
+- [인공지능 공부자료]({% post_url 2024-06-17-Study-AI %})
