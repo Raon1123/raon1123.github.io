@@ -3,7 +3,7 @@ title: 전산학 이란?
 tags: [CompSci, CSE, Study]
 ---
 
-마지막 업데이트 2024. 6. 9.
+마지막 업데이트 2025. 1. 22.
 
 쓰다보니 내용이 길어져 전산학 공부자료 문서를 따로 분리하였습니다.
 
@@ -126,3 +126,4 @@ KAIST 강지훈 교수님의 전산학부 소개영상에서 전산학에 대한
 
 1. P. J. Denning et al. "*[Computing as a Discipline](https://ieeexplore.ieee.org/document/19833/)*", Computer, Volume 22. Issue 2, 1989.
 2. [ACM Classification System](https://dl.acm.org/ccs)
+3. Anil Ada. [What is TCS?](https://www.pandanotes.org/servers/anil/chapters/What_is_TCS/)
