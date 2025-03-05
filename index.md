@@ -23,7 +23,7 @@ Email: anyunpyo `at` unist `dot` ac `dot` kr
   <div class="item__description">
 
   <p>
-  I'm currently pursuing Ph.D degree at Ulsan National Institute of Science and Technology (UNIST). I graduated Cum Laude with a B.Sc. in Computer Science and Engineering from UNIST in 2022. My research focus on robust machine learning and utilization of commonsense knowledge in computer vision.
+  I'm currently pursuing Ph.D degree at Ulsan National Institute of Science and Technology (UNIST). I graduated Cum Laude with a B.Sc. in Computer Science and Engineering from UNIST in 2022. My research focuses on finding the boundaries of machine learning paradigms and exploring methods to transcend these boundaries.
   </p>
 
   <a
@@ -43,20 +43,16 @@ Email: anyunpyo `at` unist `dot` ac `dot` kr
   </div>
   </div>
 
-</div>
+</div>`
 
 ---
 
-## Topic of Interest
+# Research Statement
 
-- Robust Machine Learning and Computer Vision (primary)
-- Understanding Computer Vision Model (secondary)
-
-But, I'm not limited to above two topics. It's not a my research topic, but I'm interested in logic and history of computer science.
+My research focuses on finding limitations of machine learning paradigms and exploring methods to transcend these limitations. The current research topic involves the concept of unknown in machine learning. A source of machine learning knowledge is training datasets that sample from real-world data. However, there is a gap between training datasets and real-world such as biased sampling in training data. Because of this difference, there are data points that remain unknown in the training dataset. If we give a task based on unknown information to a human, the human infers it as "unknown". However, in the current machine learning paradigm, it does not answer unknowns that are not based on the training dataset. In the case of humans, they fill in gaps while performing new learning based on what they do not know. Can this method be applied equally to machine learning?
 
 ## Current Projects
 
-- AI Literacy with Ulsan Metropolitan Office of Education
 - Autonomous Lab Project with Dept. of Chemistry at UNIST. (focus on estimate synthesis results and active learning on this field)
 
 ## Vita
@@ -101,7 +97,7 @@ I use tools related to machine learning and deep learning.
 2. 2020.9. - 2022.3.: UNIST AI Club, [brAIns](https://unist-brains.github.io), Promoter
 3. 2021.3. - 2022.3.: UNIST Problem Solving Club, [Almight](https://unist-almight.github.io), Promoter
 
-Last Update: 2024. 09. 26.
+Last Update: 2025. 03. 05.
 
 <style>
 h1, h2, h3 {
