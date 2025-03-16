@@ -43,13 +43,15 @@ Email: anyunpyo `at` unist `dot` ac `dot` kr
   </div>
   </div>
 
-</div>`
+</div>
 
 ---
 
 # Research Statement
 
-*What is the limitations of machine learning? How can we transcend them?*
+<p style="text-align: center;">
+<i>What is the limitations of machine learning? How can we transcend them?</i>
+</p>
 
 My research focuses on finding limitations of machine learning paradigms and exploring methods to transcend these limitations. The current research topic involves the concept of unknown in machine learning. A source of machine learning knowledge is training datasets that sample from real-world data. However, there is a gap between training datasets and real-world such as biased sampling in training data. Because of this difference, there are data points that remain unknown in the training dataset. If we give a task based on unknown information to a human, the human infers it as "unknown". However, in the current machine learning paradigm, it does not answer unknowns that are not based on the training dataset. In the case of humans, they fill in gaps while performing new learning based on what they do not know. Can this method be applied equally to machine learning?
 
