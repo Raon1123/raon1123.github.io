@@ -43,17 +43,22 @@ Email: anyunpyo `at` unist `dot` ac `dot` kr
   </div>
   </div>
 
-</div>`
+</div>
 
 ---
 
 # Research Statement
 
+<p style="text-align: center;">
+<i>What is the limitations of machine learning? How can we transcend them?</i>
+</p>
+
 My research focuses on finding limitations of machine learning paradigms and exploring methods to transcend these limitations. The current research topic involves the concept of unknown in machine learning. A source of machine learning knowledge is training datasets that sample from real-world data. However, there is a gap between training datasets and real-world such as biased sampling in training data. Because of this difference, there are data points that remain unknown in the training dataset. If we give a task based on unknown information to a human, the human infers it as "unknown". However, in the current machine learning paradigm, it does not answer unknowns that are not based on the training dataset. In the case of humans, they fill in gaps while performing new learning based on what they do not know. Can this method be applied equally to machine learning?
 
 ## Current Projects
 
-- Autonomous Lab Project with Dept. of Chemistry at UNIST. (focus on estimate synthesis results and active learning on this field)
+- World models: abstracting environments into compact representations that capture essential dynamics and structures.
+- Reasoning on ARC-AGI dataset: solving visual reasoning tasks that require abstract thinking and generalization beyond pattern recognition.
 
 ## Vita
 
@@ -76,11 +81,12 @@ I use tools related to machine learning and deep learning.
 
 ### Academic Service
 
+- 2026 AAAI reviewer
 - 2024 CVPR reviewer
 
 ### Lab Experience
 
-- 2024.3. - current: IMIL at UNIST.
+- 2024.3. - current: IMIL at UNIST. Research topic: world models and reasoning.
 - 2021.9. - 2024. 2.: MLV Group at UNIST. Research topic: attribute estimation, adversarial example, active learning, federated learning.
 
 ### Teaching Activity
@@ -97,7 +103,7 @@ I use tools related to machine learning and deep learning.
 2. 2020.9. - 2022.3.: UNIST AI Club, [brAIns](https://unist-brains.github.io), Promoter
 3. 2021.3. - 2022.3.: UNIST Problem Solving Club, [Almight](https://unist-almight.github.io), Promoter
 
-Last Update: 2025. 03. 05.
+Last Update: 2025. 12. 23.
 
 <style>
 h1, h2, h3 {
