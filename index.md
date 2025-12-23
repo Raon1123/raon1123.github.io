@@ -57,7 +57,8 @@ My research focuses on finding limitations of machine learning paradigms and exp
 
 ## Current Projects
 
-- Autonomous Lab Project with Dept. of Chemistry at UNIST. (focus on estimate synthesis results and active learning on this field)
+- World models: abstracting environments into compact representations that capture essential dynamics and structures.
+- Reasoning on ARC-AGI dataset: solving visual reasoning tasks that require abstract thinking and generalization beyond pattern recognition.
 
 ## Vita
 
@@ -80,11 +81,12 @@ I use tools related to machine learning and deep learning.
 
 ### Academic Service
 
+- 2026 AAAI reviewer
 - 2024 CVPR reviewer
 
 ### Lab Experience
 
-- 2024.3. - current: IMIL at UNIST.
+- 2024.3. - current: IMIL at UNIST. Research topic: world models and reasoning.
 - 2021.9. - 2024. 2.: MLV Group at UNIST. Research topic: attribute estimation, adversarial example, active learning, federated learning.
 
 ### Teaching Activity
@@ -101,7 +103,7 @@ I use tools related to machine learning and deep learning.
 2. 2020.9. - 2022.3.: UNIST AI Club, [brAIns](https://unist-brains.github.io), Promoter
 3. 2021.3. - 2022.3.: UNIST Problem Solving Club, [Almight](https://unist-almight.github.io), Promoter
 
-Last Update: 2025. 03. 05.
+Last Update: 2025. 12. 23.
 
 <style>
 h1, h2, h3 {
