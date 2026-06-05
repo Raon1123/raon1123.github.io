@@ -43,9 +43,9 @@ bundle exec jekyll build
 # 2. Check internal links, images, and scripts
 bundle exec htmlproofer ./_site \
   --disable-external \
-  --allow-hash-href \
   --checks Links,Images,Scripts \
-  --ignore-empty-alt
+  --allow-missing-href=true \
+  --enforce-https=false
 
 # 3. Regression assertions (sitemap/feed URLs, no leaked files, avatar)
 bash script/site-checks.sh
