@@ -45,9 +45,11 @@ if [ ! -f "$feed" ]; then
 else
   # Only structural <link href="..."> elements: relative URLs inside CDATA
   # post content are valid per Atom spec (resolved against xml:base)
+  # Flag any href that does NOT start with https:// (includes http://, //host,
+  # /absolute-path, and scheme-less hostnames)
   bad=$(grep -o '<link[^>]*href="[^"]*"' "$feed" \
         | sed 's/.*href="//;s/"$//' \
-        | grep -E '(^raon1123\.github\.io|^/[^/])' \
+        | grep -vE '^https://' \
         || true)
   if [ -n "$bad" ]; then
     fail "feed.xml: found href values that are not absolute https:// URLs:"
