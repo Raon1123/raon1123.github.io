@@ -47,7 +47,7 @@ else
   # post content are valid per Atom spec (resolved against xml:base)
   bad=$(grep -o '<link[^>]*href="[^"]*"' "$feed" \
         | sed 's/.*href="//;s/"$//' \
-        | grep -E '(^raon1123\.github\.io|^/[^/])' \
+        | grep -E '(^raon1123\.github\.io|^http://raon1123\.github\.io|^/$|^/[^/])' \
         || true)
   if [ -n "$bad" ]; then
     fail "feed.xml: found href values that are not absolute https:// URLs:"
