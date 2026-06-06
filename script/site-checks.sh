@@ -43,17 +43,18 @@ feed="$site/feed.xml"
 if [ ! -f "$feed" ]; then
   fail "feed.xml not found at $feed"
 else
-  # Match literal href="..." values (XML-unescaped structural links in Atom feed)
-  bad=$(grep -o 'href="[^"]*"' "$feed" \
-        | sed 's/^href="//;s/"$//' \
-        | grep -E '(^raon1123\.github\.io|^/[^/])' \
+  # Only structural <link href="..."> elements: relative URLs inside CDATA
+  # post content are valid per Atom spec (resolved against xml:base)
+  bad=$(grep -o '<link[^>]*href="[^"]*"' "$feed" \
+        | sed 's/.*href="//;s/"$//' \
+        | grep -E '(^raon1123\.github\.io|^http://raon1123\.github\.io|^/$|^/[^/])' \
         || true)
   if [ -n "$bad" ]; then
     fail "feed.xml: found href values that are not absolute https:// URLs:"
     printf '         %s\n' $bad
     rc=1
   else
-    pass "feed.xml: all href values are absolute https:// URLs (or external)"
+    pass "feed.xml: all <link> href values are absolute https:// URLs"
   fi
 fi
 

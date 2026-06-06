@@ -29,7 +29,9 @@ jobs:
       - name: Build site
         run: bundle exec jekyll build
       - name: Check internal links and resources
-        run: bundle exec htmlproofer ./_site --disable-external --allow-hash-href --checks Links,Images,Scripts --ignore-empty-alt
+        # --allow-missing-href: theme renders disabled buttons as <a> without href (HTML5-valid)
+        # --enforce-https=false: legacy post content links to http:// academic sites
+        run: bundle exec htmlproofer ./_site --disable-external --checks Links,Images,Scripts --allow-missing-href=true --enforce-https=false
       - name: Regression assertions
         run: bash script/site-checks.sh
 
