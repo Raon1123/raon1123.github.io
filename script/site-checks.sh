@@ -49,7 +49,7 @@ else
   # /absolute-path, and scheme-less hostnames)
   bad=$(grep -o '<link[^>]*href="[^"]*"' "$feed" \
         | sed 's/.*href="//;s/"$//' \
-        | grep -E '(^raon1123\.github\.io|^http://raon1123\.github\.io|^/$|^/[^/])' \
+        | grep -vE '^https://' \
         || true)
   if [ -n "$bad" ]; then
     fail "feed.xml: found href values that are not absolute https:// URLs:"
