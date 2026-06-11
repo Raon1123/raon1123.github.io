@@ -200,6 +200,7 @@ exclude:
   - index.md
   - index.html.old
   - CODE_REVIEW.md
+  - BACKLOG.md
   - "*.backup"
 
 defaults:

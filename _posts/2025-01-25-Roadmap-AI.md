@@ -4,7 +4,7 @@ tags: [AI, Machine Learning, Study, Mathematics]
 ---
 
 마지막 업데이트 2025. 3. 16.
-{.info}
+{:.info}
 
 # 들어가며
 
