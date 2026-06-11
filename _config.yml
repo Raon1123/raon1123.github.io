@@ -218,6 +218,11 @@ defaults:
       pageview: true
 
 
+## => Sass (jekyll-sass-converter 2.x)
+##############################
+sass:
+  sourcemap: never # keep _site free of .css.map artifacts
+
 ## => Plugins
 ##############################
 plugins:
