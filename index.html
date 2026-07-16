@@ -4,77 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yunpyo An</title>
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: Georgia, 'Times New Roman', serif;
-      font-size: 16px;
-      line-height: 1.7;
-      color: #111;
-      background: #fff;
-      max-width: 680px;
-      margin: 60px auto;
-      padding: 0 24px 80px;
-    }
-    a { color: #111; }
-    a:hover { color: #555; }
-    h1 { font-size: 1.6rem; font-weight: normal; margin-bottom: 4px; }
-    h2 {
-      font-size: 1rem;
-      font-weight: bold;
-      margin-top: 2.4em;
-      margin-bottom: 0.4em;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-    }
-    h3 { font-size: 1rem; font-weight: bold; margin-top: 1.2em; }
-    p { margin-bottom: 0.8em; }
-    ul, ol { padding-left: 1.4em; margin-bottom: 0.8em; }
-    li { margin-bottom: 0.2em; }
-    .header {
-      display: flex;
-      gap: 28px;
-      align-items: flex-start;
-      margin-bottom: 2em;
-    }
-    .header img {
-      width: 110px;
-      height: 110px;
-      object-fit: cover;
-      border-radius: 4px;
-      flex-shrink: 0;
-    }
-    .header-info { flex: 1; }
-    .subtitle { color: #555; font-size: 0.95rem; margin-top: 2px; }
-    .contact { font-size: 0.9rem; color: #444; margin-top: 6px; }
-    .contact a { color: #444; }
-    hr { border: none; border-top: 1px solid #ddd; margin: 2em 0; }
-    .pub-title { font-style: italic; }
-    .blog-link {
-      display: inline-block;
-      margin-top: 2.4em;
-      padding: 10px 22px;
-      border: 1px solid #111;
-      font-family: Georgia, serif;
-      font-size: 0.95rem;
-      text-decoration: none;
-      color: #111;
-      transition: background 0.15s, color 0.15s;
-    }
-    .blog-link:hover { background: #111; color: #fff; }
-    @media (max-width: 480px) {
-      body { margin: 32px auto; }
-      .header { flex-direction: column; }
-      .header img { width: 80px; height: 80px; }
-    }
-  </style>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7V0L1XDJP8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7V0L1XDJP8');
+  </script>
 </head>
 <body>
 
   <div class="header">
     <img src="/assets/images/YunpyoAn_profile.jpg" alt="Yunpyo An">
     <div class="header-info">
-      <h1>Yunpyo An <span style="font-size:1rem;color:#555;">안윤표, 安潤杓</span></h1>
+      <h1>Yunpyo An (안윤표, 安潤杓)</h1>
       <p class="subtitle">M.S.–Ph.D. Student · UNIST Graduate School of Artificial Intelligence</p>
       <p class="contact">
         anyunpyo [at] unist.ac.kr &nbsp;·&nbsp;
@@ -88,51 +31,94 @@
 
   <hr>
 
-  <section>
-    <p>
-      I am pursuing a combined M.S.–Ph.D. degree at
-      <a href="https://aigs.unist.ac.kr/web/index.php">UNIST Graduate School of Artificial Intelligence</a>.
-      I received a B.Sc. in Computer Science and Engineering from UNIST in 2022 (Cum Laude).
-    </p>
-    <p>
-      My research focuses on finding the limitations of machine learning paradigms and exploring
-      methods to transcend them. I am currently interested in
-      <strong>world models</strong> and <strong>reasoning</strong> (ARC-AGI).
-    </p>
-    <p style="font-style:italic;color:#444;">
-      What are the limitations of machine learning? How can we transcend them?
-    </p>
-  </section>
+  <main>
 
-  <h2>Publications</h2>
-  <ol>
-    <li>
-      Yunpyo An, Suyeong Park, and Kwang In Kim.
-      "<a href="https://arxiv.org/abs/2301.02761" class="pub-title">Active Learning Guided by Efficient Surrogate Learners</a>."
-      AAAI 2024.
-    </li>
-  </ol>
+    <section>
+      <h2>About</h2>
+      <p>
+        I am pursuing a combined M.S.–Ph.D. degree at the
+        <a href="https://aigs.unist.ac.kr/web/index.php">UNIST Graduate School of Artificial Intelligence</a>,
+        as a member of the IMIL Lab advised by
+        <a href="https://jyscardioid.github.io/">Prof. Jooyeon Kim</a>,
+        after receiving a B.Sc. in Computer Science and Engineering from UNIST in 2022 (Cum Laude).
+        My research is driven by one question:
+        <em>What are the fundamental limitations of machine learning, and how can we transcend them?</em>
+        We like to believe that machine learning solves many of our problems, yet in practice it often does not —
+        the universal approximation theorem guarantees that neural networks can represent almost anything,
+        but only under an unbounded budget, far removed from the situations we actually face.
+        My goal is to draw a clear boundary of what is learnable under a limited budget:
+        currently, I study the limitations of <strong>transformers in multi-step reasoning</strong>,
+        combining <strong>theoretical analysis</strong> — such as learnability and circuit complexity under bounded resources —
+        with <strong>empirical studies</strong> on reasoning benchmarks such as ARC-AGI,
+        alongside a broader interest in <strong>world models</strong>.
+        Previously, I worked on active learning, which led to a publication at AAAI 2024,
+        and I am always open to research discussions and collaborations — feel free to reach out.
+      </p>
+    </section>
 
-  <h2>Education</h2>
-  <ul>
-    <li>2022 – present: M.S.–Ph.D., UNIST Graduate School of Artificial Intelligence</li>
-    <li>2018 – 2022: B.Sc. in Computer Science and Engineering, UNIST (Cum Laude)</li>
-  </ul>
+    <section>
+      <h2>Publications</h2>
+      <ol>
+        <li>
+          Yunpyo An, Suyeong Park, and Kwang In Kim.
+          "<a href="https://arxiv.org/abs/2301.02761"><cite>Active Learning Guided by Efficient Surrogate Learners</cite></a>."
+          AAAI 2024.
+        </li>
+      </ol>
+    </section>
 
-  <h2>Academic Service</h2>
-  <ul>
-    <li>Reviewer: AAAI 2026, CVPR 2024</li>
-  </ul>
+    <section>
+      <h2>Education</h2>
+      <ul>
+        <li>2022 – present: M.S.–Ph.D., UNIST Graduate School of Artificial Intelligence</li>
+        <li>2018 – 2022: B.Sc. in Computer Science and Engineering, UNIST (Cum Laude)</li>
+      </ul>
+    </section>
 
-  <h2>Experience</h2>
-  <ul>
-    <li>2024 – present: IMIL Lab, UNIST (world models, reasoning)</li>
-    <li>2021 – 2024: MLV Group, UNIST (active learning, federated learning)</li>
-  </ul>
+    <section>
+      <h2>Academic Service</h2>
+      <ul>
+        <li>Reviewer: AAAI, CVPR</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <ul>
+        <li>2024 – present: IMIL Lab, UNIST (world models, reasoning)</li>
+        <li>2021 – 2024: MLV Group, UNIST (active learning, federated learning)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li><a href="https://bus.hexa.pro">Bus information system for UNIST</a>, Host by Hacking and Programming Club <a href="https://hexa.pro">HeXA</a></li>
+        <li>Speaki: Automatic grading system for Introduction to AI Programming 2 Course (101 for AI)</li> 
+        <!-- 왜 이게 스핔이인가요? 그냥요. 스핔이가 호바기를 좋아하는 이유와 동일합니다. 나중에 슬프고 기구한 사연이 붙을 수 있으니 참고해주세요. -->
+        <!-- 스핔이, 스피키는 트릭컬 리:바이브의 캐릭터이며, 해당 캐릭터에 대한 저작권은 에피드 게임즈에 있습니다. -->
+         
+      </ul>
+    </section>
+
+    <section>
+      <h2>Teaching at UNIST</h2>
+      <ul>
+        <li>2026 Spring: Introduction to AI Programming 2 (head TA): basic AI course for first-year students</li>
+        <li>2023 Fall: Introduction to AI Programming 2 (TA)</li>
+        <li>2023 Fall: Discrete Mathematics (TA): basic mathematics course for undergraduate students</li>
+        <li>2023 Spring: Principles of Deep Learning (TA): deep learning course designed for graduate students</li>
+        <li>2022 Spring: Introduction to Machine Learning (TA): machine learning course designed for undergraduate students whos major in Computer Science and Engineering</li>
+      </ul>
+    </section>
+
+  </main>
 
   <hr>
 
-  <a class="blog-link" href="/blog/">Blog →</a>
+  <footer>
+    <p><a href="/blog/">Blog →</a></p>
+  </footer>
 
 </body>
 </html>
