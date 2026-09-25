@@ -202,6 +202,10 @@ exclude:
   - CODE_REVIEW.md
   - BACKLOG.md
   - "*.backup"
+  - /script
+  - CLAUDE.md
+  - CLAUDE.local.md
+  - AGENTS.md
 
 defaults:
   - scope:

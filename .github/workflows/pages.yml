@@ -1,31 +1,39 @@
 name: Build, test, and deploy
 
 on:
+  # Test every branch push and every PR; deploy only from main (see deploy job).
   push:
-    branches: [main]
   pull_request:
-    branches: [main, dev]
+  workflow_dispatch:
+  # Weekly run so newly published advisories fail CI even without code changes.
+  schedule:
+    - cron: "0 3 * * 1"
 
+# Least privilege by default; only the deploy job gets Pages/OIDC write.
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
+# Cancel superseded runs on non-main refs; never cancel a main run mid-deploy.
 concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  group: test-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
 
 jobs:
   test:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     env:
       JEKYLL_ENV: production
     steps:
       - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.3.4"
           bundler-cache: true
+      - name: Security audit (Ruby Advisory Database)
+        run: bundle exec bundle-audit check --update
       - name: Build site
         run: bundle exec jekyll build
       - name: Check internal links and resources
@@ -39,11 +47,21 @@ jobs:
     needs: test
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    concurrency:
+      group: pages
+      cancel-in-progress: false
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.3.4"
