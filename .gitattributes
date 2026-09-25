@@ -1,0 +1,18 @@
+# Normalize line endings in the repository to LF (prevents CRLF/LF merge
+# conflicts between Windows and Linux/CI checkouts).
+* text=auto eol=lf
+
+# Shell scripts must stay LF or bash on the CI runner fails with $'\r'.
+*.sh text eol=lf
+
+# Binary assets
+*.pdf  binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.woff binary
+*.woff2 binary
+*.ttf  binary
+*.eot  binary
