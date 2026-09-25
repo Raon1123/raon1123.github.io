@@ -91,10 +91,10 @@ Notion이나 Google docs와 같은 곳에 논문을 읽고 저의 생각을 모�
 
 # 참고문헌
 
-1. [How to read paper?](https://web.stanford.edu/class/ee384m/Handouts/HowtoReadPaper.pdf)
+1. [How to read paper?](http://ccr.sigcomm.org/online/files/p83-keshavA.pdf)
 2. [How to do Research at the MIT AI Lab](https://dspace.mit.edu/bitstream/handle/1721.1/41487/AI_WP_316.pdf)
 
-# Related sites
+## Related sites
 
 1. [Connected Papers](https://www.connectedpapers.com/)
 2. [Elicit](https://elicit.org)
@@ -102,3 +102,7 @@ Notion이나 Google docs와 같은 곳에 논문을 읽고 저의 생각을 모�
 4. [Paper Digest](https://www.paper-digest.com/no_digest/not_open_access)
 5. [Research Rabbit](https://researchrabbitapp.com)
 6. [Litmap](https://www.litmaps.com/)
+
+## 관련 포스팅
+
+- [Zotero를 통해 읽을 논문 관리하기]({% post_url 2023-05-08-Zotero %})

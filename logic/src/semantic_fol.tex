@@ -1,0 +1,142 @@
+\section{Semantics of First-Order Logic}
+
+\begin{frame}
+    \frametitle{Strucutres and Interpretations}
+
+    Before define the semantics of first-order logic, we need to consider our language domain.
+
+    \begin{definition}
+        An $S$-structure is a pair $\fA = (A, \mathfrak{a})$ with the following properties:
+        \begin{itemize}
+            \item $A$ is a non-empty set, called the \emph{domain} or \emph{universe} of $\fA$
+            \item $\mathfrak{a}$ is a function that assigns from symbols to following:
+            \begin{itemize}
+                \item for every $n$-ary relation symbol $R$ in $S$, $\mathfrak{a}(R)$ is an $n$-ary relation on $A$
+                \item for every $n$-ary function symbol $f$ in $S$, $\mathfrak{a}(f)$ is an $n$-ary function on $A$
+                \item for every constant $c$ in $S$, $\mathfrak{a}(c)$ is an element of $A$
+            \end{itemize}
+        \end{itemize}
+    \end{definition}
+
+    From Ebbinghaus textbook, for convenience, we denote $\mathfrak{a}(R), \mathfrak{a}(f), \mathfrak{a}(c)$ by $R^{\fA}, f^{\fA}, c^{\fA}$ or $R^A, f^A, c^A$respectively.
+\end{frame}
+
+\begin{frame}
+    \frametitle{Structures and Interpretations}
+
+    We remain the variable symbols for semantics of first-order logic.
+    We \textbf{assign} a value in our domain $A$ to each variable.
+
+    \begin{definition}
+        An \emph{assignment} in $S$-structure $\fA$ is a function $\beta:\{v_n|n \in \mathbb{N}\} \to A$ from the set of variables into the domain $A$.
+    \end{definition}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Structures and Interpretations}
+
+    Now, we combine structure and interpretations together.
+
+    \begin{definition}
+        An $S$-interpretation $\fI$ is a pair $(\fA, \beta)$, where $\fA$ is an $S$-structure and $\beta$ is an assignment in $\fA$.
+    \end{definition}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Structures and Interpretations}
+
+    We might consider assignment is a subtitution of variables to values in domain.
+    We can write as follows:
+
+    \begin{align}
+        \beta \frac{a}{x} (y) := \begin{cases}
+            \beta(y) & \text{otherwise} \\
+            a & \text{if } y = x \\
+        \end{cases}
+    \end{align}
+    
+\end{frame}
+
+\begin{frame}
+    \frametitle{Connectives}
+
+    As we learned in propositional logic, we need to define the semantics of connectives with truth-table.
+
+    % truth-table of connectives
+
+    \begin{table}
+    \begin{tabular}{cc|c|c|c|c}
+        & & $\dot{\vee}$ & $\dot{\wedge}$ & $\dot{\to}$ & $\dot{\leftrightarrow}$ \\ 
+        \hline
+        T & T & T & T & T & T \\
+        T & F & T & F & F & F \\
+        F & T & T & F & T & F \\
+        F & F & F & F & T & T \\
+    \end{tabular}
+    \begin{tabular}{c|c}
+        & $\dot{\neg}$ \\
+        \hline
+        T & F \\
+        F & T \\
+    \end{tabular}
+    \end{table}
+    
+\end{frame}
+
+\begin{frame}
+    \frametitle{The Satisfication Relation}
+
+    Now, we define interprete of our $S$-formula.
+    Let's given $S$-formula $\varphi$ and $S$-interpretation $\fI = (\fA, \beta)$.
+    Interpreted result is denoted by $\fI(\varphi)$.
+    We define $\fI(\varphi)$ by induction on terms
+    
+    \begin{definition}
+        \begin{itemize}
+            \item For a variable $x$ let $\fI(x) = \beta(x)$
+            \item For a constant $c \in S$ let $\fI(c) = c^{\fA}$
+            \item For $n$-ary function symbol $f \in S$ and terms $t_1, \cdots, t_n$ let $\fI(f(t_1, \cdots, t_n)) = f^{\fA}(\fI(t_1), \cdots, \fI(t_n))$
+        \end{itemize}
+    \end{definition}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{The Satisfication Relation}
+
+    For all interpretations $\fI = (\fA, \beta)$ we define following interpretations
+
+    \begin{itemize}
+        \item $\fI \models (t_1 \equiv t_2)$ iff. $\fI(t_1) = \fI(t_2)$
+        \item $\fI \models (R t_1 \ldots t_n)$ iff. $R^{\fA}(\fI(t_1), \ldots, \fI(t_n))$
+        \item $\fI \models (\neg \varphi)$ iff. not $\fI \models \varphi$
+        \item $\fI \models (\varphi \wedge \psi)$ iff. $\fI \models \varphi$ and $\fI \models \psi$
+        \item $\fI \models (\varphi \vee \psi)$ iff. $\fI \models \varphi$ or $\fI \models \psi$
+        \item $\fI \models (\varphi \to \psi)$ iff. $\fI \models \varphi$ implies $\fI \models \psi$
+        \item $\fI \models (\varphi \leftrightarrow \psi)$ iff. $\fI \models \varphi$ iff. $\fI \models \psi$
+        \item $\fI \models (\forall x \varphi)$ iff. for all $a \in A$, $\fI \frac{a}{x} \models \varphi$
+        \item $\fI \models (\exists x \varphi)$ iff. there exists $a \in A$, $\fI \frac{a}{x} \models \varphi$
+    \end{itemize}
+    
+\end{frame}
+
+\section{Consequence}
+
+\begin{frame}
+    \frametitle{The Consequence Relation}
+
+    \begin{definition}
+        Let $\Phi$ be a set of $S$-formulas and $\varphi$ be an $S$-formula. We say that \\
+        \emph{$\phi$ is a consequence of $\Phi$ (written $\Phi \models \varphi$)} iff. for every $S$-interpretation $\fI$ if $\fI \models \psi$ for all $\psi \in \Phi$, then $\fI \models \varphi$.
+    \end{definition}
+
+    \begin{definition}
+        A formula $\varphi$ is valid (written $\models \varphi$) iff. $\emptyset \models \varphi$.
+    \end{definition}
+
+    \begin{definition}
+        A formula $\varphi$ is \emph{satisfiable} (written $\textit{Sat} \, \varphi$) if and only if there is interpretation which is a model of $\varphi$.
+        A set of formula $\Phi$ is \emph{satisfiable} if and only if there is interpretation which is a model of $\Phi$.
+    \end{definition}
+
+\end{frame}

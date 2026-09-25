@@ -123,6 +123,11 @@
                     end(type, url);
                   };
                 })(type, url);
+                node.onerror = (function(type, url) {
+                  return function() {
+                    end(type, url);
+                  };
+                })(type, url);
                 (doc.head || doc.body).appendChild(node);
                 s[url] = false;
               }

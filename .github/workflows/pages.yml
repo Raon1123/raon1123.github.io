@@ -1,0 +1,59 @@
+name: Build, test, and deploy
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main, dev]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      JEKYLL_ENV: production
+    steps:
+      - uses: actions/checkout@v6
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3.4"
+          bundler-cache: true
+      - name: Build site
+        run: bundle exec jekyll build
+      - name: Check internal links and resources
+        # --allow-missing-href: theme renders disabled buttons as <a> without href (HTML5-valid)
+        # --enforce-https=false: legacy post content links to http:// academic sites
+        run: bundle exec htmlproofer ./_site --disable-external --checks Links,Images,Scripts --allow-missing-href=true --enforce-https=false
+      - name: Regression assertions
+        run: bash script/site-checks.sh
+
+  deploy:
+    needs: test
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3.4"
+          bundler-cache: true
+      - name: Build site
+        env:
+          JEKYLL_ENV: production
+        run: bundle exec jekyll build
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: ./_site
+      - id: deployment
+        uses: actions/deploy-pages@v5
