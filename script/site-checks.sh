@@ -103,4 +103,36 @@ else
 fi
 
 # ---------------------------------------------------------------------------
+# Check (e): No agent/tooling config or repo-internal files published.
+#            Agent settings (.claude/, CLAUDE.md, AGENTS.md, ...) must never be
+#            deployed, even if they exist in the working tree.
+# ---------------------------------------------------------------------------
+leaked=$(find "$site" \( -name '.claude' -o -name '.codex' -o -name '.cursor' \
+                         -o -name '.ruby-lsp' -o -name '.github' -o -name '.git' \
+                         -o -name 'CLAUDE.md' -o -name 'CLAUDE.local.md' \
+                         -o -name 'AGENTS.md' -o -name 'CODE_REVIEW.md' \
+                         -o -name 'BACKLOG.md' -o -name 'Gemfile' -o -name 'Gemfile.lock' \
+                         -o -name '_drafts' -o -name 'script' \) -print)
+if [ -n "$leaked" ]; then
+  fail "Found agent config or repo-internal files under $site:"
+  printf '         %s\n' $leaked
+else
+  pass "No agent config or repo-internal files under $site"
+fi
+
+# ---------------------------------------------------------------------------
+# Check (f): Site layout: root is the static profile page, blog lives at /blog/
+# ---------------------------------------------------------------------------
+if grep -q '<title>Yunpyo An</title>' "$site/index.html" 2>/dev/null; then
+  pass "/index.html is the profile page"
+else
+  fail "/index.html missing or is not the profile page"
+fi
+if [ -f "$site/blog/index.html" ]; then
+  pass "/blog/index.html exists"
+else
+  fail "/blog/index.html not found"
+fi
+
+# ---------------------------------------------------------------------------
 exit $rc

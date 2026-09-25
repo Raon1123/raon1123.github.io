@@ -37,6 +37,9 @@ bundle exec jekyll serve --drafts
 Build the site and run all checks before pushing:
 
 ```bash
+# 0. Security audit of Gemfile.lock (Ruby Advisory Database)
+bundle exec bundle-audit check --update
+
 # 1. Build
 bundle exec jekyll build
 
@@ -47,21 +50,31 @@ bundle exec htmlproofer ./_site \
   --allow-missing-href=true \
   --enforce-https=false
 
-# 3. Regression assertions (sitemap/feed URLs, no leaked files, avatar)
+# 3. Regression assertions (sitemap/feed URLs, no leaked files, avatar,
+#    no agent config such as .claude/ or CLAUDE.md in _site, page layout)
 bash script/site-checks.sh
 ```
+
+Notes:
+
+- CI uses Ruby 3.3.4 on Linux. Some locked gems (e.g. `async`) need Ruby >= 3.3, so on an
+  older local Ruby `bundle install` rewrites `Gemfile.lock`; do not commit that rewrite.
+- html-proofer needs libcurl, which native Windows Ruby lacks. On Windows, run step 2 in
+  WSL or rely on CI.
+- Agent/tooling settings (`.claude/`, `CLAUDE.md`, `AGENTS.md`, ...) are git-ignored and
+  excluded from the Jekyll build; `site-checks.sh` fails if any of them reach `_site/`.
 
 ---
 
 ## Deployment
 
-Pushes to `main` are automatically built, tested, and deployed via GitHub Actions (`.github/workflows/pages.yml`):
+Builds, tests, and deployment run in GitHub Actions (`.github/workflows/pages.yml`):
 
-1. The **test** job builds the site and runs html-proofer and `script/site-checks.sh`.
-2. The **deploy** job (only on push to `main`, after test passes) uploads the built `_site/` to GitHub Pages.
-
-Pull requests against `main` or `dev` run the test job only — no deployment.
+1. The **test** job runs on every push, pull request, manual dispatch, and a weekly schedule.
+   It runs `bundle-audit`, builds the site, then runs html-proofer and `script/site-checks.sh`.
+2. The **deploy** job runs only on push to `main`, after the test job passes, and uploads `_site/`
+   to GitHub Pages. Only this job holds the `pages: write` / `id-token: write` permissions.
 
 **One-time setup:** In the repository Settings → Pages, set the source to **GitHub Actions**.
 
-Dependabot (`.github/dependabot.yml`) keeps Bundler gems and Actions versions up to date weekly.
+Dependabot (`.github/dependabot.yml`) keeps Bundler gems and Actions versions up to date weekly (minor/patch bumps grouped into one PR).
