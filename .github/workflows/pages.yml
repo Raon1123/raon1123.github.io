@@ -13,10 +13,17 @@ on:
 permissions:
   contents: read
 
+<<<<<<< HEAD
 # Cancel superseded runs on non-main refs; never cancel a main run mid-deploy.
 concurrency:
   group: test-${{ github.ref }}
   cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+=======
+# Cancel superseded test runs on the same ref (deploy has its own group below).
+concurrency:
+  group: test-${{ github.ref }}
+  cancel-in-progress: true
+>>>>>>> e8e9ed74187cf05e7c1ef7867a5245eb3454dd90
 
 jobs:
   test:
