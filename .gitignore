@@ -11,15 +11,6 @@
 
 /.vscode/
 
-# AI agent / editor tooling settings: local only, never commit or deploy
-.claude/
-CLAUDE.md
-CLAUDE.local.md
-AGENTS.md
-.codex/
-.cursor/
-.ruby-lsp/
-
 node_modules/
 .sass-cache/
 
@@ -336,3 +327,6 @@ TSWLatexianTemp*
 # option is specified. Footnotes are the stored in a file with suffix Notes.bib.
 # Uncomment the next line to have this generated file ignored.
 #*Notes.bib
+
+# Claude Code local files
+.claude/
