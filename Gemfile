@@ -4,8 +4,9 @@ source "https://rubygems.org"
 # site is deployed via GitHub Actions, not the legacy Pages build).
 gem "jekyll", "~> 4.3"
 
-# Pin sass converter to 2.x (sassc): the TeXt theme SCSS uses `/` division,
-# which dart-sass (jekyll-sass-converter >= 3.0) rejects.
+# Sass converter 3.x (dart-sass via sass-embedded). The TeXt theme SCSS uses
+# `/` division, darken() and @import, which Sass 1.x accepts with deprecation
+# warnings; Sass 2.0 will reject them, so the theme SCSS must be migrated first.
 gem "jekyll-sass-converter", "~> 3.1"
 
 # Plugins listed in _config.yml plugins:.

@@ -13,10 +13,10 @@ on:
 permissions:
   contents: read
 
-# Cancel superseded test runs on the same ref (deploy has its own group below).
+# Cancel superseded runs on non-main refs; never cancel a main run mid-deploy.
 concurrency:
   group: test-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
 
 jobs:
   test:
@@ -38,8 +38,8 @@ jobs:
         run: bundle exec jekyll build
       - name: Check internal links and resources
         # --allow-missing-href: theme renders disabled buttons as <a> without href (HTML5-valid)
-        # --enforce-https=false: legacy post content links to http:// academic sites
-        run: bundle exec htmlproofer ./_site --disable-external --checks Links,Images,Scripts --allow-missing-href=true --enforce-https=false
+        # --no-enforce-https: legacy post content links to http:// academic sites
+        run: bundle exec htmlproofer ./_site --disable-external --checks Links,Images,Scripts --allow-missing-href --no-enforce-https
       - name: Regression assertions
         run: bash script/site-checks.sh
 
