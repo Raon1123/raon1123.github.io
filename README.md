@@ -47,8 +47,8 @@ bundle exec jekyll build
 bundle exec htmlproofer ./_site \
   --disable-external \
   --checks Links,Images,Scripts \
-  --allow-missing-href=true \
-  --enforce-https=false
+  --allow-missing-href \
+  --no-enforce-https
 
 # 3. Regression assertions (sitemap/feed URLs, no leaked files, avatar,
 #    no agent config such as .claude/ or CLAUDE.md in _site, page layout)
