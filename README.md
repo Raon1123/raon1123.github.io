@@ -59,10 +59,23 @@ Notes:
 
 - CI uses Ruby 3.3.4 on Linux. Some locked gems (e.g. `async`) need Ruby >= 3.3, so on an
   older local Ruby `bundle install` rewrites `Gemfile.lock`; do not commit that rewrite.
-- html-proofer needs libcurl, which native Windows Ruby lacks. On Windows, run step 2 in
-  WSL or rely on CI.
+- html-proofer needs libcurl, which native Windows Ruby lacks. On Windows, run all checks in
+  Docker instead (see below).
 - Agent/tooling settings (`.claude/`, `CLAUDE.md`, `AGENTS.md`, ...) are git-ignored and
   excluded from the Jekyll build; `site-checks.sh` fails if any of them reach `_site/`.
+
+### Running the checks in Docker
+
+`script/docker-check.sh` runs steps 0–3 in the `ruby:3.3.4` image, the same Ruby version
+as CI, so it works on Windows without libcurl. It needs Docker (e.g. Docker Desktop):
+
+```bash
+bash script/docker-check.sh
+```
+
+The site is built inside the container, so the local `_site/` is not touched. Gems are
+cached in the Docker volume `raon1123-bundle`; delete it with
+`docker volume rm raon1123-bundle` to reinstall from scratch.
 
 ---
 
