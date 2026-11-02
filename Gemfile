@@ -4,9 +4,10 @@ source "https://rubygems.org"
 # site is deployed via GitHub Actions, not the legacy Pages build).
 gem "jekyll", "~> 4.3"
 
-# Sass converter 3.x (dart-sass via sass-embedded). The TeXt theme SCSS uses
-# `/` division, darken() and @import, which Sass 1.x accepts with deprecation
-# warnings; Sass 2.0 will reject them, so the theme SCSS must be migrated first.
+# Sass converter 3.x (dart-sass via sass-embedded >= 1.79, needed for
+# color.adjust($space:) and color.to-gamut in the theme SCSS). The theme still
+# uses @import, global built-in functions (map-get etc.) and the legacy if();
+# Dart Sass 3.0 removes the first two, so migrate them before a Sass 3 upgrade.
 gem "jekyll-sass-converter", "~> 3.1"
 
 # Plugins listed in _config.yml plugins:.

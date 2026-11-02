@@ -1,3 +1,11 @@
+@use "sass:color";
+
+// darken()/lighten() clamped lightness to 0-100%; color.adjust() does not, so a
+// dark color darkened further became an invalid negative-lightness hsl().
+@function clickable-adjust-lightness($clr, $amount) {
+  @return color.to-gamut(color.adjust($clr, $lightness: $amount, $space: hsl), $space: hsl, $method: clip);
+}
+
 @mixin clickable($clr, $bg-clr, $hover-clr: default, $hover-bg-clr: default, $active-clr: default, $active-bg-clr: default, $focus-clr: default, $focus-bg-clr: default, $theme: default, $ignore-path: default) {
 
   @if $theme == default {
@@ -35,10 +43,10 @@
   @if $hover-clr == default {
     @if $hover-bg-clr == null {
       @if $theme == "light" {
-        $hover-clr: darken($clr, 14%);
+        $hover-clr: clickable-adjust-lightness($clr, -14%);
       }
       @if $theme == "dark" {
-        $hover-clr: lighten($clr, 18%);
+        $hover-clr: clickable-adjust-lightness($clr, 18%);
       }
     } @else if $hover-bg-clr == default {
       $hover-clr: $clr;
@@ -47,10 +55,10 @@
 
   @if $hover-bg-clr == default {
     @if $theme == "light" {
-      $hover-bg-clr: darken($bg-clr, 14%);
+      $hover-bg-clr: clickable-adjust-lightness($bg-clr, -14%);
     }
     @if $theme == "dark" {
-      $hover-bg-clr: lighten($bg-clr, 18%);
+      $hover-bg-clr: clickable-adjust-lightness($bg-clr, 18%);
     }
   }
 
@@ -58,10 +66,10 @@
   @if $active-clr == default {
     @if $active-bg-clr == null {
       @if $theme == "light" {
-        $active-clr: darken($hover-clr, 15%);
+        $active-clr: clickable-adjust-lightness($hover-clr, -15%);
       }
       @if $theme == "dark" {
-        $active-clr: lighten($hover-clr, 16%);
+        $active-clr: clickable-adjust-lightness($hover-clr, 16%);
       }
     } @else if $active-bg-clr == default {
       $active-clr: $hover-clr;
@@ -70,10 +78,10 @@
 
   @if $active-bg-clr == default {
     @if $theme == "light" {
-      $active-bg-clr: darken($hover-bg-clr, 15%);
+      $active-bg-clr: clickable-adjust-lightness($hover-bg-clr, -15%);
     }
     @if $theme == "dark" {
-      $active-bg-clr: lighten($hover-bg-clr, 16%);
+      $active-bg-clr: clickable-adjust-lightness($hover-bg-clr, 16%);
     }
   }
 
