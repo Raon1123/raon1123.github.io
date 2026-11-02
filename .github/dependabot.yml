@@ -8,6 +8,13 @@ updates:
     groups:
       ruby-minor-patch:
         update-types: [minor, patch]
+    # Sass 2.0 drops the deprecated syntax the TeXt theme SCSS still uses (#117).
+    # Block major bumps until the SCSS is migrated.
+    ignore:
+      - dependency-name: sass-embedded
+        update-types: ["version-update:semver-major"]
+      - dependency-name: jekyll-sass-converter
+        update-types: ["version-update:semver-major"]
   - package-ecosystem: github-actions
     directory: "/"
     schedule:
