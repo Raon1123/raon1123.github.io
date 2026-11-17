@@ -59,6 +59,9 @@
 //
 // (Placeholder selectors for each type, for those who rather @extend)
 
+@use "sass:list";
+@use "sass:meta";
+
 @mixin flexbox {
   display: -webkit-box;
   display: -webkit-flex;
@@ -258,8 +261,8 @@
 
   // Box-Flex only supports a flex-grow value so let's grab the
   // first item in the list and just return that.
-  @if type-of($fg) == "list" {
-    $fg-boxflex: nth($fg, 1);
+  @if meta.type-of($fg) == "list" {
+    $fg-boxflex: list.nth($fg, 1);
   }
 
   -webkit-box-flex: $fg-boxflex;

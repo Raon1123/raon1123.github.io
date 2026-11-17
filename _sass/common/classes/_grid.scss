@@ -1,4 +1,5 @@
 @use "sass:math";
+@use "sass:map";
 
 $grid-columns: 12;
 
@@ -20,7 +21,7 @@ $grid-columns: 12;
     @include flex(1);
   } @else {
     @include flex(none);
-    width: percentage(math.div($columns, $grid-columns));
+    width: math.percentage(math.div($columns, $grid-columns));
   }
 }
 
@@ -36,7 +37,7 @@ $grid-columns: 12;
   @include flexbox();
   @include flex-wrap(wrap);
   & > {
-    @each $breakpoint in map-keys($responsive) {
+    @each $breakpoint in map.keys($responsive) {
       @for $i from 1 through $grid-columns {
         @include make-grid-cell($i, $breakpoint);
       }

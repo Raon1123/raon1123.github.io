@@ -2,6 +2,8 @@
 
 // darken()/lighten() clamped lightness to 0-100%; color.adjust() does not, so a
 // dark color darkened further became an invalid negative-lightness hsl().
+@use "sass:map";
+
 @function clickable-adjust-lightness($clr, $amount) {
   @return color.to-gamut(color.adjust($clr, $lightness: $amount, $space: hsl), $space: hsl, $method: clip);
 }
@@ -30,11 +32,11 @@
     $ignore-path: true;
   }
 
-  @include transition(map-get($clickable, transition));
+  @include transition(map.get($clickable, transition));
   @if $ignore-path == false {
     svg {
       path {
-        @include transition(map-get($clickable, transition));
+        @include transition(map.get($clickable, transition));
       }
     }
   }

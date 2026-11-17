@@ -5,6 +5,8 @@
 ///
 
 // main colors
+@use "sass:color";
+
 $main-color-1:     #f92651;
 $text-color-1:     #fff;
 
@@ -43,8 +45,8 @@ $footer-text-color: $text-color-3;
 $footer-background: linear-gradient(60deg, #ffa650 0%, #ff7b50 100%);
 
 // border and shadow colors
-$border-color:     mix($main-color-1, $background-color, 50%);
-$border-color-l:   mix(#000, $background-color, 10%);
+$border-color:     color.mix($main-color-1, $background-color, 50%);
+$border-color-l:   color.mix(#000, $background-color, 10%);
 $decorate-color:   rgba(#000, .1);
 $mask-color:       rgba(#000, .9);
 $select-color:     rgba($main-color-3, .5);
