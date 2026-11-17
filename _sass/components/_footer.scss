@@ -2,6 +2,8 @@
  * Site Info
  */
 
+@use "sass:map";
+
 .footer {
   @include flexbox();
   @include align-items(center);
@@ -11,15 +13,15 @@
     @include link-colors ($footer-text-color, $main-color-1);
   }
   .site-info {
-    font-size: map-get($base, font-size-xs);
+    font-size: map.get($base, font-size-xs);
     text-align: center;
     .menu {
-      line-height: map-get($base, line-height-xs);
+      line-height: map.get($base, line-height-xs);
       & > * {
         &:not(:last-child) {
           @include split-line(right, default, $footer-text-color);
-          padding-right: map-get($spacers, 1);
-          margin-right: map-get($spacers, 1);
+          padding-right: map.get($spacers, 1);
+          margin-right: map.get($spacers, 1);
         }
       }
     }

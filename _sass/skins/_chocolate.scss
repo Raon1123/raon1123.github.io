@@ -5,6 +5,8 @@
 ///
 
 // main colors
+@use "sass:color";
+
 $main-color-1:     #563a20;
 $text-color-1:     rgba(#fff, .85);
 
@@ -44,7 +46,7 @@ $footer-background: $main-color-3;
 
 // border and shadow colors
 $border-color:     $main-color-3;
-$border-color-l:   mix(#000, $background-color, 10%);
+$border-color-l:   color.mix(#000, $background-color, 10%);
 $decorate-color:   rgba(#000, .1);
 $mask-color:       rgba(#000, .9);
 $select-color:     rgba($main-color-3, .5);
